@@ -1,4 +1,5 @@
- import Header from './Components/Header/Header'
+import Header from './Components/Header/Header'
+import TopBar from './Components/TopBar/TopBar'
 import './App.css'
 
 function App() {
@@ -7,7 +8,8 @@ function App() {
   return (
     <>
      <Header/> 
-     </>
+     <TopBar/>
+    </>
   )
 }
 

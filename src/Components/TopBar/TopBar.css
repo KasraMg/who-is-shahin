@@ -1,0 +1,30 @@
+ .TopBar{
+    background: #16171b url('/Images/hero-bg.jpg') no-repeat;
+    background-position: center top;
+    background-size: 100%;
+    min-height: 100vh;
+ }
+ .TopBar-logo {
+    position: absolute;
+    left: calc(100% / 6); 
+    transform: translateY(-50%);
+}
+.scrollDown img{
+    transform: rotate(90deg);
+    transform-origin: center;
+    animation: scroll-down-move 1s ease infinite;
+}
+.scrollDown{
+    transform: rotate(-90deg) translateX(0px);
+}
+
+@-webkit-keyframes scroll-down-move {
+    0% {left: -30px;}
+    50% {left: -40px;}
+    100% {left: -30px;}
+}
+@keyframes scroll-down-move {
+    0% {left: -30px;}
+    50% {left: -40px;}
+    100% {left: -30px;}
+}
