@@ -6,7 +6,7 @@ export default function Header() {
       <div>
         <img className='w-[64px] cursor-pointer' src="/Images/logo.png" alt="" />
       </div>
-      <ul className='flex gap-10 font-swap  list-none'> 
+      <ul className='flex gap-10 font-swap  list-none z-30 relative'> 
         <li className='hover:text-red-500 transition-colors cursor-pointer  '>Who Am I ?</li>
         <li className='hover:text-red-500 transition-colors cursor-pointer  '>$kills</li>
         <li className='hover:text-red-500 transition-colors cursor-pointer  '>$amples</li>
