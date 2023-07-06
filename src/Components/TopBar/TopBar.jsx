@@ -6,7 +6,7 @@ import { HiArrowLongRight } from 'react-icons/hi2'
 import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai'
 export default function TopBar() {
   return (
-    <div className='TopBar'>
+    <div className='TopBar border-b-2 border-red-600 border-solid'>
       <section className='px-36 relative z-20 sm:overflow-hidden pb-10 lg:px-10 pt-28 md:pt-10'>
 
         <img src="/Images/photo_5847965502901698114_x.jpg" className='me-image-2 sm:w-60 sm:h-64 sm:relative sm:z-50    hidden md:block object-cover  w-72  h-80   mx-auto mb-4 rounded-full' alt="" />
