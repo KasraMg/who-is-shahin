@@ -1,0 +1,27 @@
+ 
+  
+  
+  .swiper-button-prev, .swiper-button-next {
+    top: 85%;
+    z-index: 5 !important;
+  }
+  .swiper-button-next{
+    left: 180px;
+  }
+  .swiper-button-prev{ 
+    left: 125px;
+}
+  .swiper-button-prev:after, .swiper-button-next:after {
+    font-size: 25px !important;
+    border: 1px solid white;
+    color: white !important;
+    padding: .6rem 1rem;
+    border-radius: 100%;
+  }
+  .projects-title{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #333;
+    font-family: 'Futura Md BT';
+    transform: rotate(90deg);
+  }
