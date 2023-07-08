@@ -11,7 +11,7 @@ export default function Projects() {
   return (
     <div style={{background:'url(/Images/projectBg.jpg)'}} className='relative pb-56 pt-36   !bg-fixed !bg-center'>
         <div class="bg-[#141519d9]  left-0 top-0 w-full h-full absolute"></div>
-       <Swiper navigation={true} modules={[Navigation]} className="mySwiper z-30 relative   ml-auto mr-0">
+       <Swiper rewind={true} navigation={true} modules={[Navigation]} className="mySwiper z-30 relative   ml-auto mr-0">
         {projects && projects.map(data=>(
              <SwiperSlide className='flex  justify-evenly bg-transparent '>
             <main className='text-left'>
@@ -24,9 +24,9 @@ export default function Projects() {
                     <a href={data.href}><button className='bg-red-600 text-2xl relative top-1 rounded-full ml-3 p-4 text-white'><HiArrowLongRight /></button></a>
                 </div>
             </main>
-            <section>
+            <section className='lg:w-[50%]'>
             
-                <img className='w-[768px] mr-6 relative z-50' src={data.image} alt="" />
+                <img className='w-[768px] mr-6 rounded-md relative z-50' src={data.image} alt="" />
             </section>
         </SwiperSlide>
         ))} 

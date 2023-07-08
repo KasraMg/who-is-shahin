@@ -1,24 +1,31 @@
 const projectData=[
     {
         name:'Digikala',
-        description:'Sed eget sodales tellus. In maximus velit necm euismod vehicula. Fusce blandit sapien pretiun.',
-        type:'Shop website',
+        description:'I developed this site using React and related packages 😁 95% of this site is completed & is still under development !!',
+        type:'Store website',
         href:'https://mr-digikala.iran.liara.run/',
         image:'/Images/digi.PNG'
     },
     {
         name:'Nuxt',
-        description:'Sed eget sodales tellus. In maximus velit necm euismod vehicula. Fusce blandit sapien pretiun.',
+        description:'This site is developed with js pure and has dark mode. It has a very beautiful and powerful UI 😎⚡',
         type:'Document website',
-        href:'https://mr-digikala.iran.liara.run/',
-        image:'/Images/digi.PNG'
+        href:'https://nuxt.iran.liara.run/',
+        image:'/Images/nuxt.PNG'
     },
     {
-        name:'Digikala',
-        description:'Sed eget sodales tellus. In maximus velit necm euismod vehicula. Fusce blandit sapien pretiun.',
-        type:'Shop website',
-        href:'https://mr-digikala.iran.liara.run/',
-        image:'/Images/digi.PNG'
+        name:'Seartudio',
+        description:'I developed this site using React and related packages & frameWork 🔥',
+        type:'Studio website',
+        href:'https://seartudio.com/',
+        image:'/Images/seartudio.PNG'
+    },,
+    {
+        name:'Fixed Float',
+        description:'This site gives you the tools to make full use of your digital assets through an easy & accessible exchange platform 🐱‍👤',
+        type:'Digital currency website',
+        href:'https://testim.iran.liara.run/',
+        image:'/Images/fixedFloat.PNG'
     },
 ]
 export default projectData
