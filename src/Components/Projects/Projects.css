@@ -39,6 +39,11 @@
       left: 35px;
   } 
   }
+  @media (max-width:900px) {
+    .swiper-button-prev, .swiper-button-next {
+      top: 94%;
+    }
+  }
   @media (min-width:1201px) {
     .swiper-button-prev, .swiper-button-next {
       top: 85%;
