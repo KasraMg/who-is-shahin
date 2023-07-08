@@ -1,0 +1,36 @@
+.skills-title{
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: #333;
+    font-family: 'Futura Md BT'; 
+}
+.line{
+    background: linear-gradient(to right, rgba(78,78,78,1) 0%,rgba(15,15,15,0) 81%,rgba(0,0,0,0) 100%);
+}
+.circle{
+    box-shadow: 0 0px 0px 8px #333;
+}
+.rectengle{
+    background: linear-gradient(to right, rgba(0,0,0,0) 1%,rgba(78,78,78,0.99) 99%,rgba(78,78,78,1) 100%);
+}
+.Skillsline::after{ 
+        content: "";
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        border-radius: 100%;
+        background: #f43534;
+        left: -7px;
+        bottom: 0;
+}
+.Skillsline::before{ 
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 100%;
+    background: #f43534;
+    left: -7px;
+    top: 0;
+}
+ 
