@@ -5,7 +5,7 @@ import Card from './Card'
 export default function Skills() {
     const [skills,setSkill]=useState(data)
     return (
-    <div className='relative bg-[#16171b] py-40'>
+    <div className='relative bg-[#16171b] pb-40 pt-10'>
       <p className='skills-title font-bold text-[120px]  uppercase  w-full text-center  mb-20 '> my skills</p>
       <div className=' relative h-full'>
         <main className='skills-main flex justify-evenly px-[93px] '>
