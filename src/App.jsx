@@ -3,6 +3,7 @@ import TopBar from './Components/TopBar/TopBar'
 import Intro from './Components/Intro/Intro'
 import Projects from './Components/Projects/Projects'
 import Skills from './Components/Skills/Skills'
+import SoftSkills from './Components/SoftSkills/SoftSkills'
 import './App.css'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
      <Intro/>
      <Projects/>
      <Skills/>
+     <SoftSkills/>
     </>
   )
 }

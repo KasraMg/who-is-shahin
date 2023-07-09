@@ -12,6 +12,7 @@ export default {
       'sm':{"max":"767px"},
       'md':{"max":"900px"},
       'lg':{"max":"1200px"},
+      'lg-x2':{"min":"1201px"},
      
     },
     fontFamily:{
