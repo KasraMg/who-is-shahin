@@ -1,9 +1,9 @@
 import React from 'react'
 import './TopBar.css'
-import { BsGithub } from 'react-icons/bs'
+import { BsDiscord, BsGithub } from 'react-icons/bs'
 import { BiLogoTelegram } from 'react-icons/bi'
 import { HiArrowLongRight } from 'react-icons/hi2'
-import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai'
+import { AiOutlineInstagram } from 'react-icons/ai'
 export default function TopBar() {
   return (
     <div className='TopBar border-b-2 border-red-600 border-solid sm-x2:pb-20'>
@@ -24,10 +24,12 @@ export default function TopBar() {
         <img src="https://demo.themecon.net/onlyme/html/images/dot-texture.png" className='dot-bg  md:z-[-1] md:right-1/2 lg:right-5 right-20  md:-top-20 top-28 absolute' alt="" />
       </section>
       <div className='flex gap-5  sm-x2:relative  sm-x2:top-12  pb-10 flex-col text-2xl text-white'>
-        <AiOutlineTwitter className='ml-auto mr-7 ' />
-        <AiOutlineInstagram className='ml-auto mr-7 ' />
-        <BiLogoTelegram className='ml-auto mr-7 ' />
-        <BsGithub className='ml-auto mr-7 ' />
+                <a href="https://instagram.com/_ka.s.ra_?igshid=ZDc4ODBmNjlmNQ==" target='_blank'><AiOutlineInstagram className='ml-auto mr-7 '/></a>
+                        <a href="https://t.me/shahiinnnnn" target='_blank'><BiLogoTelegram className='ml-auto mr-7 '/></a>
+                        <a href="https://github.com/KasraMg" target='_blank'><BsGithub className='ml-auto mr-7 '/></a>
+                        <a href="https://discord.com/users/shahin#6613" target='_blank'><BsDiscord className='ml-auto mr-7 '/></a>
+       
+         
       </div>
       <div className='absolute lg:bottom-14  sm-x2:!-bottom-7 md:!-bottom-28 bottom-36'>
         <p className='scrollDown text-white '>Scroll Down   <img className=' absolute w-4 top-0 -left-10' src="https://demo.themecon.net/onlyme/html/images/scroll-down-arrow.png" alt="" /></p>

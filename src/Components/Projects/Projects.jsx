@@ -31,7 +31,7 @@ export default function Projects() {
         </SwiperSlide>
         ))} 
       </Swiper>
-      <p className=' projects-title font-bold text-[120px] md:!-right-44 lg:right-12  uppercase absolute right-52 bottom-[42%]'>Projects</p>
+      <p className=' projects-title sm-x2:hidden font-bold text-[120px] md:!-right-44 lg:right-12  uppercase absolute right-52 bottom-[42%]'>Projects</p>
       <img src="/Images/projectShape.png" className='bottom-0 -left-44 absolute' alt="" />
     </div>
   )

@@ -35,7 +35,7 @@ export default function SoftSkills() {
     
 
   </div>
-  <p className='skills-title font-bold text-[120px] text-white relative z-50  uppercase sm:text-[80px] sm-x2:!text-[50px]  w-full text-center  mt-20 '> soft skills</p>
+  <p className='skills-title font-bold  pb-16 text-[120px] text-white relative z-50  uppercase sm:text-[80px] sm-x2:!text-[50px]  w-full text-center  mt-20 '> soft skills</p>
   
   <div className="overlay"></div>
     </div>
