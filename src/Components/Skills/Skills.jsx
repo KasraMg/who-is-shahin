@@ -25,7 +25,7 @@ export default function Skills() {
         
        
         
-           <span className="Skillsline block w-[2px] h-full bg-[#f43534] absolute left-1/2 -ml-[1px] -top-10"></span> 
+           <span className="Skillsline block w-[2px] sm-x2:h-[101%] h-full bg-[#f43534] absolute left-1/2 -ml-[1px] -top-10"></span> 
         </div>
         
     </div>
