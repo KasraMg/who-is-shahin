@@ -1,4 +1,5 @@
 import Header from './Components/Header/Header'
+import Footer from './Components/Footer/Footer'
 import TopBar from './Components/TopBar/TopBar'
 import Intro from './Components/Intro/Intro'
 import Projects from './Components/Projects/Projects'
@@ -17,6 +18,7 @@ function App() {
      <Projects/>
      <Skills/>
      <SoftSkills/>
+     <Footer/>
     </>
   )
 }
