@@ -9,7 +9,7 @@ import { HiArrowLongRight } from 'react-icons/hi2';
 export default function Projects() {
     const [projects,setProjects]=useState(projectData)
   return (
-    <div style={{background:'url(/Images/projectBg.jpg)'}} className='relative pb-56 pt-36 md:pt-12  !bg-fixed !bg-center '>
+    <div style={{background:'url(/Images/projectBg.jpg)'}} id='projects' className='relative border-b-2 border-solid border-red-600 pb-56 pt-36 md:pt-12  !bg-fixed !bg-center '>
         <div class="bg-[#141519d9]  left-0 top-0 w-full h-full absolute"></div>
        <Swiper rewind={true} navigation={true} modules={[Navigation]} className="mySwiper sm:border-t-2 sm:mt-5 border-0 pt-12 border-red-600 border-solid z-30 relative sm:pl-0   ml-auto mr-0">
         {projects && projects.map(data=>(
