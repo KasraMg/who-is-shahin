@@ -17,7 +17,7 @@ export default function TopBar() {
         <p className='text-5xl md:text-3xl md:text-center md:w-full mt-4 w-max relative  sm-x2:!text-2xl text-white font-swap font-extrabold z-10'>  Front-end Developer</p>
         <div className=' pt-12 md:text-center'>
           <span className='text-2xl   text-white font-swap font-extrabold'>Hire Me</span>
-          <button className='bg-red-600 text-2xl relative top-1 rounded-full ml-3 p-4 text-white'><HiArrowLongRight /></button>
+          <a href="#footer" className='z-[999] relative'><button className='bg-red-600 text-2xl relative top-1 rounded-full ml-3 p-4 text-white'><HiArrowLongRight /></button></a>
         </div>
         <img className='TopBar-logo  sm-x2:left-0  sm-x2:w-full' src="https://demo.themecon.net/onlyme/html/images/vertical-logo.png" alt="" />
         <img src="/Images/photo_5847965502901698113_y.jpg" className='me-image lg:right-28 md:hidden ' alt="" />

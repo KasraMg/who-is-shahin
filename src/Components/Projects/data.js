@@ -1,10 +1,10 @@
 const projectData=[
     {
-        name:'Digikala',
-        description:'I developed this site using React and related packages 😁 95% of this site is completed & is still under development !!',
-        type:'Store website',
-        href:'https://mr-digikala.iran.liara.run/',
-        image:'/Images/digi.PNG'
+        name:'Fixed Float',
+        description:'This site gives you the tools to make full use of your digital assets through an easy & accessible exchange platform 🐱‍👤',
+        type:'Digital currency website',
+        href:'https://testim.iran.liara.run/',
+        image:'/Images/fixedFloat.PNG'
     },
     {
         name:'Nuxt',
@@ -12,6 +12,12 @@ const projectData=[
         type:'Document website',
         href:'https://nuxt.iran.liara.run/',
         image:'/Images/nuxt.PNG'
+    },{
+        name:'Digikala',
+        description:'I developed this site using React and related packages 😁 95% of this site is completed & is still under development !!',
+        type:'Store website',
+        href:'https://mr-digikala.iran.liara.run/',
+        image:'/Images/digi.PNG'
     },
     {
         name:'Seartudio',
@@ -19,13 +25,7 @@ const projectData=[
         type:'Studio website',
         href:'https://seartudio.com/',
         image:'/Images/seartudio.PNG'
-    },,
-    {
-        name:'Fixed Float',
-        description:'This site gives you the tools to make full use of your digital assets through an easy & accessible exchange platform 🐱‍👤',
-        type:'Digital currency website',
-        href:'https://testim.iran.liara.run/',
-        image:'/Images/fixedFloat.PNG'
     },
+ 
 ]
 export default projectData
