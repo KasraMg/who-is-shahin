@@ -6,12 +6,13 @@ import Projects from './Components/Projects/Projects'
 import Skills from './Components/Skills/Skills'
 import SoftSkills from './Components/SoftSkills/SoftSkills'
 import './App.css'
-
+import AOS from 'aos';
+import 'aos/dist/aos.css';  
 function App() {
- 
+ AOS.init()
 
   return (
-    <>
+    <div data-aos="fade-down"   data-aos-duration="3000" >
      <Header/> 
      <TopBar/>
      <Intro/>
@@ -19,7 +20,7 @@ function App() {
      <Skills/>
      <SoftSkills/>
      <Footer/>
-    </>
+    </div>
   )
 }
 

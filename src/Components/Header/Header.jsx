@@ -5,7 +5,7 @@ import { RiMenu5Fill } from 'react-icons/ri'
 export default function Header() {
  
   return (
-    <header className='Header sm-x2:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    '>
+    <header   className='Header sm-x2:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    '>
       <div>
         <img className='w-[64px] cursor-pointer' src="/Images/logo.png" alt="" />
       </div>

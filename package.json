@@ -5,13 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "start": "vite" ,
+    "start": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite preview"
   },
   "dependencies": {
     "@preline/overlay": "^1.4.0",
+    "aos": "^3.0.0-beta.6",
     "autoprefixer": "^10.4.14",
     "formik": "^2.2.9",
     "postcss": "^8.4.24",
