@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Card(props) {
     return (
-        <div className='relative   md:!w-3/4 md:mx-auto items-stretch md:z-[999] border-[#26272d] border-solid border-2 sm-x2:px-4  pb-5 pt-4 px-8 rounded-md mb-12 bg-[#1c1d21] lg:w-[377px] w-[535px]'>
+        <div className='relative   md:!w-3/4 md:mx-auto items-stretch md:z-[888] border-[#26272d] border-solid border-2 sm-x2:px-4  pb-5 pt-4 px-8 rounded-md mb-12 bg-[#1c1d21] lg:w-[377px] w-[535px]'>
             <div className='font-swap text-3xl text-white flex gap-2'>
                 <p className='relative z-40 top-[2px]'>{props.name}</p>
                 <span className='line block relative top-[20px] ml-8 h-[2px] w-full'></span>

@@ -2,6 +2,7 @@
 export default {
   content: [
     "./src/**/*.{js,jsx,ts,tsx}",
+    '/node_modules/preline/dist/*.js',
   ],
  
   theme: {
@@ -21,6 +22,8 @@ export default {
   },
   
 
-  plugins: [],
+  plugins: [
+    require('preline/plugin'),
+  ],
 }
 
