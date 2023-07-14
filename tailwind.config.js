@@ -6,6 +6,12 @@ export default {
   ],
  
   theme: {
+    backgroundSize: {
+      'auto': 'auto',
+      'cover': 'cover',
+      'contain': 'contain',
+      'fullSize': '100%', 
+    },
     extend: {},
     screens:{
       'sm-x3':{"max":"390px"}, 

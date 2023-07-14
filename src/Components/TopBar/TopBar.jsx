@@ -1,12 +1,12 @@
-import React from 'react'
-import './TopBar.css'
+import React from 'react' 
 import { BsDiscord, BsGithub } from 'react-icons/bs'
 import { BiLogoTelegram } from 'react-icons/bi'
 import { HiArrowLongRight } from 'react-icons/hi2'
 import { AiOutlineInstagram } from 'react-icons/ai'
 export default function TopBar() {
   return (
-    <div    className='TopBar border-b-2 border-red-600 border-solid sm-x2:pb-20'>
+    
+    <div  className='bg-[top] bg-fullSize bg-no-repeat bg-[#16171b] bg-[url(/Images/hero-bg.jpg)] border-b-2 border-red-600 border-solid sm-x2:pb-20'>
       <section className='px-36 relative z-20  sm-x2:overflow-hidden  pb-[70px] lg:px-10 pt-28 md:pt-10'>
 
         <img src="/Images/photo_5847965502901698114_x.jpg" className='me-image-2   sm-x2:w-60  sm-x2:h-64  sm-x2:relative  sm-x2:z-50    hidden md:block object-cover  w-72  h-80   mx-auto mb-4 rounded-full' alt="" />
@@ -19,9 +19,9 @@ export default function TopBar() {
           <span className='text-2xl   text-white font-swap font-extrabold'>Hire Me</span>
           <a href="#footer" className='z-[999] relative'><button className='bg-red-600 text-2xl relative top-1 rounded-full ml-3 p-4 text-white'><HiArrowLongRight /></button></a>
         </div>
-        <img className='TopBar-logo  sm-x2:left-0  sm-x2:w-full' src="https://demo.themecon.net/onlyme/html/images/vertical-logo.png" alt="" />
-        <img src="/Images/photo_5847965502901698113_y.jpg" className='me-image lg:right-28 md:hidden ' alt="" />
-        <img src="https://demo.themecon.net/onlyme/html/images/dot-texture.png" className='dot-bg  md:z-[-1] md:right-1/2 lg:right-5 right-[72px]  md:-top-20 top-32 absolute' alt="" />
+        <img className='TopBar-logo absolute    sm-x2:left-0  sm-x2:w-full' src="https://demo.themecon.net/onlyme/html/images/vertical-logo.png" alt="" />
+        <img src="/Images/photo_5847965502901698113_y.jpg" className='me-image absolute right-[182px] w-[517px] -top-[74px] lg:right-28 md:hidden ' alt="" />
+        <img src="https://demo.themecon.net/onlyme/html/images/dot-texture.png" className='dot-bg md:!right-[45%] md:z-[-1]   lg:right-5 right-[72px]  md:-top-20 top-32 absolute' alt="" />
       </section>
       <div className='flex gap-5 w-11 ml-auto  sm-x2:relative  sm-x2:top-12  pb-10 flex-col text-2xl text-white'>
                 <a href="https://instagram.com/_ka.s.ra_?igshid=ZDc4ODBmNjlmNQ==" target='_blank'><AiOutlineInstagram className='ml-auto mr-7 '/></a>

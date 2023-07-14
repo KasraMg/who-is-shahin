@@ -1,8 +1,7 @@
-import React, { useRef, useState } from 'react'; 
+import React, { useState } from 'react'; 
 import { Swiper, SwiperSlide } from 'swiper/react'; 
 import 'swiper/css';
-import 'swiper/css/navigation'; 
-import './Projects.css' 
+import 'swiper/css/navigation';  
 import projectData from './data';
 import { Navigation } from 'swiper/modules';
 import { HiArrowLongRight } from 'react-icons/hi2';

@@ -1,11 +1,9 @@
-import React from 'react'
-import './Footer.css'
+import React from 'react' 
 import { useFormik } from "formik";
 import swal from 'sweetalert';
 import registerSchema from '../../Validations/rules';
 import { BsDiscord, BsGithub } from 'react-icons/bs'
-import { BiLogoTelegram } from 'react-icons/bi'
-import { HiArrowLongRight } from 'react-icons/hi2'
+import { BiLogoTelegram } from 'react-icons/bi' 
 import { AiOutlineInstagram, AiOutlineTwitter } from 'react-icons/ai'
 export default function Footer() {
     const footerform = useFormik({
@@ -87,7 +85,7 @@ export default function Footer() {
                             value={footerform.values.name}
                             onChange={footerform.handleChange}
                             onBlur={footerform.handleBlur}
-                            className='bg-transparent focus-visible:outline-0 w-[460px] md:w-full text-[#fff] pb-4 border-solid border-b-2 border-[#333]' placeholder='Your Name' />
+                            className='bg-transparent focus-visible:outline-0 w-[460px] md:w-full text-[#fff] rounded pt-[14px] pb-4 border-solid border-b-2 border-[#333]' placeholder='Your Name' />
                     </section>
                     <section className='grid font-swap gap-6 my-8'>
                         <label className='text-[#727272]' htmlFor="">Email *</label>
@@ -96,7 +94,7 @@ export default function Footer() {
                             value={footerform.values.email}
                             onChange={footerform.handleChange}
                             onBlur={footerform.handleBlur}
-                            className='bg-transparent focus-visible:outline-0 w-[460px] md:w-full text-[#fff] pb-4 border-solid border-b-2 border-[#333]' placeholder='Your Email' />
+                            className='bg-transparent focus-visible:outline-0 w-[460px] md:w-full text-[#fff] rounded pt-[14px] pb-4 border-solid border-b-2 border-[#333]' placeholder='Your Email' />
                     </section>
                     <section className='grid font-swap gap-6'>
                         <label className='text-[#727272]' htmlFor="">message *</label>
@@ -105,7 +103,7 @@ export default function Footer() {
                             value={footerform.values.message}
                             onChange={footerform.handleChange}
                             onBlur={footerform.handleBlur}
-                            type="text" className='bg-transparent focus-visible:outline-0 w-[460px] md:w-full text-[#fff] pb-4 border-solid border-b-2 border-[#333]' placeholder='Write your message' />
+                            type="text" className='bg-transparent focus-visible:outline-0 w-[460px] md:w-full text-[#fff] rounded pt-[14px] pb-4 border-solid border-b-2 border-[#333]' placeholder='Write your message' />
                     </section>
 
                     <button onClick={(e) => formClickHandle(e)} className='bg-red-600 md:w-full font-swap text-white py-2 mt-8 rounded-sm px-6'>Send</button>

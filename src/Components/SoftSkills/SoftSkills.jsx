@@ -1,5 +1,4 @@
-import React from 'react'
-import './SoftSkills.css'
+import React from 'react' 
 export default function SoftSkills() {
   return (
     <div className='bg-[url(/Images/softBg.jpg)] font-swap relative '>

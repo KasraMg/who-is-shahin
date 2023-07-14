@@ -1,11 +1,10 @@
-import React from 'react'
-import './Header.css'
+import React from 'react' 
 import { RiMenu5Fill } from 'react-icons/ri'
  
 export default function Header() {
  
   return (
-    <header   className='Header sm-x2:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    '>
+    <header className='bg-full bg-[top] bg-fullSize bg-no-repeat bg-[#16171b] bg-[url(https://demo.themecon.net/onlyme/html/images/hero-bg.jpg)] sm-x2:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    '>
       <div>
         <img className='w-[64px] cursor-pointer' src="/Images/logo.png" alt="" />
       </div>

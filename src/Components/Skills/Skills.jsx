@@ -1,5 +1,4 @@
-import React,{ useState } from 'react'
-import './Skills.css'
+import React,{ useState } from 'react' 
 import data from './data'
 import Card from './Card'
 export default function Skills() {
