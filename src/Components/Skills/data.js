@@ -4,6 +4,11 @@ const skillsData=[
         percent:'80%',
         text:'JavaScript is a high-level programming language that is primarily used for creating interactive & dynamic web content. ',
         rotate:false
+    },  {
+        name:'TypeScript',
+        percent:'70%',
+        text:'TypeScript is a strongly typed programming language that builds on JavaScript, giving you better tooling at any scale.',
+        rotate:false
     },
     {
         name:'React',
@@ -28,7 +33,7 @@ const skillsData=[
         name:'Bootstrap',
         percent:'80%',
         text:'Bootstrap is the most popular CSS Framework for developing responsive and mobile-first websites.',
-        rotate:false
+        rotate:true
     },
     {
         name:'Tailwind',
