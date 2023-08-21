@@ -10,10 +10,10 @@ export default function Projects() {
   return (
     <div data-aos="fade-down"  data-aos-duration="3000" style={{background:'url(/Images/projectBg.jpg)'}} id='projects' className='relative border-b-2 border-solid border-red-600 pb-56 pt-36 md:pt-12  !bg-fixed !bg-center '>
         <div class="bg-[#141519d9]  left-0 top-0 w-full h-full absolute"></div>
-       <Swiper rewind={true} navigation={true} modules={[Navigation]} className="mySwiper sm:border-t-2 sm:mt-5 border-0 pt-12 border-red-600 border-solid z-30 relative sm:pl-0   ml-auto mr-0">
+       <Swiper rewind={true} navigation={true} modules={[Navigation]} className="mySwiper sm-x2:pb-32 sm:border-t-2 sm:mt-5 border-0 pt-12 border-red-600 border-solid z-30 relative sm:pl-0   ml-auto mr-0">
         {projects && projects.map(data=>(
              <SwiperSlide className='flex md:flex-col-reverse  justify-between gap-8 bg-transparent '>
-            <main className='text-left sm:px-5'>
+            <main className='text-left sm:px-5 sm:!pl-5 pl-24 lg:pl-16'>
                 <span className='text-red-600 text-2xl font-swap'>{data.type}</span>
                 <p className='text-3xl mt-4 text-white font-swap font-bold'>{data.name}</p>
                 <p className='text-justify sm:w-[100%] mt-3 text-[20px] font-swap w-96  text-[#ababab]'>{data.description}</p> 
@@ -25,7 +25,7 @@ export default function Projects() {
             </main>
             <section className='lg:w-[600px] sm:!w-full sm:pr-0 pr-24'>
             
-                <img className='w-[768px] sm:block sm:mr-auto sm:!w-[90%] sm-x2:!mx-auto   mr-6 rounded-md relative z-50' src={data.image} alt="" />
+                <img className='w-[768px] sm:!mx-auto md:ml-16 sm:block sm:mr-auto sm:!w-[80%] sm-x2:!mx-auto   mr-6 rounded-md relative z-50' src={data.image} alt="" />
             </section>
         </SwiperSlide>
         ))} 

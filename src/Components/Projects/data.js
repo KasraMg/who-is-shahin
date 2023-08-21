@@ -3,7 +3,7 @@ const projectData=[
         name:'Fixed Float',
         description:'This site gives you the tools to make full use of your digital assets through an easy & accessible exchange platform 🐱‍👤',
         type:'Digital currency website',
-        href:'https://testim.iran.liara.run/',
+        href:'https://pilbil.com/',
         image:'/Images/fixedFloat.PNG'
     },
     {
@@ -14,11 +14,11 @@ const projectData=[
         image:'/Images/nuxt.PNG'
     },
     {
-        name:'Seartudio',
-        description:'I developed this site using React and related packages & frameWork 🔥',
-        type:'Studio website',
-        href:'https://seartudio.com/',
-        image:'/Images/seartudio.PNG'
+        name:'OnlyMusic',
+        description:'Reference of all types of music for you. This site is developed with js pure & tailwind & more packages...',
+        type:'Music website',
+        href:'https://onlymusic.iran.liara.run/',
+        image:'/Images/onlyMusic.jpg'
     },{
         name:'Digikala',
         description:'I developed this site using React and related packages 😁 95% of this site is completed & is still under development !!',

@@ -308,10 +308,11 @@
          syntax: "<angle>";
          inherits: true;
          initial-value: 0turn;
-     }
+     } 
+ }
 
-     /* soft skill */
-
-
-
+ @media (max-width:500px) {
+    .swiper-button-prev, .swiper-button-next {
+        top:90% !important; 
+    } 
  }

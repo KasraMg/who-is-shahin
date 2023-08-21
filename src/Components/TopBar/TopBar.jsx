@@ -20,8 +20,8 @@ export default function TopBar() {
           <a href="#footer" className='z-[999] relative'><button className='bg-red-600 text-2xl relative top-1 rounded-full ml-3 p-4 text-white'><HiArrowLongRight /></button></a>
         </div>
         <img className='TopBar-logo absolute    sm-x2:left-0  sm-x2:w-full' src="https://demo.themecon.net/onlyme/html/images/vertical-logo.png" alt="" />
-        <img src="/Images/photo_5847965502901698113_y.jpg" className='me-image absolute right-[182px] w-[517px] -top-[74px] lg:right-28 md:hidden ' alt="" />
-        <img src="https://demo.themecon.net/onlyme/html/images/dot-texture.png" className='dot-bg md:!right-[45%] md:z-[-1]   lg:right-5 right-[72px]  md:-top-20 top-32 absolute' alt="" />
+        <img src="/Images/shomal2.jpg" className='me-image absolute right-[220px] w-[420px] -top-[74px] lg:right-28 md:hidden ' alt="" />
+        <img src="https://demo.themecon.net/onlyme/html/images/dot-texture.png" className='dot-bg md:!right-[45%] md:z-[-1]   lg:right-5 right-[97px]  md:-top-20 top-32 absolute' alt="" />
       </section>
       <div className='flex gap-5 w-11 ml-auto  sm-x2:relative  sm-x2:top-12  pb-10 flex-col text-2xl text-white'>
                 <a href="https://instagram.com/_ka.s.ra_?igshid=ZDc4ODBmNjlmNQ==" target='_blank'><AiOutlineInstagram className='ml-auto mr-7 '/></a>
