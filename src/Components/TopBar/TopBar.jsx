@@ -1,22 +1,26 @@
-import React from 'react' 
+import React,{useContext} from 'react' 
 import { BsDiscord, BsGithub } from 'react-icons/bs'
 import { BiLogoTelegram } from 'react-icons/bi'
 import { HiArrowLongRight } from 'react-icons/hi2'
 import { AiOutlineInstagram } from 'react-icons/ai'
+import { useTranslation } from 'react-i18next'
+import contextData from '../../context/context'
 export default function TopBar() {
+  const { t } = useTranslation();
+  const context=useContext(contextData)
   return (
     
-    <div  className='bg-[top] bg-fullSize bg-no-repeat bg-[#16171b] bg-[url(/Images/hero-bg.jpg)] border-b-2 border-red-600 border-solid sm-x2:pb-20'>
+    <div  className=' topbar bg-[top] bg-fullSize bg-no-repeat bg-[#16171b] bg-[url(/Images/hero-bg.jpg)] border-b-2 border-red-600 border-solid sm-x2:pb-20'>
       <section className='px-36 relative z-20  sm-x2:overflow-hidden  pb-[70px] lg:px-10 pt-28 md:pt-10'>
 
         <img src="/Images/photo_5847965502901698114_x.jpg" className='me-image-2   sm-x2:w-60  sm-x2:h-64  sm-x2:relative  sm-x2:z-50    hidden md:block object-cover  w-72  h-80   mx-auto mb-4 rounded-full' alt="" />
         <div className='text-9xl md:text-6xl md:text-center   sm-x2:mt-8 sm-x3:!text-4xl  md:w-full w-max relative text-white font-swap font-extrabold'>
-          <span className='z-20 relative'>Hi! I’m Kasra</span>
+          <span className='z-20 relative'>{t('topbar.title')}</span>
            <img className='absolute top-4 md:right-40 md:top-0 w-36  z-10 sm-x3:!right-0  right-2 ' src="https://demo.themecon.net/onlyme/html/images/hero-title-pettern-bg.png" alt="" />
            </div>
-        <p className='text-5xl md:text-3xl md:text-center md:w-full mt-4 w-max relative  sm-x2:!text-2xl text-white font-swap font-extrabold z-10'>  Front-end Developer</p>
+        <p className='text-5xl md:text-3xl md:text-center md:w-full mt-4 w-max relative  sm-x2:!text-2xl text-white font-swap font-extrabold z-10'> {t('topbar.myJob')}</p>
         <div className=' pt-12 md:text-center'>
-          <span className='text-2xl   text-white font-swap font-extrabold'>Hire Me</span>
+          <span className='text-2xl   text-white font-swap font-extrabold'>{t('topbar.hire')}</span>
           <a href="#footer" className='z-[999] relative'><button className='bg-red-600 text-2xl relative top-1 rounded-full ml-3 p-4 text-white'><HiArrowLongRight /></button></a>
         </div>
         <img className='TopBar-logo absolute    sm-x2:left-0  sm-x2:w-full' src="https://demo.themecon.net/onlyme/html/images/vertical-logo.png" alt="" />
@@ -32,7 +36,7 @@ export default function TopBar() {
          
       </div>
       <a href='#footer' onClick={()=> window.scrollTo(500,7900)} className='absolute z-50 cursor-pointer lg:bottom-10  sm-x2:!-bottom-7 md:!-bottom-36 bottom-32'>
-        <p className='scrollDown text-white '>Scroll Down   <img className=' absolute z-50 cursor-pointer w-4 top-0 -left-10' src="https://demo.themecon.net/onlyme/html/images/scroll-down-arrow.png" alt="" /></p>
+        <p className='scrollDown text-white '>{t('topbar.scroll')}  <img className=' absolute z-50 cursor-pointer w-4 top-0 -left-10' src="https://demo.themecon.net/onlyme/html/images/scroll-down-arrow.png" alt="" /></p>
 
       </a>
 

@@ -7,14 +7,19 @@
          font-family: Swap;
          src: url('../public/Fonts/Quicksand-Regular.ttf');
      }
-
+     @font-face {
+        font-family: Vazir;
+        src: url('../public/Fonts/vazir/Vazir-Medium.woff2');
+    }
  }
-
+ header[dir='rtl'] *{
+    font-family: Vazir;
+ } 
  @layer utilities {
      html {
          scroll-behavior: smooth;
      }
-
+   
      .inset-0 {
          display: none !important;
      }
@@ -298,7 +303,11 @@
              --border-angle: 1turn;
          }
      }
-
+     .dropdown:focus-within .dropdown-menu {
+        opacity:1;
+        transform: translate(0) scale(1);
+        visibility: visible;
+      }
      .box:hover {
          -webkit-animation-play-state: paused;
          animation-play-state: paused;

@@ -7,9 +7,13 @@ import Skills from './Components/Skills/Skills'
 import SoftSkills from './Components/SoftSkills/SoftSkills' 
 import AOS from 'aos';
 import 'aos/dist/aos.css';  
-import { useEffect } from 'react'
+import { useEffect, useState } from 'react'
 import { initFlowbite } from 'flowbite'
+import  contextData from './context/context'
 function App() {
+  
+ const [language,setLanguage]= useState('en')
+ 
  AOS.init()
 
  useEffect(() => {
@@ -18,6 +22,7 @@ function App() {
  
   return (
     <div data-aos="fade-down"   data-aos-duration="3000" >
+      <contextData.Provider value={{language,setLanguage}}> 
      <Header/> 
      <TopBar/>
      <Intro/>
@@ -25,7 +30,9 @@ function App() {
      <Skills/>
      <SoftSkills/>
      <Footer/>
+     </contextData.Provider>
     </div>
+  
   )
 }
 

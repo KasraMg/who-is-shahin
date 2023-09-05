@@ -23,7 +23,8 @@ export default {
      
     },
     fontFamily:{
-      "swap" : 'Swap'
+      "swap" : 'Swap',
+      "vazir": "Vazir"
     },
   },
   
