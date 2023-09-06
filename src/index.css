@@ -11,6 +11,10 @@
         font-family: Vazir;
         src: url('../public/Fonts/vazir/Vazir-Medium.woff2');
     }
+     @font-face {
+        font-family: VazirLight;
+        src: url('../public/Fonts/vazir/Vazir-Light.woff');
+    }
  }
  header[dir='rtl'] *{
     font-family: Vazir;
@@ -150,8 +154,13 @@
          }
      }
 
+     .Intro{
+        direction: ltr !important;
+     }
 
-
+     .dirRtl{
+        direction: rtl !important;
+     }
      /* swiper */
 
      .swiper-button-prev,

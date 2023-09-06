@@ -1,54 +1,55 @@
-import React,{ useState,useEffect, useContext } from 'react'
+import React, { useState, useEffect, useContext } from 'react'
 import { RiMenu5Fill } from 'react-icons/ri'
 import { useTranslation } from "react-i18next";
-import i18n from '../../i18n'; 
-import contextData from '../../context/context';
+import i18n from '../../i18n';
+import i18next from 'i18next';
 
 
 export default function Header() {
   const { t } = useTranslation();
-  const context=useContext(contextData)
-  
+  const [language, setLanguage] = useState('en')
 
   useEffect(() => {
-    i18n.changeLanguage(context.language);
-    i18n.language=='en'?document.querySelector('header').dir='ltr':document.querySelector('header').dir='rtl'
-    i18n.language=='en'?document.querySelector('.topbar').dir='ltr':document.querySelector('.topbar').dir='rtl'
-  }, [context.language])
-  
+    i18n.changeLanguage(language);
+    // i18n.language == 'en' ? document.documentElement.dir = 'ltr' : document.documentElement.dir = 'rtl'
+    i18n.language == 'en' ? document.querySelector('header').dir = 'ltr' : document.querySelector('header').dir = 'rtl'
+    i18n.language == 'en' ? document.querySelector('.topbar').dir = 'ltr' : document.querySelector('.topbar').dir = 'rtl'
+    i18n.language == 'en' ? document.querySelector('.Intro').dir = 'ltr' : document.querySelector('.Intro').dir = 'rtl' 
+  }, [language])
+
   return (
     <header className='bg-full bg-[top] bg-fullSize bg-no-repeat bg-[#16171b] bg-[url(https://demo.themecon.net/onlyme/html/images/hero-bg.jpg)] sm-x2:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    '>
       <div className='flex z-[999]'>
 
 
-      <div  >
-<div className="flex items-center justify-center">
-  <div className=" relative inline-block text-left dropdown  mt-1">
-    <span className="rounded-md shadow-sm"
-      ><button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5  transition duration-150 ease-in-out   text-white active:text-gray-800" 
-       type="button" aria-haspopup="true" aria-expanded="true" aria-controls="headlessui-menu-items-117">
-        <span style={{ marginLeft: context.language === 'fa'? '.5rem' : null }}>{context.language== 'fa' ? 'فارسی':'en'}</span>
-        <svg className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
-        </button ></span>
-    <div className="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
-      <div className="absolute right-0 px-3 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none" aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
-        <div className="px-4 py-2">          
-          <p onClick={()=>context.setLanguage(context.language == 'en'? 'fa':'en')} className="text-sm font-medium leading-5 text-gray-900 truncate">{context.language == 'en' && 'fa' } {context.language== 'fa' && <>انگلیسی</>}</p>
+        <div  >
+          <div className="flex items-center justify-center">
+            <div className=" relative inline-block text-left dropdown  mt-1">
+              <span className="rounded-md shadow-sm"
+              ><button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5  transition duration-150 ease-in-out   text-white active:text-gray-800"
+                type="button" aria-haspopup="true" aria-expanded="true" aria-controls="headlessui-menu-items-117">
+                  <span style={{ marginLeft: i18next.language === 'fa' ? '.5rem' : null }}>{i18next.language == 'fa' ? 'فارسی' : 'en'}</span>
+                  <svg className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                </button ></span>
+              <div className="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
+                <div className="absolute right-0 px-3 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none" aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
+                  <div className="px-4 py-2">
+                    <p onClick={() => setLanguage(i18next.language == 'en' ? 'fa' : 'en')} className="text-sm font-medium leading-5 text-gray-900 truncate">{i18next.language == 'en' && 'fa'} {i18next.language == 'fa' && <>انگلیسی</>}</p>
+                  </div>
+
+
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
- 
- 
-      </div>
-    </div>
-  </div>
-</div>              
-</div>
 
- 
 
- 
+
+
 
         <img className='w-[64px] cursor-pointer' src="/Images/logo.png" alt="" />
-       
+
       </div>
       <ul className='flex gap-10 font-swap  sm:hidden  list-none z-30 relative'>
         <a href="#me"><li className='hover:text-red-500 transition-colors cursor-pointer  '>{t("header.whoAmI")}</li></a>
@@ -60,7 +61,7 @@ export default function Header() {
       <button type="button" style={{ display: 'none' }} className=" sm:!block text-3xl" data-drawer-target="drawer-example" data-drawer-show="drawer-example" aria-controls="drawer-example">
         <RiMenu5Fill />
       </button>
- 
+
 
 
 
@@ -68,7 +69,7 @@ export default function Header() {
       <div id="drawer-example" class="fixed z-[999] top-0 left-0 border-r bg-[url(/Images/projectBg.jpg)]  h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-label">
         <div className="flex justify-between items-center py-3 px-4 border-b dark:border-gray-700">
           <h3 className="font-bold text-white dark:text-white font-swap relative bottom-2" >
-          {t("header.menuTitle")}
+            {t("header.menuTitle")}
           </h3>
           <button type="button"
             className="inline-flex flex-shrink-0 justify-center items-center h-8 relative bottom-2 w-8 rounded-md text-gray-500 hover:text-gray-700 focus:outline-none focus:ring-2 focus:ring-gray-400 focus:ring-offset-2 focus:ring-offset-white text-sm dark:text-gray-500 dark:hover:text-gray-400 dark:focus:ring-gray-700 dark:focus:ring-offset-gray-800"
@@ -86,7 +87,7 @@ export default function Header() {
             <a data-drawer-hide="drawer-example" aria-controls="drawer-example" href="#skills"><li className='hover:text-red-500 transition-colors cursor-pointer  '>{t("header.skills")} </li></a>
             <a data-drawer-hide="drawer-example" aria-controls="drawer-example" href="#projects"><li className='hover:text-red-500 transition-colors cursor-pointer  '>{t("header.projects")}</li></a>
             <a data-drawer-hide="drawer-example" aria-controls="drawer-example" href="#footer"><li className='hover:text-red-500 transition-colors cursor-pointer  '>{t("header.talk")}</li></a>
-         </ul>
+          </ul>
         </div>
         <div className='flex absolute w-full bottom-4 justify-between px-4 border-t-2 border-solid border-black pt-4 left-0'>
           <p className=' text-[14px]'>{t("header.menuFooter")}</p>

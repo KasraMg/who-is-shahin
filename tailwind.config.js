@@ -24,7 +24,8 @@ export default {
     },
     fontFamily:{
       "swap" : 'Swap',
-      "vazir": "Vazir"
+      "vazir": "Vazir",
+      "vazirlight":"VazirLight"
     },
   },
   
