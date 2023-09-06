@@ -22,6 +22,9 @@
  .topbar[dir='rtl'] *{
     font-family: Vazir;
  } 
+ #projects[dir='rtl'] *{
+    font-family: Vazir;
+ } 
  @layer utilities {
      html {
          scroll-behavior: smooth;
@@ -158,8 +161,8 @@
         direction: ltr !important;
      }
 
-     .dirRtl{
-        direction: rtl !important;
+     .dirLeft{
+        direction: ltr !important;
      }
      /* swiper */
 
@@ -189,7 +192,7 @@
          -webkit-text-fill-color: transparent;
          -webkit-text-stroke-width: 2px;
          -webkit-text-stroke-color: #333;
-         font-family: 'Futura Md BT';
+         font-family: 'Futura Md BT' !important;
          transform: rotate(90deg);
      }
 

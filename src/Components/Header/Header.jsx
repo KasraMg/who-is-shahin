@@ -15,6 +15,7 @@ export default function Header() {
     i18n.language == 'en' ? document.querySelector('header').dir = 'ltr' : document.querySelector('header').dir = 'rtl'
     i18n.language == 'en' ? document.querySelector('.topbar').dir = 'ltr' : document.querySelector('.topbar').dir = 'rtl'
     i18n.language == 'en' ? document.querySelector('.Intro').dir = 'ltr' : document.querySelector('.Intro').dir = 'rtl' 
+    i18n.language == 'en' ? document.querySelector('#projects').dir = 'ltr' : document.querySelector('#projects').dir = 'rtl' 
   }, [language])
 
   return (
