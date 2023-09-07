@@ -26,6 +26,22 @@ const en = {
     five:'competitive',
     six:'Problem solver',
     title:'SOFT SKILLS'
+  },
+  footer:{
+    footer_title:'GET IN TOUCH',
+    address_title:'ADDRESS ',
+    address_value:'Iran, Fars, Marvdasht',
+    email_title:' Email :', 
+    phone_title:' phone :', 
+    button:'Send',
+    lable1:'Name',
+    lable2:'Email',
+    lable3:'message ',
+    placeHolder1:' Your Name',
+    placeHolder2:' Your Email',
+    placeHolder3:' Your message ', 
+    last_text:'© Developed By kasra. All Right Reserved'
+    
   }
    
 }; 

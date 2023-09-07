@@ -28,6 +28,22 @@ const fa = {
     five:' رقابتی',
     six:'حلال مشکلات',
     title:' مهارت های نرم  '
+  },
+  footer:{
+    footer_title:'صحبت کنیم :)',
+    address_title:'آدرس ',
+    address_value:'ایران , فارس , مرودشت',
+    email_title:' ایمیل :', 
+    phone_title:' شماره تماس :', 
+    button:'ارسال',
+    lable1:'اسم',
+    lable2:'ایمیل',
+    lable3:'پیام ',
+    placeHolder1:'اسم شما',
+    placeHolder2:'ایمیل شما',
+    placeHolder3:'پیام خود را بنویسید', 
+    last_text:'این سایت توسط کسرا طراحی شده  و تمامی  حقوق آن محفوظ است ©'
+    
   }
 
   

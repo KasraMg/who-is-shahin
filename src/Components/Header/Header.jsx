@@ -12,10 +12,7 @@ export default function Header() {
   useEffect(() => {
     i18n.changeLanguage(language);
     i18n.language == 'en' ? document.documentElement.dir = 'ltr' : document.documentElement.dir = 'rtl'
-    // i18n.language == 'en' ? document.querySelector('header').dir = 'ltr' : document.querySelector('header').dir = 'rtl'
-    // i18n.language == 'en' ? document.querySelector('.topbar').dir = 'ltr' : document.querySelector('.topbar').dir = 'rtl'
-    // i18n.language == 'en' ? document.querySelector('.Intro').dir = 'ltr' : document.querySelector('.Intro').dir = 'rtl' 
-    // i18n.language == 'en' ? document.querySelector('#projects').dir = 'ltr' : document.querySelector('#projects').dir = 'rtl' 
+   
   }, [language])
 
   return (
@@ -30,7 +27,7 @@ export default function Header() {
               ><button className="inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5  transition duration-150 ease-in-out   text-white active:text-gray-800"
                 type="button" aria-haspopup="true" aria-expanded="true" aria-controls="headlessui-menu-items-117">
                   <span style={{ marginLeft: i18next.language === 'fa' ? '.5rem' : null }}>{i18next.language == 'fa' ? 'فارسی' : 'en'}</span>
-                  <svg className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+                  <svg className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                 </button ></span>
               <div className="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
                 <div className="absolute right-0 px-3 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none" aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
@@ -67,7 +64,7 @@ export default function Header() {
 
 
 
-      <div id="drawer-example" class="fixed z-[999] top-0 left-0 border-r bg-[url(/Images/projectBg.jpg)]  h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabindex="-1" aria-labelledby="drawer-label">
+      <div id="drawer-example" className="fixed z-[999] top-0 left-0 border-r bg-[url(/Images/projectBg.jpg)]  h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabIndex="-1" aria-labelledby="drawer-label">
         <div className="flex justify-between items-center py-3 px-4 border-b dark:border-gray-700">
           <h3 className="font-bold text-white dark:text-white font-swap relative bottom-2" >
             {t("header.menuTitle")}
@@ -81,7 +78,7 @@ export default function Header() {
             </svg>
           </button>
         </div>
-        <div class="px-2 py-10">
+        <div className="px-2 py-10">
 
           <ul className='flex flex-col gap-10 font-swap     list-none z-30 relative' data-drawer-hide="drawer-example" aria-controls="drawer-example" >
             <a href="#me"><li className='hover:text-red-500 transition-colors cursor-pointer  '> {t("header.whoAmI")}</li></a>

@@ -15,10 +15,12 @@
         font-family: VazirLight;
         src: url('../public/Fonts/vazir/Vazir-Light.woff');
     }
+    
  }
  html[dir='rtl'] *{
     font-family: Vazir;
  }  
+ 
  @layer utilities {
      html {
          scroll-behavior: smooth;
@@ -39,32 +41,7 @@
          background-color: transparent !important;
      }
 
-     /* / swal / */
 
-     .swal-modal {
-         background: url(/Images/footer-bg.jpg);
-
-     }
-
-     .swal-title {
-         color: white;
-         text-align: center;
-         font-family: swap;
-     }
-
-     .swal-footer {
-         text-align: center;
-     }
-
-     .swal-button {
-         background-color: #1c1d21;
-     }
-
-     .swal-button:not([disabled]):hover {
-         background-color: #1c1d21;
-     }
-
-     /* / swal / */
      /* TopBar  */
      .TopBar-logo {
          left: calc(100% / 6);
@@ -331,10 +308,48 @@
          inherits: true;
          initial-value: 0turn;
      } 
+
+     
  }
+
+    /* / swal / */
+
+    .swal-modal {
+        background: url('/public/Images/footer-bg.jpg') !important; 
+
+    }
+
+    .swal-title {
+        color: white;
+        text-align: center;
+        font-family: swap;
+    }
+
+    .swal-footer {
+        text-align: center;
+    }
+
+    .swal-button {
+        background-color: #1c1d21;
+    }
+
+    .swal-button:not([disabled]):hover {
+        background-color: #1c1d21;
+    }
+    .swal-icon--success:before {
+        display: none !important;
+    }
+    .swal-icon--success:after {
+        display: none !important;
+    }
+    .swal-icon--success__hide-corners{
+        display: none !important;
+    }
+    /* / swal / */
 
  @media (max-width:500px) {
     .swiper-button-prev, .swiper-button-next {
         top:90% !important; 
     } 
  }
+   

@@ -19,7 +19,7 @@ export default function Skills() {
       
         <div className=' md:mt-0 mt-28'>
               {skills.slice(5,10).map(data=>(
-            <Card {...data} />
+            <Card  key={crypto.randomUUID()}  {...data} />
         ))}
         </div>
         </main>

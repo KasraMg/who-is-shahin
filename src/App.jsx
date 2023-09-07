@@ -23,10 +23,10 @@ function App() {
      <Header/> 
      <TopBar/>
      <Intro/>
-     <Projects/>
+       <Projects/> 
      <Skills/>
      <SoftSkills/>
-     <Footer/> 
+      <Footer/>   
     </div>
   
   )

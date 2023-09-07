@@ -13,10 +13,10 @@ export default function Projects() {
     const { t } = useTranslation();
   return (
     <div data-aos="fade-down"  data-aos-duration="3000" style={{background:'url(/Images/projectBg.jpg)'}} id='projects' className='relative overflow-hidden border-b-2 border-solid border-red-600 pb-56 pt-36 md:pt-12  !bg-fixed !bg-center '>
-        <div class="bg-[#141519d9]  left-0 top-0 w-full h-full absolute"></div>
+        <div className="bg-[#141519d9]  left-0 top-0 w-full h-full absolute"></div>
        <Swiper  dir={  'rtl'  } rewind={true} navigation={true} modules={[Navigation]} className="mySwiper sm-x2:pb-32 sm:border-t-2 sm:mt-5 border-0 pt-12 border-red-600 border-solid z-30 relative sm:pl-0   ml-auto mr-0">
         {projects && projects.map(data=>(
-             <SwiperSlide className={` ${i18n.language =='en' ? 'dirLeft': null} flex md:flex-col-reverse  justify-between gap-8 bg-transparent `}>
+             <SwiperSlide key={crypto.randomUUID()} className={` ${i18n.language =='en' ? 'dirLeft': null} flex md:flex-col-reverse  justify-between gap-8 bg-transparent `}>
             <main className={` ${i18n.language =='fa' ? 'text-right sm:!pr-5 pr-24 lg:pr-16' : 'text-left sm:!pl-5 pl-24 lg:pl-16' }  sm:px-5  `}>
                 <span className='text-red-600 text-2xl font-swap'>{i18n.language =='fa' ? data.type_fa:data.type_en}</span>
                 <p className='text-3xl mt-4 text-white font-swap font-bold'>{data.name}</p>
