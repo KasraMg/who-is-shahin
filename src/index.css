@@ -16,20 +16,16 @@
         src: url('../public/Fonts/vazir/Vazir-Light.woff');
     }
  }
- header[dir='rtl'] *{
+ html[dir='rtl'] *{
     font-family: Vazir;
- } 
- .topbar[dir='rtl'] *{
-    font-family: Vazir;
- } 
- #projects[dir='rtl'] *{
-    font-family: Vazir;
- } 
+ }  
  @layer utilities {
      html {
          scroll-behavior: smooth;
      }
-   
+     body{
+        overflow-x: hidden;
+     }
      .inset-0 {
          display: none !important;
      }

@@ -17,7 +17,7 @@ export default function TopBar() {
           <span className='z-20 relative sm-x2:whitespace-nowrap'>{t('topbar.title')}</span>
           <img className={` ${i18n.language == 'fa' ? 'md:left-40 sm-x3:!left-0  left-10' : ' md:right-40 sm-x3:!right-0  right-2'} absolute top-4 md:top-0 w-36  z-10   `} src="https://demo.themecon.net/onlyme/html/images/hero-title-pettern-bg.png" alt="" />
         </div>
-        <p className={`${i18n.language == 'fa' ? ' !font-vazirlight mt-8' : ' font-swap'} text-5xl md:text-3xl md:text-center md:w-full mt-4 w-max relative  sm-x2:!text-2xl text-white font-extrabold z-10`}> {t('topbar.myJob')}</p>
+        <p className={`${i18n.language == 'fa' ? ' !font-vazirlight  relative top-4' : ' font-swap'} text-5xl md:text-3xl md:text-center md:w-full mt-4 w-max relative  sm-x2:!text-2xl text-white font-extrabold z-10`}> {t('topbar.myJob')}</p>
         <div className={` ${i18n.language == 'fa' ? ' gap-3 flex items-center justify-start sm:justify-center' : null}  pt-12 md:text-center  `}>
           <span className='text-2xl   text-white font-swap font-extrabold'>{t('topbar.hire')}</span>
           <a href="#footer" className='z-[999] relative'><button className='bg-red-600 text-2xl relative top-1 rounded-full ml-3 p-4 text-white'><HiArrowLongRight /></button></a>

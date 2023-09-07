@@ -1,14 +1,14 @@
 import React from 'react'
-
+import i18n from '../../i18n'
 export default function Card(props) {
     return (
-        <div className='relative   md:!w-3/4 md:mx-auto items-stretch md:z-[888] border-[#26272d] border-solid border-2 sm-x2:px-4  pb-5 pt-4 px-8 rounded-md mb-12 bg-[#1c1d21] lg:w-[377px] w-[535px]'>
+        <div dir={i18n.language == 'fa' ? 'rtl' : 'ltr'} className='relative   md:!w-3/4 md:mx-auto items-stretch md:z-[888] border-[#26272d] border-solid border-2 sm-x2:px-4  pb-5 pt-4 px-8 rounded-md mb-12 bg-[#1c1d21] lg:w-[377px] w-[535px]'>
             <div className='font-swap text-3xl text-white flex gap-2'>
                 <p className='relative z-40 top-[2px]'>{props.name}</p>
                 <span className='line block relative top-[20px] ml-8 h-[2px] w-full'></span>
             </div>
             
-            <p className='font-swap text-1xl text-white mt-4 sm-x2:mt-5 '>{props.text}</p>
+            <p className={`${i18n.language == 'fa' ? 'font-vazirlight': 'font-swap'}  text-1xl text-white mt-4 sm-x2:mt-5 `}>{i18n.language == 'fa' ? props.des_fa:  props.des_en}</p>
             <div className="w-full bg-gray-200 rounded-full">
                 <div className="bg-red-600 text-xs font-medium text-blue-100 text-center p-0.5 leading-none rounded-full mt-8" style={{ width: props.percent }}> {props.percent}</div>
             </div>

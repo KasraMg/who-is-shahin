@@ -12,7 +12,7 @@ export default function Projects() {
     const [projects,setProjects]=useState(projectData)
     const { t } = useTranslation();
   return (
-    <div data-aos="fade-down"  data-aos-duration="3000" style={{background:'url(/Images/projectBg.jpg)'}} id='projects' className='relative border-b-2 border-solid border-red-600 pb-56 pt-36 md:pt-12  !bg-fixed !bg-center '>
+    <div data-aos="fade-down"  data-aos-duration="3000" style={{background:'url(/Images/projectBg.jpg)'}} id='projects' className='relative overflow-hidden border-b-2 border-solid border-red-600 pb-56 pt-36 md:pt-12  !bg-fixed !bg-center '>
         <div class="bg-[#141519d9]  left-0 top-0 w-full h-full absolute"></div>
        <Swiper  dir={  'rtl'  } rewind={true} navigation={true} modules={[Navigation]} className="mySwiper sm-x2:pb-32 sm:border-t-2 sm:mt-5 border-0 pt-12 border-red-600 border-solid z-30 relative sm:pl-0   ml-auto mr-0">
         {projects && projects.map(data=>(
