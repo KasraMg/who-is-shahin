@@ -30,9 +30,9 @@ export default function Header() {
                   <svg className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
                 </button ></span>
               <div className="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
-                <div className="absolute right-0 px-3 mt-2 origin-top-right bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none" aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
-                  <div className="px-4 py-2">
-                    <p onClick={() => setLanguage(i18next.language == 'en' ? 'fa' : 'en')} className="text-sm font-medium leading-5 text-gray-900 truncate">{i18next.language == 'en' && 'fa'} {i18next.language == 'fa' && <>انگلیسی</>}</p>
+                <div className="absolute right-0   mt-2 origin-top-right cursor-pointer bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none" aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
+                  <div className="mx-5 py-2">
+                    <p onClick={() => setLanguage(i18next.language == 'en' ? 'fa' : 'en')} className="text-sm font-medium px-3 leading-5 text-gray-900 truncate">{i18next.language == 'en' && 'fa'} {i18next.language == 'fa' && <>انگلیسی</>}</p>
                   </div>
 
 

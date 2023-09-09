@@ -14,15 +14,15 @@ export default function Projects() {
   return (
     <div data-aos="fade-down"  data-aos-duration="3000" style={{background:'url(/Images/projectBg.jpg)'}} id='projects' className='relative overflow-hidden border-b-2 border-solid border-red-600 pb-56 pt-36 md:pt-12  !bg-fixed !bg-center '>
         <div className="bg-[#141519d9]  left-0 top-0 w-full h-full absolute"></div>
-       <Swiper  dir={  'rtl'  } rewind={true} navigation={true} modules={[Navigation]} className="mySwiper sm-x2:pb-32 sm:border-t-2 sm:mt-5 border-0 pt-12 border-red-600 border-solid z-30 relative sm:pl-0   ml-auto mr-0">
+       <Swiper  dir={  'ltr'  } rewind={true} navigation={true} modules={[Navigation]} className="mySwiper sm-x2:pb-32 sm:border-t-2 sm:mt-5 border-0 pt-12 border-red-600 border-solid z-30 relative sm:pl-0   ml-auto mr-0">
         {projects && projects.map(data=>(
-             <SwiperSlide key={crypto.randomUUID()} className={` ${i18n.language =='en' ? 'dirLeft': null} flex md:flex-col-reverse  justify-between gap-8 bg-transparent `}>
+             <SwiperSlide key={crypto.randomUUID()} className={` ${i18n.language =='fa' ? 'dirRtl': null} flex md:flex-col-reverse  justify-between gap-8 bg-transparent `}>
             <main className={` ${i18n.language =='fa' ? 'text-right sm:!pr-5 pr-24 lg:pr-16' : 'text-left sm:!pl-5 pl-24 lg:pl-16' }  sm:px-5  `}>
                 <span className='text-red-600 text-2xl font-swap'>{i18n.language =='fa' ? data.type_fa:data.type_en}</span>
                 <p className='text-3xl mt-4 text-white font-swap font-bold'>{data.name}</p>
                 <p className='text-justify sm:w-[100%] mt-3 text-[20px] font-swap w-96  text-[#ababab]'>{i18n.language =='fa' ? data.description_fa:data.description_en}</p> 
 
-                <div  className={` flex gap-2 sm-x2:flex-wrap sm:sm-x2:justify-center sm-x2:mt-10 mt-3 sm-x2:text-[13px] text-white`}>
+                <div  className={` flex gap-2 sm-x2:flex-wrap sm:sm-x2:justify-center sm-x2:mt-10 !mt-6 sm-x2:text-[13px] text-white`}>
                   <span className='mt-[2px] sm-x2:hidden'>{i18n.language =='fa' ?'تگ :' :'Tag:' }</span>
                   {data.tag.map(tag=>(
                     <p className='bg-red-200 text-black w-max rounded-sm px-2 py-1'>{tag}</p>

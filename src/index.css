@@ -17,14 +17,14 @@
     }
     
  }
- html[dir='rtl'] *{
-    font-family: Vazir;
- }  
- 
+  
  @layer utilities {
      html {
          scroll-behavior: smooth;
      }
+     html[dir='rtl'] *{
+        font-family: Vazir;
+     }  
      body{
         overflow-x: hidden;
      }
@@ -134,8 +134,8 @@
         direction: ltr !important;
      }
 
-     .dirLeft{
-        direction: ltr !important;
+     .dirRtl{
+        direction: rtl !important;
      }
      /* swiper */
 
