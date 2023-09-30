@@ -45,7 +45,7 @@ const projectData=[
         description_en:'I developed this site using React and related packages 😁 95% of this site is completed & is still under development !!',
         type_en:'Store website',
         type_fa:'سایت فروشگاهی',
-        href:'https://mr-digikala.iran.liara.run/',
+        href:'https://my-digikalaa.iran.liara.run/',
         image:'/Images/digi.PNG',
         tag:['Api','React','Bootstrap']
     }
