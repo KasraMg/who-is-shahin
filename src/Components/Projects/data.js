@@ -1,6 +1,16 @@
  
 const projectData=[
     {
+        name_en:'Nike',
+        description_fa:'انواع کفش های نایک و فقط و فقط از ما بخواهید:))',
+        description_en:' Buy all kinds of Nike shoes from our site and enjoy it 😉 I really enjoy the Ui of this site',
+        type_en:'Store website',
+        type_fa:'سایت فروشگاهی',
+        href:'https://nike.iran.liara.run/',
+        image:'/Images/nike.PNG',
+        tag:['Api','React','TypeScript','Redux Toolkit','ParicleJs','Leaflet-map','Tailwind','ThreeJs']
+    },
+    {
         name_en:'Fixed Float',
         description_fa:'با این سایت به راحتی میتونید ارز های دیجیتال خود را به سایر حساب ها انتقال بدید ',
         description_en:'This site gives you the tools to make full use of your digital assets through an easy & accessible exchange platform 🐱‍👤',
@@ -9,7 +19,8 @@ const projectData=[
         href:'https://pilbil.com/',
         image:'/Images/fixedFloat.PNG',
         tag:['Api','Bootstrap','Formik_Yup','React']
-    }, {
+    },
+     {
         name_en:'OnlyMusic',
         description_fa:'با استفاده از این سایت میتونید انواع اهنگ ها و موزیک ویدیو دانلود و مشاهده کنید.',
         description_en:'Reference of all types of music for you. This site is developed with js pure & tailwind & more packages...',
