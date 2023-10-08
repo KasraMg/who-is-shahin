@@ -5,16 +5,14 @@ import 'swiper/css/navigation';
 import projectData from './data';
 import { Navigation } from 'swiper/modules';
 import { HiArrowLongRight } from 'react-icons/hi2';
-import i18n from '../../i18n';
-import { useTranslation } from 'react-i18next';
+import i18n from '../../i18n'; 
 
 export default function Projects() {
-    const [projects,setProjects]=useState(projectData)
-    const { t } = useTranslation();
+    const [projects,setProjects]=useState(projectData) 
   return (
     <div data-aos="fade-down"  data-aos-duration="3000" style={{background:'url(/Images/projectBg.jpg)'}} id='projects' className='relative overflow-hidden border-b-2 border-solid border-red-600 pb-56 pt-36 md:pt-12  !bg-fixed !bg-center '>
         <div className="bg-[#141519d9]  left-0 top-0 w-full h-full absolute"></div>
-       <Swiper  dir={  'ltr'  } rewind={true} navigation={true} modules={[Navigation]} className="mySwiper sm-x2:pb-32 sm:border-t-2 sm:mt-5 border-0 pt-12 border-red-600 border-solid z-30 relative sm:pl-0   ml-auto mr-0">
+       <Swiper  dir={'ltr'} rewind={true} navigation={true} modules={[Navigation]} className="mySwiper sm-x2:pb-32 sm:border-t-2 sm:mt-5 border-0 pt-12 border-red-600 border-solid z-30 relative sm:pl-0   ml-auto mr-0">
         {projects && projects.map(data=>(
              <SwiperSlide key={crypto.randomUUID()} className={` ${i18n.language =='fa' ? 'dirRtl': null} flex md:flex-col-reverse  justify-between gap-8 bg-transparent `}>
             <main className={` ${i18n.language =='fa' ? 'text-right sm:!pr-5 pr-24 lg:pr-16' : 'text-left sm:!pl-5 pl-24 lg:pl-16' }  sm:px-5 sm-x2:h-[350px] `}>

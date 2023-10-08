@@ -352,4 +352,11 @@
         top:90% !important; 
     } 
  }
+ .leaflet-control-attribution {
+    display: none !important;
+  }
+  .leaflet-control-zoom-in,.leaflet-control-zoom-out{
+    background-color: red !important;
+    color: white !important;
+  }
    

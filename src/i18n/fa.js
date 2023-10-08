@@ -36,6 +36,8 @@ const fa = {
     email_title: ' ایمیل :',
     phone_title: ' شماره تماس :',
     button: 'ارسال',
+    Linkedin_title:'لینکدین ',
+    location_title:'موقعیت مکانی',
     lable1: 'اسم',
     lable2: 'ایمیل',
     lable3: 'پیام ',

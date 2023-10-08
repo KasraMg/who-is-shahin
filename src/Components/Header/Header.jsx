@@ -12,7 +12,7 @@ export default function Header() {
   useEffect(() => {
     i18n.changeLanguage(language);
     i18n.language == 'en' ? document.documentElement.dir = 'ltr' : document.documentElement.dir = 'rtl'
-   
+
   }, [language])
 
   return (
@@ -33,19 +33,13 @@ export default function Header() {
                 <div className="absolute right-0   mt-2 origin-top-right cursor-pointer bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none" aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
                   <div className="mx-5 py-2">
                     <p onClick={() => setLanguage(i18next.language == 'en' ? 'fa' : 'en')} className="text-sm font-medium px-3 leading-5 text-gray-900 truncate">{i18next.language == 'en' && 'fa'} {i18next.language == 'fa' && <>انگلیسی</>}</p>
-                  </div>
-
-
+                  </div> 
                 </div>
               </div>
             </div>
           </div>
         </div>
-
-
-
-
-
+  
         <img className='w-[64px] cursor-pointer' src="/Images/logo.png" alt="" />
 
       </div>

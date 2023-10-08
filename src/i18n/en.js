@@ -33,6 +33,8 @@ const en = {
     address_value:'Iran, Fars, Marvdasht',
     email_title:' Email :', 
     phone_title:' phone :', 
+    Linkedin_title:'LinkedIn',
+    location_title:'Live location',
     button:'Send',
     lable1:'Name',
     lable2:'Email',
