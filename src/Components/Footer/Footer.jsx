@@ -8,6 +8,7 @@ import { AiOutlineInstagram } from 'react-icons/ai'
 import i18n from '../../i18n'
 import { useTranslation } from 'react-i18next';
 import { Map } from '../Map/Map';
+import "leaflet/dist/images/marker-shadow.png";
 export default function Footer() {
     const footerform = useFormik({
         initialValues: { name: "", email: "", message: "" },
@@ -131,8 +132,8 @@ export default function Footer() {
          
         </footer>
 
-        <div className='flex sm-x2:!px-6 lg:px-16 md:gap-20 relative gap-48 justify-center md:flex-col md:justify-center  py-20 bg-[url(/Images/softBg.jpg)]'>
-                <div className='z-50 w-[330px] md:flex md:justify-between md:w-full'>
+        <div className='flex sm-x2:!px-6 sm:!px-5 lg:px-16 md:gap-20 relative gap-48 justify-center md:flex-col md:justify-center  py-20 bg-[url(/Images/softBg.jpg)]'>
+                <div className='z-50  pl-10 lg:pl-8 md:!pl-0 w-[330px] md:flex md:justify-between md:w-full'>
                     <div>
                         <p className='text-[#727272] font-extrabold font-swap'>{t('footer.address_title')}</p>
                         <p className='text-red-600 text-2xl whitespace-nowrap sm:!text-[20px] mt-4 font-swap'>{t('footer.address_value')}</p>
