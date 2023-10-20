@@ -19,7 +19,7 @@ function App() {
   }, [])
 
   return (
-    <div data-aos="fade-down" data-aos-duration="3000" >
+    <div data-aos="fade-down" className=' bg-[#1d192c]' data-aos-duration="3000" >
       <Header />
       <TopBar />
       <Intro />

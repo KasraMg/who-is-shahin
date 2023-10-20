@@ -16,7 +16,7 @@ export default function Header() {
   }, [language])
 
   return (
-    <header className='bg-full bg-[top] bg-fullSize bg-no-repeat bg-[#16171b] bg-[url(https://demo.themecon.net/onlyme/html/images/hero-bg.jpg)] sm-x2:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    '>
+    <header className='bg-full bg-[top] bg-fullSize     bg-[#1d192c] sm-x2:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    '>
       <div className='flex z-[999]'>
 
 

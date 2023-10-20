@@ -9,7 +9,7 @@ export default function TopBar() {
   const { t } = useTranslation();
   return (
 
-    <div className=' topbar bg-[top] bg-fullSize bg-no-repeat bg-[#16171b] bg-[url(/Images/hero-bg.jpg)] border-b-2 border-red-600 border-solid sm-x2:pb-20'>
+    <div className=' topbar bg-[top] bg-fullSize    bg-[#1d192c]   border-b-2 border-red-600 border-solid sm-x2:pb-20'>
       <section className={`${i18n.language == 'fa' ? null : 'pl-44'} px-36 relative z-20  sm-x2:overflow-hidden  pb-[70px] lg:px-10 pt-28 md:pt-10`}>
 
         <img src="/Images/photo_5847965502901698114_x.jpg" className='me-image-2   sm-x2:w-60  sm-x2:h-64  sm-x2:relative  sm-x2:z-50    hidden md:block object-cover  w-72  h-80   mx-auto mb-4 rounded-full' alt="" />
@@ -22,7 +22,7 @@ export default function TopBar() {
           <span className='text-2xl   text-white font-swap font-extrabold'>{t('topbar.hire')}</span>
           <a href="#footer" className='z-[999] relative'><button className='bg-red-600 text-2xl relative top-1 rounded-full ml-3 p-4 text-white'><HiArrowLongRight /></button></a>
         </div>
-        <img className='TopBar-logo absolute sm-x2:left-0  sm-x2:w-full' src="https://demo.themecon.net/onlyme/html/images/vertical-logo.png" alt="" />
+        <img className={`${i18n.language == 'fa' ? 'sm-x2:right-0 TopBar-logo-fa':'sm-x2:left-0 TopBar-logo'}  absolute  sm-x2:w-full`} src="https://demo.themecon.net/onlyme/html/images/vertical-logo.png" alt="" />
         <img src="/Images/shomal2.jpg" className={`${i18n.language == 'fa' ? 'left-[220px] lg:left-28' : 'right-[220px] lg:right-28'} me-image absolute   w-[420px] -top-[74px]  md:hidden`} alt="" />
         <img src="https://demo.themecon.net/onlyme/html/images/dot-texture.png" className={`${i18n.language == 'fa' ? ' md:!left-[45%]  lg:left-5 left-[97px] ' : ' md:!right-[45%]  lg:right-5 right-[97px]'} dot-bg  md:z-[-1] md:-top-20 top-32 absolute`} alt="" />
       </section>

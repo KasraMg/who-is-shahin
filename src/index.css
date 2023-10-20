@@ -47,6 +47,10 @@
          left: calc(100% / 6);
          transform: translateY(-50%);
      }
+     .TopBar-logo-fa{
+        right: calc(100% / 6);
+        transform: translateY(-50%);
+     }
      .topbar[dir='rtl'] .TopBar-logo {
         right: calc(100% / 6) !important;
      }
@@ -98,7 +102,7 @@
 
 
      .overlay {
-         background: rgba(22, 23, 27, 0.9);
+         background: #1d192cf0;
          z-index: 0;
          position: absolute;
          left: 0;
@@ -164,7 +168,7 @@
      .projects-title {
          -webkit-text-fill-color: transparent;
          -webkit-text-stroke-width: 2px;
-         -webkit-text-stroke-color: #333;
+         -webkit-text-stroke-color: #fff6;
          font-family: 'Futura Md BT' !important;
          transform: rotate(90deg);
      }
@@ -229,7 +233,7 @@
      .skills-title {
          -webkit-text-fill-color: transparent;
          -webkit-text-stroke-width: 2px;
-         -webkit-text-stroke-color: #333;
+         -webkit-text-stroke-color: #fff6;
          font-family: 'Futura Md BT';
      }
 
