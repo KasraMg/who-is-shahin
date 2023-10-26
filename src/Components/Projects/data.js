@@ -8,7 +8,7 @@ const projectData = [
         type_fa: 'سایت فروشگاهی',
         href: 'https://nike.iran.liara.run/',
         image: '/Images/nike.PNG',
-        tag: ['Api', 'React', 'TypeScript', 'Redux Toolkit', 'ParicleJs', 'Leaflet-map', 'Tailwind', 'ThreeJs']
+        tag: ['Api', 'React', 'TypeScript', 'Redux Toolkit', 'ParicleJs', 'Leaflet-map', 'Tailwind', 'ThreeJs','infinite-scroll']
     },
     {
         name_en: 'Fixed Float',
@@ -38,7 +38,17 @@ const projectData = [
         type_fa: 'لیست کارهای روزانه',
         href: 'https://todo-list-v2.iran.liara.run/',
         image: '/Images/todolist.PNG',
-        tag: ['Api', 'Json-server', 'Mui', 'TypeScript', 'Formik_Yup']
+        tag: ['Api', 'Json-server', 'Mui', 'TypeScript', 'Formik_Yup','React']
+    },
+    { 
+        name_en: 'Seartudio',
+        description_fa: 'استودیوت و ثبت کن و منتظر خواننده باش و اگه خواننده ای نزدیک ترین استودیو به خودت و اینجا پیدا کن!',
+        description_en: 'Register your studio and wait for the singer, or if you are a singer, find the studio closest to you here!',
+        type_en: 'Studio website',
+        type_fa: 'سایت استودیو',
+        href: 'https://seartudio.iran.liara.run/',
+        image: '/Images/seartudio.PNG',
+        tag: ['Api', 'Json-server', 'Bootstrap', 'React', 'Formik_Yup','infinite-scroll']
     },
     {
         name_en: 'Nuxt',
