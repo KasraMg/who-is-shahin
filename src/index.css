@@ -40,8 +40,7 @@
      input[data-autocompleted] {
          background-color: transparent !important;
      }
-
-
+ 
      /* TopBar  */
      .TopBar-logo {
          left: calc(100% / 6);
