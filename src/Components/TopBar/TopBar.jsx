@@ -24,7 +24,7 @@ export default function TopBar() {
         </div>
         <img className={`${i18n.language == 'fa' ? 'sm-x2:right-0 TopBar-logo-fa':'sm-x2:left-0 TopBar-logo'}  absolute  sm-x2:w-full`} src="https://demo.themecon.net/onlyme/html/images/vertical-logo.png" alt="" />
         <img src="/Images/shomal2.jpg" className={`${i18n.language == 'fa' ? 'left-[220px] lg:left-28' : 'right-[220px] lg:right-28'} me-image absolute   w-[420px] -top-[74px]  md:hidden`} alt="" />
-        <img src="https://demo.themecon.net/onlyme/html/images/dot-texture.png" className={`${i18n.language == 'fa' ? ' md:!left-[45%]  lg:left-5 left-[97px] ' : ' md:!right-[45%]  lg:right-5 right-[97px]'} dot-bg  md:z-[-1] md:-top-20 top-32 absolute`} alt="" />
+        <img src="https://demo.themecon.net/onlyme/html/images/dot-texture.png" className={`${i18n.language == 'fa' ? ' md:!left-[45%]  lg:left-3 left-[97px] ' : ' md:!right-[45%]  lg:right-3 right-[97px]'} dot-bg  md:z-[-1] md:-top-20 top-32 absolute`} alt="" />
       </section>
       <div className={` ${i18n.language == 'fa' ? 'mr-auto ml-14' : ' ml-auto '} flex gap-5 w-11 sm-x2:!gap-10 sm-x2:relative sm-x2:flex-row sm-x2:right-auto sm-x2:mx-auto sm-x2:w-full sm-x2:justify-center  sm-x2:top-12 relative top-3 right-4 pb-10 flex-col text-2xl text-white`}>
         <a href="https://instagram.com/_ka.s.ra_?igshid=ZDc4ODBmNjlmNQ==" target='_blank'><AiOutlineInstagram className='ml-auto mr-7 sm-x2:mx-auto ' /></a>
