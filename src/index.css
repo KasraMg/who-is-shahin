@@ -169,7 +169,7 @@
          -webkit-text-fill-color: transparent;
          -webkit-text-stroke-width: 2px;
          -webkit-text-stroke-color: #fff6;
-         font-family: 'Futura Md BT' !important;
+         font-family: 'Futura Md BT';
          transform: rotate(90deg);
      }
 

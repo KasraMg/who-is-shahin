@@ -17,10 +17,9 @@ export default function Header() {
 
   return (
     <header className='bg-full bg-[top] bg-fullSize     bg-[#1d192c] sm-x2:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    '>
-      <div className='flex z-[999]'>
-
-
-        <div  >
+      <div className='flex z-[999] sm-x3:mx-3'>
+ 
+        <div>
           <div className="flex items-center justify-center">
             <div className=" relative inline-block text-left dropdown  mt-1">
               <span className="rounded-md shadow-sm"

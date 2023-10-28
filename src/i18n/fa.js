@@ -29,6 +29,9 @@ const fa = {
     six: 'حلال مشکلات',
     title: ' مهارت های نرم  '
   },
+   projects: {
+    title: 'پروژه ها'
+  },
   footer: {
     footer_title: 'صحبت کنیم :)',
     address_title: 'آدرس ',

@@ -27,6 +27,9 @@ const en = {
     six:'Problem solver',
     title:'SOFT SKILLS'
   },
+  projects: {
+    title: 'Projects'
+  },
   footer:{
     footer_title:'GET IN TOUCH',
     address_title:'ADDRESS ',
