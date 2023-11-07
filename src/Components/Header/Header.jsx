@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useContext } from 'react'
+import React, { useState, useEffect, useRef } from 'react'
 import { RiMenu5Fill } from 'react-icons/ri'
 import { useTranslation } from "react-i18next";
 import i18n from '../../i18n';
@@ -8,17 +8,19 @@ import i18next from 'i18next';
 export default function Header() {
   const { t } = useTranslation();
   const [language, setLanguage] = useState('en')
-
+  const drawer =useRef()
   useEffect(() => {
     i18n.changeLanguage(language);
     i18n.language == 'en' ? document.documentElement.dir = 'ltr' : document.documentElement.dir = 'rtl'
-
+    drawer.current.style.display="none"
+    setTimeout(() => {
+      drawer.current.style.display="block"
+    }, 1000);
   }, [language])
 
   return (
-    <header className='bg-full bg-[top] bg-fullSize     bg-[#1d192c] sm-x2:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    '>
-      <div className='flex z-[999] sm-x3:mx-3'>
- 
+    <header className='bg-full bg-[top] bg-fullSize bg-[#1d192c] sm-x2:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    '>
+      <div className='flex z-[999] sm-x3:mx-3'> 
         <div>
           <div className="flex items-center justify-center">
             <div className=" relative inline-block text-left dropdown  mt-1">
@@ -32,13 +34,13 @@ export default function Header() {
                 <div className="absolute right-0   mt-2 origin-top-right cursor-pointer bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none" aria-labelledby="headlessui-menu-button-1" id="headlessui-menu-items-117" role="menu">
                   <div className="mx-5 py-2">
                     <p onClick={() => setLanguage(i18next.language == 'en' ? 'fa' : 'en')} className="text-sm font-medium px-3 leading-5 text-gray-900 truncate">{i18next.language == 'en' && 'fa'} {i18next.language == 'fa' && <>انگلیسی</>}</p>
-                  </div> 
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-  
+
         <img className='w-[64px] cursor-pointer' src="/Images/logo.png" alt="" />
 
       </div>
@@ -57,7 +59,7 @@ export default function Header() {
 
 
 
-      <div id="drawer-example" className="fixed z-[999] top-0 left-0 border-r bg-[url(/Images/projectBg.jpg)]  h-screen p-4 overflow-y-auto transition-transform -translate-x-full bg-white w-80 dark:bg-gray-800" tabIndex="-1" aria-labelledby="drawer-label">
+      <div id="drawer-example" ref={drawer} className={` ${i18n.language == 'fa' ? "right-0 translate-x-full" : "left-0 -translate-x-full"} fixed z-[999] top-0 border-r bg-[url(/Images/projectBg.jpg)]  h-screen p-4 overflow-y-auto transition-transform  bg-white w-80 dark:bg-gray-800`} tabIndex="-1" aria-labelledby="drawer-label">
         <div className="flex justify-between items-center py-3 px-4 border-b dark:border-gray-700">
           <h3 className="font-bold text-white dark:text-white font-swap relative bottom-2" >
             {t("header.menuTitle")}

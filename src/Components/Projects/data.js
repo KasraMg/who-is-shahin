@@ -58,7 +58,7 @@ const projectData = [
         type_fa: 'لندینگ پیج',
         href: 'https://nuxt.iran.liara.run/',
         image: '/Images/nuxt.PNG',
-        tag: ['Animation', 'Bootstrap', 'DarkMode']
+        tag: ['Animation', 'Bootstrap', 'DarkMode', 'PWA']
     },
     {
         name_en: 'Digikala',
