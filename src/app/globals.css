@@ -329,26 +329,26 @@
    /* / swal / */
 
    .swal-modal {
-       background: url('/public/Images/footer-bg.jpg') !important; 
+       background: url('../../public/Images/footer-bg.jpg') !important; 
 
    }
 
    .swal-title {
-       color: white;
-       text-align: center;
-       font-family: swap;
+       color: white !important;
+       text-align: center !important;
+       font-family: swap !important;
    }
 
    .swal-footer {
-       text-align: center;
+       text-align: center !important;
    }
 
    .swal-button {
-       background-color: #1c1d21;
+       background-color: #1c1d21 !important;
    }
 
    .swal-button:not([disabled]):hover {
-       background-color: #1c1d21;
+       background-color: #1c1d21 !important;
    }
    .swal-icon--success:before {
        display: none !important;

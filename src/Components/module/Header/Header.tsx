@@ -40,13 +40,13 @@ export default function Header() {
       boxShadow: isSticky
         ? '0 5px 16px rgba(0, 0, 0, 0.1)'
         : 'none',
-    }} className={`${isSticky && ` !top-0 !fixed z-[99999] !py-2 left-0 w-full text-[#1d192c] bg-white !max-w-full`} bg-full bg-[top] bg-fullSize bg-[#1d192c] sm-x2:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    `}>
+    }} className={`${isSticky && ` !top-0 !fixed z-[99999] !py-2 left-0 w-full !text-[#1d192c] bg-white !max-w-full`} bg-full bg-[top] bg-fullSize bg-[#1d192c] sm-x2:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    `}>
       <div className='flex z-[999] sm-x3:mx-3'>
         <div>
           <div className="flex items-center justify-center">
             <div className=" relative inline-block text-left dropdown  mt-1">
               <span className="rounded-md shadow-sm"
-              ><button className={`${isSticky && 'text-[#1d192c]'} inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5  transition duration-150 ease-in-out   text-white active:text-gray-800`}
+              ><button className={`${isSticky && '!text-[#1d192c]'} inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5  transition duration-150 ease-in-out   text-white active:text-gray-800`}
                 type="button" aria-haspopup="true" aria-expanded="true" aria-controls="headlessui-menu-items-117">
                   <span style={{ marginLeft: i18next.language === 'fa' ? '.5rem' as any : null }}>{i18next.language == 'fa' ? 'فارسی' : 'en'}</span>
                   <svg className="w-5 h-5 ml-2 -mr-1" viewBox="0 0 20 20" fill="currentColor"><path fillRule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clipRule="evenodd"></path></svg>
@@ -62,7 +62,7 @@ export default function Header() {
           </div>
         </div>
 
-        <div className={`${isSticky && ' w-[48px]'} relative w-[64px]`} >
+        <div className={`${isSticky && ' !w-[48px]'} relative w-[64px]`} >
           <svg className='w-full cursor-pointer absolute ' xmlns="http://www.w3.org/2000/svg" id="Layer_1" data-name="Layer 1" viewBox="0 0 226.75 211.94">
             <path fill="red" d="M229,358.24l27.07-4,.36,1.73c-6.93.78-13.18,2.85-17.9,9.23l15.26-1.64a31.83,31.83,0,0,0-13.47,16.31l15.12-8.06.48,1c-4.42,6.81-9,13.54-13.19,20.47-2.38,3.9-3.89,8.14.41,13.57-1.38-9.39,3.7-14.41,8.88-19.61,2.09-2.09,3.12-5.24,4.61-7.92,1.25-2.24,2.47-4.5,3.51-6.4l2.48,10.64,1.25.55,2.11-4.48c0,11.26-4.31,16-13.19,16.52l5.82-8.75-.76-.58c-2.38,2.18-4.85,4.28-7.12,6.57-7.33,7.36-6.65,12.45,2.26,17.47-5.23,3-9.82,2.77-13.6-1.06-6.38-6.46-4.58-13.18-.55-20.42a67.39,67.39,0,0,1-6.68,4.45,62.41,62.41,0,0,1-7.42,2.75l12.11-14.3-1-1.24-6.19,1.47,6.34-9-.93-.67-12.83,9.39-.91-1.11,7.67-9.74-.71-1.64-10.86,1.52,10-8.85-15.39-3,18.8-5.2c-2.51-1.87-5.05-3.12.47-5.46l-2.72-.79L215.87,352l-.67-.66,9.76-9.1-9.25.43-.4-.65,9.94-5c-6.51-3.37-14.79-2.05-26.83,3.54a67.67,67.67,0,0,1,5.24-5.71,45.8,45.8,0,0,1,6.48-4.65c2.37-1.46,4.9-2.67,7.39-4-3.75-5-6.94-6.27-14.36-5.52,6.33-5.46,13.18-4.82,21.1-3.09l-15.42-18,.24-.54,15,9.46c-2.81-6.6-5-11.74-7.19-16.9l13.88,10.07c-2.11-8.06-5.94-11.83-12.94-14.05l.43-1.2c3.05,1.14,7.08,1.42,9,3.57,12.49,14,29.67,17.72,46.58,22.22a31.83,31.83,0,0,1,9.21,3.84l-40.76-9.42c10.26,14.3,24.37,21,42,21-6.82,1.77-13.33.87-19.63-1.61-3.55-1.39-6.92-3.26-10.47-4.69-9-3.63-18.09-7.13-27.15-10.69l-1.2,2.17c3.71,2.51,7.12,5.83,11.2,7.36,8.23,3.06,16.83,5.14,25.27,7.66a28.7,28.7,0,0,1,5.94,2.41c-17.11-3.19-34.1-2.68-51.08.38,11.59,2.88,23.11,6,35.39,3.15l-8-2.15.11-1,19,1.16.17,1.36-33.57,11.26.07.81,24.81,2.06-26.55,9.7ZM224.49,300c3.5,8,7.91,10.62,14.16,8.19Zm-7.87,18.71c4.93,6.29,7.75,6.91,16,3.56Z" transform="translate(-198.42 -270.73)" /><path fill={isSticky ? '#1d192c' : 'white'} d="M368.53,364.2l-1.39-1c2.3-2,5-3.45,7.45-.81,8.15,8.8,16.08,17.81,12.48,31.45l1.53.36c.79-2,2.63-4.34,2.21-6.09a180.17,180.17,0,0,0-6.8-23.36c-2.85-7.36-8.6-12.42-17.67-15.43,12.4-.5,20.6,5.83,29.44,10.58a34.65,34.65,0,0,0-19.93-14l.53-1.74,22.77,5.07c-4.34-8.81-14.68-7.8-22.43-11.05l.93-1.62,16.06-1.12.31-1.59-14-5.51,20.49-4-.45-2.68-27,3.87,33.35-14.67c-11.27-3.8-21.22.47-31.68,3.71l19.49-14.4-.58-1.32-22.33,5.82,8.85-7.84C374,295.78,346,312,341,318.08l-.6-2.79-6.3,1.12-.22-.7c6.72-3.16,13.46-6.28,20.16-9.49,13.18-6.32,25.12-14.34,35.11-25.17,3.25-3.52,6.5-7.7,11.23-6.95l-13,13c7.16,1.09,10.14-3.66,13.42-8l1.33.72-6.71,15.59,17.46-9.72.58.76L395.2,303l7.27-.89-4.23,4.52c9.61,1.21,19.23-.89,26.93,4.41L403,313l0,1.67,5,2-3.75,1.49,1,1.95L421,317.24l.34,1.07L400.47,326l7.31,1.55L403,331.21l.27,1.24,14.8-1.88.34,1.16c-3,.84-5.94,1.89-9,2.48s-6.46.79-11,1.31l6.84,5.67L399,342.94c6.17,7.12,11,15,21.06,16.68l-.52,1.53-11.21-2.39,2.39,2.55-6.87-1.21c2.42,4.78,4.93,6.19,13.15,8-9,2.68-16.1-3.74-25.56-6,2.3,4.31,4.09,7.64,6.11,11.41l-8.38-5.75c3.92,10.26,7.61,19.83.36,29.07-3.61,4.61-8.45,7.31-15.35,7.59,3-2.67,5.51-4.67,7.73-7,4.46-4.63,6-10.25,3-16a97.61,97.61,0,0,0-10.22-15.28c-1.11-1.39-4.14-1.24-6.29-1.8ZM381.87,297l1.37,2,9.14-6.55-1.19-1.7Zm8.73,31.28c6,3.87,7.56,3.75,9.68,0Zm7.19,13.29.75-2.59-8.65-2.26-.58,1.92Z" transform="translate(-198.42 -270.73)" />
             <path fill={isSticky ? '#1d192c' : 'white'} d="M343.7,326.31c4,1.54,8.15,2.7,11.88,4.69,5.64,3,10.9,6.77,16.48,9.92,2.33,1.32,5.07,1.9,7.27,2.69-6.9,3.66-11.73,3.39-26.75,1.56-13.17-1.6-26.51-1.74-40.09-1.71,4.68,5.32,6.92,12.53,15,14.06a35.42,35.42,0,0,1,12,4.73c2,1.26,4.13,4.7,3.76,6.71s-3.55,4.37-5.9,4.94c-4.91,1.18-10.09,1.27-15.39,1.84,10.8,14.85,28.55,22,39.18,36.53l-1,1.29c-2.15-1.52-4.28-3.05-6.44-4.55-5.31-3.7-10.29-8.07-16-10.9-8.28-4.09-13.54-.24-12.66,9a79.48,79.48,0,0,0,3.56,17c4.29,13.11,9,26.11,13.77,39.05,2.5,6.76,2.55,13-1.71,19.5-1-6.47-1.56-12.56-3-18.43-2-8.16-6-14.82-15.56-16.09-1-.13-1.67-2.09-2.49-3.2l1.15-1.29,13.81,8.69c-1.66-4.33-3.19-8.18-4.63-12.06-4.28-11.56-8.69-23.1-8.73-35.7,0-8.6,1.93-12.23,8.63-14.79l-21.57-17.74.71-1.77a44.65,44.65,0,0,1,4.9,1c8.46,2.6,16.18.92,24-3.42-4-5-9.38-5.07-14.25-6.47a13.11,13.11,0,0,1-5-3.18c-4.9-4.67-9.43-9.76-14.54-14.18-2.22-1.91-3.09-3.23-1.39-5.67l10.39,1.2c-3.4-9.81-.29-14.57,10.93-17.14-2-4.74-7.73-8.8-3-15.6,3.43,12.16,12.38,16.88,22.91,19.69Zm-14.15,13.17,35.56,2.16.47-2.29c-8.26-2.7-16.51-5.46-24.82-8a4.38,4.38,0,0,0-3.5.75C334.7,334.23,332.4,336.69,329.55,339.48Zm-9.14-1.26c3.3-1.41,6.15-2.08,8.25-3.72,1.75-1.35,2.61-3.84,3.86-5.82-2.34-.75-4.66-2-7-2.11-2.2-.14-4.92.26-6.6,1.51-1.85,1.38-3.71,4-3.75,6.08C315.11,335.46,318.47,336.82,320.41,338.22Z" transform="translate(-198.42 -270.73)" />
@@ -115,14 +115,14 @@ export default function Header() {
         <div className="px-2 py-10">
 
           <ul className='flex flex-col gap-10 font-swap     list-none z-30 relative' data-drawer-hide="drawer-example" aria-controls="drawer-example" >
-            <a href="#me"><li className='hover:text-red-500 transition-colors cursor-pointer  '> {t("header.whoAmI")}</li></a>
-            <a data-drawer-hide="drawer-example" aria-controls="drawer-example" href="#skills"><li className='hover:text-red-500 transition-colors cursor-pointer  '>{t("header.skills")} </li></a>
-            <a data-drawer-hide="drawer-example" aria-controls="drawer-example" href="#projects"><li className='hover:text-red-500 transition-colors cursor-pointer  '>{t("header.projects")}</li></a>
-            <a data-drawer-hide="drawer-example" aria-controls="drawer-example" href="#footer"><li className='hover:text-red-500 transition-colors cursor-pointer  '>{t("header.talk")}</li></a>
+            <a href="#me"><li className='hover:text-red-500 transition-colors cursor-pointer text-white '> {t("header.whoAmI")}</li></a>
+            <a data-drawer-hide="drawer-example" aria-controls="drawer-example" href="#skills"><li className='hover:text-red-500 transition-colors cursor-pointer  text-white '>{t("header.skills")} </li></a>
+            <a data-drawer-hide="drawer-example" aria-controls="drawer-example" href="#projects"><li className='hover:text-red-500 transition-colors cursor-pointer  text-white '>{t("header.projects")}</li></a>
+            <a data-drawer-hide="drawer-example" aria-controls="drawer-example" href="#footer"><li className='hover:text-red-500 transition-colors cursor-pointer  text-white '>{t("header.talk")}</li></a>
           </ul>
         </div>
         <div className='flex absolute w-full bottom-4 justify-between px-4 border-t-2 border-solid border-black pt-4 left-0'>
-          <p className=' text-[14px]'>{t("header.menuFooter")}</p>
+          <p className='text-white  text-[14px]'>{t("header.menuFooter")}</p>
         </div>
       </div>
     </header>

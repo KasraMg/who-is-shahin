@@ -14,7 +14,7 @@ export default function TopBar() {
 
         <img src="/Images/photo_5847965502901698114_x.jpg" className='me-image-2   sm-x2:w-60  sm-x2:h-64  sm-x2:relative  sm-x2:z-50    hidden md:block object-cover  w-72  h-80   mx-auto mb-4 rounded-full' alt="" />
         <div className={` md:text-center sm:w-full  sm-x2:mt-8 md:w-full w-max relative text-white font-swap font-extrabold`}>
-          <p className={` text-9xl sm-x3:!text-[23px] sm:mx-auto  md:text-6xl z-20 relative   `}>{t('topbar.title')}</p>
+          <p className={`${i18n.language == 'fa'  ? 'text-[7rem] mt-4 leading-[1]' : 'text-9xl'}  text-9xl sm-x3:!text-[23px] sm:mx-auto  md:text-6xl z-20 relative   `}>{t('topbar.title')}</p>
           <img className={` ${i18n.language == 'fa' ? 'md:left-40 sm-x3:!left-0  left-10' : ' md:right-40 sm-x3:!right-0  right-2'} absolute top-4 md:top-0 w-36  z-10   `} src="https://demo.themecon.net/onlyme/html/images/hero-title-pettern-bg.png" alt="" />
         </div>
         <p className={`${i18n.language == 'fa' ? ' !font-vazirlight  relative top-4' : ' font-swap'} text-5xl md:text-3xl md:text-center md:w-full mt-4 w-max relative  sm-x2:!text-2xl text-white font-extrabold z-10`}> {t('topbar.myJob')}</p>

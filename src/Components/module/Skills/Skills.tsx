@@ -1,12 +1,21 @@
 "use client"
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import data from '@/utils/skillsData'
 import Card from '@/Components/templates/Skills/Card';
 import i18n from '@/i18n/index'; 
 import ParticlesComponent from '@/Components/templates/Particles/Particles';
-import { SkillType } from '@/app/types/Index.types';
+import { SkillType } from '@/app/types/Index.types'; 
+import { useTranslation } from 'react-i18next'; 
+
+
 export default function Skills() {
-  const [skills, setSkill] = useState(data) 
+  const [skills, setSkill] = useState(data)  
+  const { t } = useTranslation();
+  useEffect(() => {
+   console.log('jor');
+   
+  }, [i18n.language])
+  
   return (
     <div id='skills' className='relative border-b-2 sm:border-0 border-red-600 border-solid bg-[#1d192c] pb-40 pt-10'>
       <p className='skills-title font-bold text-[120px]  uppercase sm:text-[80px] sm-x2:!text-[50px]  w-full text-center  mb-20 '>{i18n.language == 'fa' ? ' تخصص ها' : ' my skills'}</p>
@@ -18,7 +27,7 @@ export default function Skills() {
             ))}
           </div>
 
-          <div className=' md:mt-0 mt-28'>
+          <div className=' md:mt-0 mt-28'> 
             {skills.slice(5, 10).map((data:SkillType) => (
               <Card key={crypto.randomUUID()}  {...data} />
             ))}

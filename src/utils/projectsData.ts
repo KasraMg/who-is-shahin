@@ -2,6 +2,16 @@ import { ProjectType } from "@/app/types/Index.types"
 
 const projectData: ProjectType[] = [
         {
+            name_en: 'Storm Seeker',
+            description_fa: 'این سایت اطلاعات مفید و خوبی را با پیش بینی آب و هوا برای تمام مناطق ارائه می دهد.',
+            description_en: 'This site provides useful and good information with weather forecast for all regions.',
+            type_en: 'Weather website',
+            type_fa: 'سایت آب و هوا',
+            href: 'https://github.com/KasraMg/Weather',
+            image: '/Images/weather.PNG',
+            tag: ['Api', 'next-12', 'TypeScript', 'ParicleJs','Tailwind',]
+        },
+        {
             name_en: 'Nike',
             description_fa: 'انواع کفش های نایک و فقط و فقط از ما بخواهید:))',
             description_en: ' Buy all kinds of Nike shoes from our site and enjoy it 😉 I really enjoy the Ui of this site',

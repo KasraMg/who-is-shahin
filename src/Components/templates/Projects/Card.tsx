@@ -1,14 +1,14 @@
 import React from 'react' 
 import { HiArrowLongRight } from 'react-icons/hi2'; 
-import i18n from '@/i18n/index'; 
 import { ProjectType } from '@/app/types/Index.types';
+import i18n from '@/i18n/index'; 
 
 const Card = (props:ProjectType) => { 
     return (
         <>
-            <main className={` ${i18n.language == 'fa' ? 'text-right sm:!pr-5 pr-24 lg:pr-16' : 'text-left sm:!pl-5 pl-24 lg:pl-16'}  sm:px-5 sm-x2:h-[350px] `}>
+            <main className={` ${i18n.language == 'fa' ? 'text-right sm:pr-16 sm-x2:!pr-5 pr-24 lg:pr-16' : 'text-left sm-x2:!pl-5 pl-24 lg:pl-16'}  sm:px-5 sm-x2:h-[350px] `}>
                 <span className='text-red-600 text-2xl font-swap'>{i18n.language == 'fa' ? props.type_fa : props.type_en}</span>
-                <p className='text-3xl mt-4 text-white font-swap font-bold'>{props.name_en}</p>
+                <p className='text-3xl mt-4 text-white font-swap font-bold '>{props.name_en}</p>
                 <p className='text-justify sm:w-[100%] mt-3 text-[20px] font-swap w-96  text-[#ababab]'>{i18n.language == 'fa' ? props.description_fa : props.description_en}</p>
 
                 <div className={` w-[366px] sm-x2:!w-full flex-wrap flex gap-2 sm-x2:flex-wrap sm:sm-x2:justify-center sm-x2:mt-10 !mt-6 sm-x2:text-[13px] text-white`}>
@@ -17,7 +17,7 @@ const Card = (props:ProjectType) => {
                         <p className='bg-red-200 text-black w-max rounded-sm px-2 py-1'>{tag}</p>
                     ))}
                 </div>
-                <div className='flex sm-x2:w-full sm-x2:absolute sm-x2:bottom-0 items-center mt-5'>
+                <div className='flex sm-x2:w-full sm-x2:absolute sm-x2:bottom-0 sm-x3:!-bottom-5 items-center mt-5'>
                     <p className=' text-white font-swap text-2xl'> {i18n.language == 'fa' ? 'بریم ببینیم' : 'View Live'}</p>
                     <a className={`${i18n.language == 'fa' && 'mr-2'}`} href={props.href}><button className='bg-red-600 text-2xl relative top-1 rounded-full ml-3 p-4 text-white'><HiArrowLongRight /></button></a>
                 </div>

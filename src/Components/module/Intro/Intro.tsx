@@ -16,7 +16,7 @@ export default function Intro() {
                 <div className={` ${i18n.language=='fa'? ' font-vazirlight' : 'font-swap '}   relative z-10 mt-6 lg:text-[1.5rem] leading-[53px] ml-6 text-[2rem] text-white  `}> {t('intro.text1')}</div>
                 <div className={`${i18n.language=='fa'? ' mr-auto ml-5 font-vazirlight' : 'font-swap ml-auto mr-2'}  w-80  leading-10 text-[22px] sm-x2:!w-full sm-x2:px-5 relative z-30  mt-16 text-justify text-white `} > {t('intro.text2')} <p> {t('intro.text3')}</p></div>
             </section> 
-            <img src="/Images/Capture.PNG" className='w-80 object-cover sm:hidden lg:w-72' alt="" />
+            <img src="/Images/Capture.PNG" className='w-80 z-[99] object-cover sm:hidden lg:w-72' alt="" />
       </main>
       <img className='intro-shape absolute sm-x2:bottom-32 bottom-0 right-1' src="https://demo.themecon.net/onlyme/html/images/about-shape.png" alt="" />
     </div>
