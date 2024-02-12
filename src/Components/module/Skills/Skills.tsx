@@ -4,7 +4,7 @@ import data from '@/utils/skillsData'
 import Card from '@/Components/templates/Skills/Card';
 import i18n from '@/i18n/index'; 
 import ParticlesComponent from '@/Components/templates/Particles/Particles';
-import { SkillType } from '@/app/types/Index.types'; 
+import { SkillType } from '@/types/Index.types'; 
 import { useTranslation } from 'react-i18next'; 
 
 

@@ -7,8 +7,9 @@ import projectData from '@/utils/projectsData';
 import { Navigation } from 'swiper/modules';
 import i18n from '@/i18n/index';
 import { useTranslation } from 'react-i18next';
-import { ProjectType } from '@/app/types/Index.types.js';
+import { ProjectType } from '@/types/Index.types.js';
 import Card from '@/Components/templates/Projects/Card';
+import Image from 'next/image';
 
 export default function Projects() {
   const [projects, _setProjects] = useState(projectData)
@@ -26,7 +27,7 @@ export default function Projects() {
         ))}
       </Swiper>
       <p className={`${i18n.language == 'fa' ? '!font-vazir lg-x2:text-[180px] md:text-[130px] md:!-left-28   text-[150px] lg:bottom-[44%] lg:left-[5.5rem] bottom-[37%] left-60' : 'bottom-[42%] text-[120px] md:!-right-48 lg:right-12  right-52'} projects-title sm:hidden font-bold uppercase absolute `}>{t('projects.title')}</p>
-      <img src="/Images/projectShape.png" className='bottom-0 -left-44 absolute' alt="" />
+      <Image height={50} width={260} src="/Images/projectShape.png" className='bottom-0 -left-44 absolute' alt="" />
     </div>
   )
 }

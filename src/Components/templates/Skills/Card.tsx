@@ -1,5 +1,5 @@
  "use client"
-import { SkillType } from '@/app/types/Index.types'
+import { SkillType } from '@/types/Index.types'
 import i18n from '@/i18n/index';  
 export default function Card(props:SkillType) {
     

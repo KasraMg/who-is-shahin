@@ -1,4 +1,4 @@
-import { SkillType } from "@/app/types/Index.types"
+import { SkillType } from "@/types/Index.types"
 
 const skillsData:SkillType[]=[
     {

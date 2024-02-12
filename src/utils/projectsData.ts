@@ -1,4 +1,4 @@
-import { ProjectType } from "@/app/types/Index.types"
+import { ProjectType } from "@/types/Index.types"
 
 const projectData: ProjectType[] = [
         {
