@@ -13,8 +13,8 @@ export default function Intro() {
       <img src="/Images/photo_5922601885498458783_y.jpg" className='w-80 sm:!block sm:object-cover sm:!w-full sm-x2:!h-[300px]   sm:h-[430px] sm:rounded-none md:hidden object-cover lg:w-72 rounded-l-[20rem] relative z-30' alt="" /> 
             <section dir={i18n.language=='fa' ? 'rtl' : 'ltr'}  className={`${i18n.language=='fa' && 'pr-5'} bg-center bg-[url(https://demo.themecon.net/onlyme/html/images/about-bg.jpg)] relative`}>
                 <div className="overlay"></div>
-                <div className={` ${i18n.language=='fa'? ' font-vazirlight' : 'font-swap '}   relative z-10 mt-6 lg:text-[1.5rem] leading-[53px] ml-6 text-[2rem] text-white  `}> {t('intro.text1')}</div>
-                <div className={`${i18n.language=='fa'? ' mr-auto ml-5 font-vazirlight' : 'font-swap ml-auto mr-2'}  w-80  leading-10 text-[22px] sm-x2:!w-full sm-x2:px-5 relative z-30  mt-16 text-justify text-white `} > {t('intro.text2')} <p> {t('intro.text3')}</p></div>
+                <div className={` ${i18n.language=='fa'? ' font-vazirlight' : 'font-swap '}   relative z-10 mt-6 lg:text-[1.5rem] leading-[53px] ml-6 text-[2rem] text-white mix-blend-difference `}> {t('intro.text1')}</div>
+                <div className={`${i18n.language=='fa'? ' mr-auto ml-5 font-vazirlight' : 'font-swap ml-auto mr-2'}  w-80  leading-10 text-[22px] sm-x2:!w-full sm-x2:px-5 mix-blend-difference relative z-30  mt-16 text-justify text-white `} > {t('intro.text2')} <p> {t('intro.text3')}</p></div>
             </section> 
             <img src="/Images/Capture.PNG" className='w-80 z-[99] object-cover sm:hidden lg:w-72' alt="" />
       </main>

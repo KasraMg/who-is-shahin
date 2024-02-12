@@ -14,7 +14,7 @@ const Card = (props:ProjectType) => {
                 <div className={` w-[366px] sm-x2:!w-full flex-wrap flex gap-2 sm-x2:flex-wrap sm:sm-x2:justify-center sm-x2:mt-10 !mt-6 sm-x2:text-[13px] text-white`}>
                     <span className='mt-[2px] sm-x2:hidden'>{i18n.language == 'fa' ? 'تگ :' : 'Tag:'}</span>
                     {props.tag.map(tag => (
-                        <p className='bg-red-200 text-black w-max rounded-sm px-2 py-1'>{tag}</p>
+                        <p key={crypto.randomUUID()} className='bg-red-200 text-black w-max rounded-sm px-2 py-1'>{tag}</p>
                     ))}
                 </div>
                 <div className='flex sm-x2:w-full sm-x2:absolute sm-x2:bottom-0 sm-x3:!-bottom-5 items-center mt-5'>

@@ -34,7 +34,7 @@ export default function TopBar() {
 
 
       </div>
-      <a href='#footer' onClick={() => window.scrollTo(500, 7900)} className='absolute z-50 cursor-pointer lg:bottom-10  sm-x2:!-bottom-7 md:!-bottom-36 bottom-32  sm-x2:hidden'>
+      <a href='#footer' onClick={() => window.scrollTo(500, 7900)} className='absolute z-50 cursor-pointer lg:bottom-10  sm-x2:!-bottom-7 md:!-bottom-36 bottom-36  sm-x2:hidden'>
         <p className='scrollDown text-white '>{t('topbar.scroll')}  <img className=' absolute z-50 cursor-pointer w-4 top-0 -left-10' src="https://demo.themecon.net/onlyme/html/images/scroll-down-arrow.png" alt="" /></p>
 
       </a>
