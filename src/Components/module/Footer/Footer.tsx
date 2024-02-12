@@ -7,13 +7,14 @@ import { BiLogoTelegram } from 'react-icons/bi'
 import { AiOutlineInstagram } from 'react-icons/ai'
 import i18n from '@/i18n/index';
 import { useTranslation } from 'react-i18next';
-import swal from 'sweetalert';
-import { Map } from '../../templates/Map/Map';
+import swal from 'sweetalert'; 
 import "leaflet/dist/images/marker-shadow.png";
-
+import dynamic from 'next/dynamic';
+const Map = dynamic(() => import("../../templates/Map/Map"), { ssr: false });
 export default function Footer() {
 
 
+ 
     const { t } = useTranslation();
 
 

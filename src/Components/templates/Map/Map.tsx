@@ -1,9 +1,8 @@
 import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet'
 import "leaflet/dist/leaflet.css";
-export const Map = () => {
+ const Map = () => {
   return (
-
-
+ 
     <MapContainer className={`w-[500px] border-red-600 border-2 border-solid relative  z-[500]  lg:w-full rounded-md h-[300px]`} center={[29.871166, 52.797588]} zoom={12} scrollWheelZoom={true}>
       <TileLayer
         attribution={'&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'}
@@ -19,3 +18,4 @@ export const Map = () => {
 
   )
 }
+export default Map
