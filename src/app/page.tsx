@@ -13,11 +13,12 @@ import { initFlowbite } from 'flowbite'
 
 export default function Home() {
 
-
-  AOS.init() 
   useEffect(() => {
-    initFlowbite()
+    AOS.init()
+    initFlowbite() 
   }, [])
+
+
 
   return (
     <div data-aos="fade-down" className=' bg-[#1d192c]' data-aos-duration="3000" >

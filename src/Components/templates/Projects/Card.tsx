@@ -23,7 +23,7 @@ const Card = (props: ProjectType) => {
                 </div>
             </main>
             <section className={`${i18n.language == 'fa' ? ' sm:pl-0 pl-24' : ' sm:pr-0 pr-24'} lg:w-[600px] sm:!w-full`}>
-                <Image width={1000} height={1000} className={`${i18n.language == 'fa' ? ' md:mr-16  sm:ml-auto  ml-16' : ' md:ml-16  sm:mr-auto  mr-6'} h-auto w-[700px] sm:!mx-auto sm:block sm:!w-[80%] sm-x2:!mx-auto   rounded-md relative z-50`} src={props.image} alt="" />
+                <Image  loading="eager" priority={true}  width={1000} height={1000} className={`${i18n.language == 'fa' ? ' md:mr-16  sm:ml-auto  ml-16' : ' md:ml-16  sm:mr-auto  mr-6'} h-auto w-[700px] sm:!mx-auto sm:block sm:!w-[80%] sm-x2:!mx-auto   rounded-md relative z-50`} src={props.image} alt="" />
             </section>
         </>
     )
