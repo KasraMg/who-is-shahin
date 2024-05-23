@@ -40,7 +40,7 @@ const skillsData:SkillType[]=[
         percent:'70%',
         des_en:'PWA stands for Progressive Web App, which is a web application that combines the best features of both web & ...',
         des_fa:'Pwa مخفف عبارت Progressive Web Application به معنای وب اپلیکیشن‌های پیش رونده است. این فناوری برای اولین بار توسط شرکت گوگل در سال ۲۰۱۵ معرفی شده است.',
-        rotate:true
+        rotate:false
     },
     
     {
@@ -58,10 +58,10 @@ const skillsData:SkillType[]=[
         rotate:true
     },
     {
-        name:'Regex',
-        percent:'80%',
-        des_en:'short for regular expression, is a sequence of characters that forms a search pattern.',
-        des_fa:'regex  به معنای عبارت منظم است که به آن عبارت باقاعده نیز گفته می شود. عبارت باقاعده مجموعه ای از کاراکترهای تشکیل دهنده یک الگو است . از Regex می توان برای اعتبارسنجی استفاده میشود.',
+        name:'Zustand',
+        percent:'50%',
+        des_en:'Zustand is a state management lib. It is a simple and flexible state management solution that allows you to manage global states',
+        des_fa:'Zustand یک استیت منیجمنت فوق العاده سریع، راحت و مقیاس پذیر و کاربردی برای React میباشد. کارکرد zustand بر اساس hook های ری اکتی است، و علت اصلی راحتی و سرعت در کار با آن هم همین موضوع میباشد.',
         rotate:true
     },
     {
@@ -72,10 +72,10 @@ const skillsData:SkillType[]=[
         rotate:true
     },
     {
-        name:'Sass',
-        percent:'60%',
-        des_en:'Sass  is a preprocessor scripting language that is used to enhance the functionality of CSS.',
-        des_fa:'SASS و یک زبان پیش‌پردازنده برای تولید کد Css است. این زبان به هیچ عنوان جایگزین Css محسوب نمی‌شود و می‌توان آن را روشی برای توسعه و مدیریت کدهای Css دانست.',
+        name:'threeJs',
+        percent:'30%',
+        des_en:'Three.js is a JavaScript library that allows users to create 3D graphics and animations in web browsers.',
+        des_fa:'کتابخانه Three.js، یک کتابخانه جاوا اسکریپت است که برای ایجاد و نمایش گرافیک سه‌بعدی در مرورگرهای وب استفاده می‌شود. با استفاده از کتابخانه Three.js می‌توان برنامه‌ها و بازی‌های سه‌بعدی را در محیط وب ایجاد کرد.',
         rotate:true
     }
 ]

@@ -11,11 +11,14 @@ const Card = (props: ProjectType) => {
                 <span className='text-red-600 text-2xl font-swap'>{i18n.language == 'fa' ? props.type_fa : props.type_en}</span>
                 <p className='text-3xl mt-4 text-white font-swap font-bold '>{props.name_en}</p>
                 <p className='text-justify sm:w-[100%] mt-3 text-[20px] font-swap w-96  text-[#ababab]'>{i18n.language == 'fa' ? props.description_fa : props.description_en}</p>
-                <div className={` w-[366px] sm-x2:!w-full flex-wrap flex gap-2 sm-x2:flex-wrap sm:sm-x2:justify-center sm-x2:mt-10 !mt-6 sm-x2:text-[13px] text-white`}>
-                    <span className='mt-[2px] sm-x2:hidden'>{i18n.language == 'fa' ? 'تگ :' : 'Tag:'}</span>
+                <div className={` w-[366px] sm-x2:!w-full flex-wrap flex gap-2 sm-x2:flex-wrap sm:sm-x2:justify-center sm-x2:mt-10 !mt-4 sm-x2:text-[13px] text-white`}>
+                    <span className='mt-[2px] sm-x2:hidden'>{i18n.language == 'fa' ? 'تگ ها :' : 'Tags:'}</span>
+                    <div className='flex overflow-x-scroll items-baseline gap-3 pb-3 tags'>
                     {props.tag.map(tag => (
-                        <p key={crypto.randomUUID()} className='bg-red-200 text-black w-max rounded-sm px-2 py-1'>{tag}</p>
+                        <p key={crypto.randomUUID()} className='bg-red-200 text-black w-max rounded-sm px-2 py-1 whitespace-nowrap'>{tag}</p>
                     ))}
+                    </div>
+                  
                 </div>
                 <div className='flex sm-x2:w-full sm-x2:absolute sm-x2:bottom-0 sm-x3:!-bottom-5 items-center mt-5'>
                     <p className=' text-white font-swap text-2xl'> {i18n.language == 'fa' ? 'بریم ببینیم' : 'View Live'}</p>

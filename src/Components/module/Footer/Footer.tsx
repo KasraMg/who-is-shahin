@@ -11,12 +11,9 @@ import swal from 'sweetalert';
 import "leaflet/dist/images/marker-shadow.png";
 import dynamic from 'next/dynamic';
 const Map = dynamic(() => import("../../templates/Map/Map"), { ssr: false });
-export default function Footer() {
-
-
+export default function Footer() { 
  
-    const { t } = useTranslation();
-
+    const { t } = useTranslation(); 
 
     return (
         <>
