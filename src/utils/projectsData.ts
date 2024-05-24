@@ -11,19 +11,7 @@ const projectData: ProjectType[] = [
     href: "https://github.com/KasraMg/jajiga",
     image: "/Images/jajiga.jpg",
     tag: ["Api", "next-13", "TypeScript", "Threejs", "Tailwind", "shadcn"],
-  },
-  {
-    name_en: "Storm Seeker",
-    description_fa:
-      "این سایت اطلاعات مفید و خوبی رو با پیش بینی آب و هوا برای تمام مناطق ارائه میده .",
-    description_en:
-      "This site provides useful and good information with weather forecast for all regions.",
-    type_en: "Weather website",
-    type_fa: "سایت آب و هوا",
-    href: "https://github.com/KasraMg/Weather",
-    image: "/Images/weather.PNG",
-    tag: ["Api", "next-12", "TypeScript", "ParicleJs", "Tailwind"],
-  },
+  }, 
   {
     name_en: "Nike",
     description_fa: "انواع کفش های نایک و فقط و فقط از ما بخواهید:))",
@@ -44,6 +32,18 @@ const projectData: ProjectType[] = [
       "ThreeJs",
       "infinite-scroll",
     ],
+  },
+  {
+    name_en: "Storm Seeker",
+    description_fa:
+      "این سایت اطلاعات مفید و خوبی رو با پیش بینی آب و هوا برای تمام مناطق ارائه میده .",
+    description_en:
+      "This site provides useful and good information with weather forecast for all regions.",
+    type_en: "Weather website",
+    type_fa: "سایت آب و هوا",
+    href: "https://github.com/KasraMg/Weather",
+    image: "/Images/weather.PNG",
+    tag: ["Api", "next-12", "TypeScript", "ParicleJs", "Tailwind"],
   },
   {
     name_en: "Fixed Float",

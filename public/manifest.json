@@ -1,0 +1,43 @@
+{
+    "name": "Shahin Pwa App",
+    "short_name": "shahin",
+    "theme_color": "#1d192c",
+    "background_color": "#1d192c",
+    "display": "standalone",
+    "orientation": "portrait",
+    "scope": "/",
+    "start_url": "/",
+    "icons": [
+      {
+        "src": "/images/pwa/Square44x44Logo.targetsize-32.png",
+        "sizes": "32x32",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/images/pwa/Square44x44Logo.targetsize-64.png",
+        "sizes": "64x64",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/images/pwa/Square44x44Logo.altform-lightunplated_targetsize-80.png",
+        "sizes": "80x80",
+        "type": "image/png",
+        "purpose": "maskable any"
+      },
+      {
+        "src": "/images/pwa/Square44x44Logo.scale-125.png",
+        "sizes": "125x125",
+        "type": "image/png",
+        "purpose": "maskable any"
+      }, 
+      {
+        "src": "/images/pwa/Square150x150Logo.scale-400.png",
+        "sizes": "400x400",
+        "type": "image/png",
+        "purpose": "maskable any"
+      }
+    ],
+    "splash_pages": null
+  }
