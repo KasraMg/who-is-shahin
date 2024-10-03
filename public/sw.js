@@ -81,12 +81,6 @@ define(['./workbox-60fe7365'], (function (workbox) { 'use strict';
   workbox.precacheAndRoute([{
     "url": "/offline",
     "revision": "development"
-  }, {
-    "url": "/static/font/fallback.woff2",
-    "revision": "development"
-  }, {
-    "url": "/static/images/fallback.png",
-    "revision": "development"
   }], {
     "ignoreURLParametersMatching": [/^utm_/, /^fbclid$/, /ts/]
   });
@@ -115,7 +109,6 @@ define(['./workbox-60fe7365'], (function (workbox) { 'use strict';
       }) => "undefined" != typeof self ? self.fallback(e) : Response.error()
     }]
   }), 'GET');
-  self.__WB_DISABLE_DEV_LOGS = true;
 
 }));
 //# sourceMappingURL=sw.js.map

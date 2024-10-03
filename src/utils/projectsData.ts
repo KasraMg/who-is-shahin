@@ -3,15 +3,25 @@ import { ProjectType } from "@/types/Index.types";
 const projectData: ProjectType[] = [
   {
     name_en: "Jajiga",
-    description_fa: "ویلای مورد علاقتو رزرو کن و با خانواده لذتشو ببرید، به زودی...",
+    description_fa: "ویلای مورد علاقتو رزرو کن و با خانواده لذتشو ببرید.",
     description_en:
-      "Reserve your favorite villa and enjoy with your family. It is under development, comming soon...",
+      "Book your favorite villa in your favorite city with Jajiga website and have fun with your family!",
     type_en: "Villa reservation site",
     type_fa: "سایت رزرو ویلا",
     href: "https://github.com/KasraMg/jajiga",
     image: "/Images/jajiga.jpg",
-    tag: ["Api", "next-13", "TypeScript", "Threejs", "Tailwind", "shadcn"],
-  }, 
+    tag: [
+      "Zustand",
+      "Next-14",
+      "Threejs",
+      "Tanstack-Query",
+      "TypeScript",
+      "Leaflet",
+      "Date-picker",
+      "Tailwind",
+      "Shadcn",
+    ],
+  },
   {
     name_en: "Nike",
     description_fa: "انواع کفش های نایک و فقط و فقط از ما بخواهید:))",
@@ -77,27 +87,25 @@ const projectData: ProjectType[] = [
       "By using this site, you can note and manage your daily tasks and also always have access to them.",
     type_en: "Todo List website",
     type_fa: "لیست کارهای روزانه",
-    href: "https://todo-list-v2.iran.liara.run/",
+    href: "https://todo-list-v2.liara.run/",
     image: "/Images/todolist.PNG",
     tag: ["Api", "Json-server", "Mui", "TypeScript", "Formik_Yup", "React"],
   },
   {
-    name_en: "Seartudio",
+    name_en: "Divar",
     description_fa:
-      "استودیوت و ثبت کن و منتظر خواننده باش و اگه خواننده ای نزدیک ترین استودیو به خودت و اینجا پیدا کن!",
+      "چکیده ای سایت فروشگاهی دیوار که با جاوااسکریپت پیور توسعه داده شده(رسپانسیو نیست و فقط در دسکتاپ قابل مشاهده هست)",
     description_en:
-      "Register your studio and wait for the singer, or if you are a singer, find the studio closest to you here!",
-    type_en: "Studio website",
-    type_fa: "سایت استودیو",
-    href: "https://seartudio.iran.liara.run/",
-    image: "/Images/seartudio.PNG",
+      "Divar shop with pure javascript & best packages 🔥(this project isnt full responsive(View the project on the desktop))",
+    type_en: "Shop",
+    type_fa: "سایت دیوار",
+    href: "https://mydivar.liara.run/",
+    image: "/Images/divar.png",
     tag: [
-      "Api",
-      "Json-server",
+      "Api", 
       "Bootstrap",
-      "React",
-      "Formik_Yup",
-      "infinite-scroll",
+      "swal",
+      "Leaflet", 
     ],
   },
   {
@@ -111,18 +119,6 @@ const projectData: ProjectType[] = [
     href: "https://nuxt.iran.liara.run/",
     image: "/Images/nuxt.PNG",
     tag: ["Animation", "Bootstrap", "DarkMode", "PWA"],
-  },
-  {
-    name_en: "Digikala",
-    description_fa:
-      "دیجی کالا رو که دیگه همتون میشناسید. تقریبا کامل شده و هنوز که هنوزه در حال اپدیت کردنش هستم :))",
-    description_en:
-      "I developed this site using React and related packages 😁 95% of this site is completed & is still under development !!",
-    type_en: "Store website",
-    type_fa: "سایت فروشگاهی",
-    href: "https://my-digikalaa.iran.liara.run/",
-    image: "/Images/digi.PNG",
-    tag: ["Api", "React", "Bootstrap"],
-  },
+  } 
 ];
 export default projectData;

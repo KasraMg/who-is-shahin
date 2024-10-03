@@ -11,14 +11,15 @@ const en = {
     title: "Hi! I’m Shahin",
     myJob: "Front-end Developer",
     hire: "Hire Me",
+    resume: "Resume",
     scroll: "scroll down",
   },
   intro: {
     text1:
-      "I have been working as a frontEnd developer for +3 years and Im still learning and updating my skills. Also, Im currently working as an assistant teacher in Sabzlearn Academy.",
+      "Frontend Developer with over 3 years of experience in designing and developing websites using modern technologies such as React, Next.js, and TypeScript.",
     text2:
-      "I care about details and I like to find the best solution for difficult challenges. ",
-    text3: "Also, currently, I am among the top 50 Github contributors in Iran",
+      "I pay great attention to details & coding standards, striving to deliver the best possible results in my projects, both technically & in terms of user experience ",
+    text3: "Tackling difficult challenges & finding appropriate & creative solutions for them is one of my favorite aspects of work.",
   },
 
   softSkills: {

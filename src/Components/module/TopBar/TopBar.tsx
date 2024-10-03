@@ -1,11 +1,14 @@
 "use client";
 import { BsDiscord, BsGithub } from "react-icons/bs";
 import { BiLogoTelegram } from "react-icons/bi";
-import { HiArrowLongRight } from "react-icons/hi2";
+import { HiArrowLongDown, HiArrowLongRight } from "react-icons/hi2";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import i18n from "@/i18n/index";
+import Link from "next/link";
+import { IoCloudDownloadOutline } from "react-icons/io5";
+
 export default function TopBar() {
   const { t } = useTranslation();
   return (
@@ -58,19 +61,30 @@ export default function TopBar() {
         </p>
         <div
           className={`${
-            i18n.language == "fa"
-              ? " gap-3 flex items-center justify-start sm:justify-center"
-              : null
-          }  pt-12 md:text-center  `}
+            i18n.language == "fa" ? "justify-start " : ""
+          } pt-12 md:text-center gap-3 sm-x2:flex-col md:!justify-center flex items-center`}
         >
-          <span className="text-2xl font-thin  text-white font-swap">
-            {t("topbar.hire")}
-          </span>
-          <a href="#footer" className="z-[999] relative">
-            <button className="bg-red-600 text-2xl relative top-1 rounded-full ml-3 p-4 text-white">
-              <HiArrowLongRight />
-            </button>
-          </a>
+          <div className="flex items-center gap-2">
+            <span className="text-2xl font-thin text-white font-swap w-[90px]">
+              {t("topbar.hire")}
+            </span>
+            <Link href="#footer" className="z-[999] relative">
+              <button className="bg-red-600 text-2xl relative top-1 rounded-full p-4 text-white">
+                <HiArrowLongRight />
+              </button>
+            </Link>
+          </div>
+
+          <div className="mx-4 flex items-center gap-2">
+            <span className="text-2xl font-thin text-white font-swap w-[90px]">
+              {t("topbar.resume")}
+            </span>
+            <Link href="#footer" className="z-[999] relative">
+              <button className="bg-red-600 text-2xl relative top-1 rounded-full p-4 text-white">
+                <IoCloudDownloadOutline />
+              </button>
+            </Link>
+          </div>
         </div>
         <Image
           width={317}
@@ -107,45 +121,44 @@ export default function TopBar() {
         />
       </section>
       <div className="flex justify-between items-center">
-      <a
-        href="#footer"
-        onClick={() => window.scrollTo(500, 7900)}
-        className={` z-50 cursor-pointer sm-x2:hidden`}>
-        <p className="scrollDown text-white ">
-          {t("topbar.scroll")}{" "}
-          <Image
-            width={16}
-            height={23}
-            className=" absolute z-50 cursor-pointer w-4 top-0 -left-10"
-            src="/Images/scroll.png"
-            alt=""
-          />
-        </p>
-      </a>
-           <div
-        className={`${
-          i18n.language == "fa" ? "mr-auto ml-14" : " ml-auto "
-        } flex gap-5 w-11 sm-x2:!gap-10 sm-x2:relative sm-x2:flex-row sm-x2:right-auto sm-x2:mx-auto sm-x2:w-full sm-x2:justify-center  sm-x2:top-12 relative top-3 right-4 pb-10 flex-col text-2xl text-white`}
-      >
-        <a
-          href="https://instagram.com/_ka.s.ra_?igshid=ZDc4ODBmNjlmNQ=="
-          target="_blank"
+        <Link
+          href="#footer"
+          onClick={() => window.scrollTo(500, 7900)}
+          className={` z-50 cursor-pointer sm-x2:hidden`}
         >
-          <AiOutlineInstagram className="ml-auto mr-7 sm-x2:mx-auto " />
-        </a>
-        <a href="https://t.me/shahiinnnnn" target="_blank">
-          <BiLogoTelegram className="ml-auto mr-7 sm-x2:mx-auto " />
-        </a>
-        <a href="https://github.com/KasraMg" target="_blank">
-          <BsGithub className="ml-auto mr-7 sm-x2:mx-auto " />
-        </a>
-        <a href="https://discord.com/users/shahin#6613" target="_blank">
-          <BsDiscord className="ml-auto mr-7 sm-x2:mx-auto " />
-        </a>
+          <p className="scrollDown text-white ">
+            {t("topbar.scroll")}{" "}
+            <Image
+              width={16}
+              height={23}
+              className=" absolute z-50 cursor-pointer w-4 top-0 -left-10"
+              src="/Images/scroll.png"
+              alt=""
+            />
+          </p>
+        </Link>
+        <div
+          className={`${
+            i18n.language == "fa" ? "mr-auto ml-14" : " ml-auto "
+          } flex gap-5 w-11 sm-x2:!gap-10 sm-x2:relative sm-x2:flex-row sm-x2:right-auto sm-x2:mx-auto sm-x2:w-full sm-x2:justify-center  sm-x2:top-12 relative top-3 right-4 pb-10 flex-col text-2xl text-white`}
+        >
+          <Link
+            href="https://instagram.com/_ka.s.ra_?igshid=ZDc4ODBmNjlmNQ=="
+            target="_blank"
+          >
+            <AiOutlineInstagram className="ml-auto mr-7 sm-x2:mx-auto " />
+          </Link>
+          <Link href="https://t.me/MrShahiin" target="_blank">
+            <BiLogoTelegram className="ml-auto mr-7 sm-x2:mx-auto " />
+          </Link>
+          <Link href="https://github.com/KasraMg" target="_blank">
+            <BsGithub className="ml-auto mr-7 sm-x2:mx-auto " />
+          </Link>
+          <Link href="https://discord.com/users/shahin#6613" target="_blank">
+            <BsDiscord className="ml-auto mr-7 sm-x2:mx-auto " />
+          </Link>
+        </div>
       </div>
-      </div>
-   
-    
     </div>
   );
 }

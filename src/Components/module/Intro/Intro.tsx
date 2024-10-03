@@ -15,9 +15,9 @@ export default function Intro() {
         <section dir={i18n.language == 'fa' ? 'rtl' : 'ltr'} className={`${i18n.language == 'fa' && 'pr-5'} bg-center bg-[url(/Images/about-bg.jpg)] relative`}>
           <div className="overlay"></div>
           <div className={` ${i18n.language == 'fa' ? ' !font-vazirlight !font-thin' : 'font-swap '} z-[9999] relative   mt-6 lg:text-[1.5rem] leading-[53px] ml-6 text-[2rem] text-white mix-blend-difference `}> {t('intro.text1')}</div>
-          <div className={`${i18n.language == 'fa' ? ' mr-auto ml-5 font-vazirlight font-thin' : 'font-swap ml-auto mr-2'}  w-80  leading-10 text-[22px] sm-x2:!w-full sm-x2:px-5 mix-blend-difference relative z-30  mt-16 text-justify text-white `} > {t('intro.text2')} <p className='text-red-600'> {t('intro.text3')}</p></div>
+          <div className={`${i18n.language == 'fa' ? ' mr-auto ml-5 font-vazirlight font-thin' : 'font-swap ml-auto mr-2'}  w-80  leading-10 text-[22px] sm-x2:!w-full sm-x2:px-5 mix-blend-difference relative z-30  mt-16 text-justify text-white `} > {t('intro.text2')} <p className='text-red-600 !text-base mt-3'> {t('intro.text3')}</p></div>
         </section>
-        <Image style={{objectPosition:'-117px'}} height={1000} width={1000} src="/Images/photo_5940515790363148695_x.jfif" className='w-[250px] z-[99] object-cover sm:hidden lg:w-72' alt="" />
+        <Image height={1000} width={1000} src="/Images/photo_6023903289084594267_y.jpg" className='w-[250px] z-[99] object-cover sm:hidden lg:w-72' alt="" />
       </main>
       <Image height={1000} width={1000} className='intro-shape absolute sm-x2:bottom-32 bottom-0 right-1' src="/Images/shape.png" alt="" />
     </div>

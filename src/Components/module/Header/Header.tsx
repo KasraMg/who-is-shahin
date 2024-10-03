@@ -4,6 +4,7 @@ import { RiMenu5Fill } from "react-icons/ri";
 import { useTranslation } from "react-i18next";
 import i18n from "@/i18n/index";
 import i18next from "i18next";
+import Link from "next/link";
 
 export default function Header() {
   const { t } = useTranslation();
@@ -241,26 +242,26 @@ export default function Header() {
           </div>
         </div>
         <ul className="flex gap-10 font-swap  sm:hidden  list-none z-30 relative">
-          <a href="#me">
+          <Link href="#me">
             <li className="hover:text-red-500 transition-colors cursor-pointer  ">
               {t("header.whoAmI")}
             </li>
-          </a>
-          <a href="#skills">
+          </Link>
+          <Link href="#skills">
             <li className="hover:text-red-500 transition-colors cursor-pointer  ">
               {t("header.skills")}
             </li>
-          </a>
-          <a href="#projects">
+          </Link>
+          <Link href="#projects">
             <li className="hover:text-red-500 transition-colors cursor-pointer  ">
               {t("header.projects")}
             </li>
-          </a>
-          <a href="#footer">
+          </Link>
+          <Link href="#footer">
             <li className="hover:text-red-500 transition-colors cursor-pointer  ">
               {t("header.talk")}
             </li>
-          </a>
+          </Link>
         </ul>
 
         <button
@@ -317,12 +318,12 @@ export default function Header() {
               data-drawer-hide="drawer-example"
               aria-controls="drawer-example"
             >
-              <a href="#me">
+              <Link href="#me">
                 <li className="hover:text-red-500 transition-colors cursor-pointer text-white ">
                   {" "}
                   {t("header.whoAmI")}
                 </li>
-              </a>
+              </Link>
               <a
                 data-drawer-hide="drawer-example"
                 aria-controls="drawer-example"
@@ -332,7 +333,7 @@ export default function Header() {
                   {t("header.skills")}{" "}
                 </li>
               </a>
-              <a
+              <Link
                 data-drawer-hide="drawer-example"
                 aria-controls="drawer-example"
                 href="#projects"
@@ -340,8 +341,8 @@ export default function Header() {
                 <li className="hover:text-red-500 transition-colors cursor-pointer  text-white ">
                   {t("header.projects")}
                 </li>
-              </a>
-              <a
+              </Link>
+              <Link
                 data-drawer-hide="drawer-example"
                 aria-controls="drawer-example"
                 href="#footer"
@@ -349,7 +350,7 @@ export default function Header() {
                 <li className="hover:text-red-500 transition-colors cursor-pointer  text-white ">
                   {t("header.talk")}
                 </li>
-              </a>
+              </Link>
             </ul>
           </div>
           <div className="flex absolute w-full bottom-4 justify-between px-4 border-t-2 border-solid border-black pt-4 left-0">
