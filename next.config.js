@@ -1,49 +1,63 @@
-// Import next-pwa for PWA configuration
 const withPWA = require("@ducanh2912/next-pwa").default({
+  cacheOnFrontEndNav: true,
+  aggressiveFrontEndNavCaching: true,
+  reloadOnOnline: true,
+  swcMinify: true,  
+  workboxOptions: {
+    disableDevLogs: true,
+  },
   dest: "public",
   register: true,
   skipWaiting: true,
-  sw: "sw.js",
-  fallbacks: {
-    document: "/offline",
-  },
+  sw: "sw.js", 
   runtimeCaching: [
-    {
-      urlPattern: /^https?.*/, 
+    { 
+      urlPattern: /^https?.*\.html$/, 
       handler: "NetworkFirst", 
       options: {
         cacheName: "html-cache",
         expiration: {
           maxEntries: 50,
-          maxAgeSeconds: 7 * 24 * 60 * 60,
+          maxAgeSeconds: 7 * 24 * 60 * 60,  
         },
       },
     },
-    {
-      urlPattern: /\.(?:ts|tsx|css)$/, 
+    { 
+      urlPattern: /\.(?:js|css|ts|tsx)$/, 
       handler: "StaleWhileRevalidate",
       options: {
         cacheName: "static-resources",
         expiration: {
           maxEntries: 50,
-          maxAgeSeconds: 30 * 24 * 60 * 60,
+          maxAgeSeconds: 30 * 24 * 60 * 60, 
         },
       },
     },
-    {
-      urlPattern: /\.(?:png|jpg|jpeg|svg|gif|webp)$/,
+    { 
+      urlPattern: /^https?.*\/images\/.*\.(?:png|jpg|jpeg|svg|gif|webp)$/,
       handler: "CacheFirst",
       options: {
         cacheName: "image-cache",
         expiration: {
           maxEntries: 100,
-          maxAgeSeconds: 60 * 24 * 60 * 60,
+          maxAgeSeconds: 60 * 24 * 60 * 60, 
+        },
+      },
+    },
+    { 
+      urlPattern: /\.(?:woff|woff2|ttf|eot)$/,
+      handler: "CacheFirst",
+      options: {
+        cacheName: "font-cache",
+        expiration: {
+          maxEntries: 30,
+          maxAgeSeconds: 60 * 24 * 60 * 60, 
         },
       },
     },
   ],
 });
-  
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true, 
@@ -53,5 +67,3 @@ const nextConfig = {
 };
  
 module.exports = withPWA(nextConfig);
-
-  
