@@ -242,7 +242,7 @@
   .line {
     background: linear-gradient(
       to right,
-      rgba(78, 78, 78, 1) 0%,
+      rgb(187, 23, 23) 0%,
       rgba(15, 15, 15, 0) 81%,
       rgba(0, 0, 0, 0) 100%
     );

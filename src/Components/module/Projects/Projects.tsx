@@ -21,15 +21,15 @@ export default function Projects() {
       data-aos-duration="3000"
       style={{ background: "url(/Images/projectBg.jpg)" }}
       id="projects"
-      className={`relative overflow-hidden border-b-2 border-solid border-red-600 pb-56 pt-36 md:pt-12  !bg-fixed !bg-center `}
+      className={`relative overflow-hidden border-b-2 border-solid border-red-600 pb-56 pt-36 md:pt-12 !bg-fixed !bg-center `}
     >
-      <div className="bg-[#19182dd9]  left-0 top-0 w-full h-full absolute"></div>
+      <div className="bg-[#19182dd9] left-0 top-0 w-full h-full absolute"></div>
       <Swiper
         dir={"ltr"}
         rewind={true}
         navigation={true}
         modules={[Navigation]}
-        className="mySwiper !pb-5 sm-x2:!pb-32 sm:border-t-2 sm:mt-5 border-0 pt-12 border-red-600 border-solid z-30 relative sm:pl-0 sm:!pt-20  ml-auto mr-0"
+        className="mySwiper !pb-5 xs:!pb-32 sm:border-t-2 sm:mt-5 border-0 pt-12 border-red-600 border-solid z-30 relative sm:pl-0 sm:!pt-20  ml-auto mr-0"
       >
         {projects &&
           projects.map((data: ProjectType) => (
@@ -46,9 +46,9 @@ export default function Projects() {
       <p
         className={`${
           i18n.language == "fa"
-            ? "!font-vazir lg-x2:text-[180px] md:text-[130px] md:!-left-28   text-[150px] lg:bottom-[44%] lg:left-[5.5rem] bottom-[37%] left-60"
-            : "bottom-[42%] text-[120px] md:!-right-48 lg:right-12  right-52"
-        } projects-title sm:hidden font-bold uppercase absolute `}
+            ? "!font-vazir xl:text-[180px] md:text-[130px] md:!-left-28 text-[150px] lg:bottom-[44%] lg:left-[5.5rem] bottom-[37%] left-60"
+            : "bottom-[42%] text-[120px] md:!-right-48 lg:right-12 right-52"
+        } projects-title sm:hidden font-bold uppercase absolute`}
       >
         {t("projects.title")}
       </p>

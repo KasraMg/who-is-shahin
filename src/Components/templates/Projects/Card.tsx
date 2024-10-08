@@ -11,9 +11,9 @@ const Card = (props: ProjectType) => {
       <main
         className={` ${
           i18n.language == "fa"
-            ? "text-right sm:pr-16 sm-x2:!pr-5 pr-24 lg:pr-16"
-            : "text-left sm-x2:!pl-5 pl-24 lg:pl-16"
-        }  sm:px-5 sm-x2:h-[350px] `}
+            ? "text-right sm:pr-16 xs:!pr-5 pr-24 lg:pr-16"
+            : "text-left xs:!pl-5 pl-24 lg:pl-16"
+        }  sm:px-5 xs:h-[350px] `}
       >
         <span className="text-red-600 text-2xl font-swap">
           {i18n.language == "fa" ? props.type_fa : props.type_en}
@@ -25,9 +25,9 @@ const Card = (props: ProjectType) => {
           {i18n.language == "fa" ? props.description_fa : props.description_en}
         </p>
         <div
-          className={` w-[366px] sm-x2:!w-full flex-wrap flex gap-2 sm-x2:flex-wrap sm:sm-x2:justify-center sm-x2:mt-10 !mt-4 sm-x2:text-[13px] text-white`}
+          className={` w-[366px] xs:!w-full flex-wrap flex gap-2 xs:flex-wrap sm:xs:justify-center xs:mt-10 !mt-4 xs:text-[13px] text-white`}
         >
-          <span className="mt-[2px] sm-x2:hidden">
+          <span className="mt-[2px] xs:hidden">
             {i18n.language == "fa" ? "تکنولوژی ها :" : "Technologies :"}
           </span>
           <div className="flex overflow-x-scroll items-baseline gap-3 pb-3 tags">
@@ -41,7 +41,7 @@ const Card = (props: ProjectType) => {
             ))}
           </div>
         </div>
-        <div className="flex sm-x2:w-full sm-x2:absolute sm-x2:bottom-0 sm-x3:!-bottom-5 items-center mt-5">
+        <div className="flex xs:w-full xs:absolute xs:bottom-0 xxs:!-bottom-5 items-center mt-5">
           <p className=" text-white font-swap text-2xl">
             {" "}
             {i18n.language == "fa" ? "بریم ببینیم" : "View Live"}
@@ -70,7 +70,7 @@ const Card = (props: ProjectType) => {
             i18n.language == "fa"
               ? " md:mr-16  sm:ml-auto  ml-16"
               : " md:ml-16  sm:mr-auto  mr-6"
-          } h-auto w-[700px] sm:!mx-auto sm:block sm:!w-[80%] sm-x2:!mx-auto   rounded-md relative z-50`}
+          } h-auto w-[700px] sm:!mx-auto sm:block sm:!w-[80%] xs:!mx-auto   rounded-md relative z-50`}
           src={props.image}
           alt=""
         />

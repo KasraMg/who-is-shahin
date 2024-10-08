@@ -10,8 +10,7 @@ export interface ProjectType{
 }
 
 export interface SkillType{
-    name:string,
-    percent:string,
+    name:string, 
     des_en:string,
     des_fa:string,
     rotate:boolean

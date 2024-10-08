@@ -40,9 +40,9 @@ export default function Header() {
         className={`${
           isSticky &&
           ` !top-0 !fixed z-[99999] !py-2 left-0 w-full !text-[#1d192c] bg-white !max-w-full`
-        } bg-full bg-[top] bg-fullSize bg-[#1d192c] sm-x2:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    `}
+        } bg-full bg-[top] bg-fullSize bg-[#1d192c] xs:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    `}
       >
-        <div className="flex z-[999] sm-x3:mx-3">
+        <div className="flex z-[999] xxs:mx-3">
           <div>
             <div className="flex items-center justify-center">
               <div className=" relative inline-block text-left dropdown  mt-1">
@@ -243,22 +243,22 @@ export default function Header() {
         </div>
         <ul className="flex gap-10 font-swap  sm:hidden  list-none z-30 relative">
           <Link href="#me">
-            <li className="hover:text-red-500 transition-colors cursor-pointer  ">
+            <li className="hover:text-red-500 transition-colors cursor-pointer">
               {t("header.whoAmI")}
             </li>
           </Link>
           <Link href="#skills">
-            <li className="hover:text-red-500 transition-colors cursor-pointer  ">
+            <li className="hover:text-red-500 transition-colors cursor-pointer">
               {t("header.skills")}
             </li>
           </Link>
           <Link href="#projects">
-            <li className="hover:text-red-500 transition-colors cursor-pointer  ">
+            <li className="hover:text-red-500 transition-colors cursor-pointer">
               {t("header.projects")}
             </li>
           </Link>
           <Link href="#footer">
-            <li className="hover:text-red-500 transition-colors cursor-pointer  ">
+            <li className="hover:text-red-500 transition-colors cursor-pointer">
               {t("header.talk")}
             </li>
           </Link>
@@ -282,7 +282,7 @@ export default function Header() {
             i18n.language == "fa"
               ? "right-0 translate-x-full"
               : "left-0 -translate-x-full"
-          } fixed z-[999] top-0 border-r bg-[url(/Images/projectBg.jpg)]  h-screen p-4 overflow-y-auto transition-transform  bg-white w-80 dark:bg-gray-800`}
+          } fixed z-[999] top-0 border-r bg-[url(/Images/projectBg.jpg)] h-screen p-4 overflow-y-auto transition-transform bg-white w-80 dark:bg-gray-800`}
           tabIndex={-1}
           aria-labelledby="drawer-label"
         >
@@ -314,7 +314,7 @@ export default function Header() {
           </div>
           <div className="px-2 py-10">
             <ul
-              className="flex flex-col gap-10 font-swap     list-none z-30 relative"
+              className="flex flex-col gap-10 font-swap list-none z-30 relative"
               data-drawer-hide="drawer-example"
               aria-controls="drawer-example"
             >
@@ -329,7 +329,7 @@ export default function Header() {
                 aria-controls="drawer-example"
                 href="#skills"
               >
-                <li className="hover:text-red-500 transition-colors cursor-pointer  text-white ">
+                <li className="hover:text-red-500 transition-colors cursor-pointer text-white">
                   {t("header.skills")}{" "}
                 </li>
               </a>
@@ -338,7 +338,7 @@ export default function Header() {
                 aria-controls="drawer-example"
                 href="#projects"
               >
-                <li className="hover:text-red-500 transition-colors cursor-pointer  text-white ">
+                <li className="hover:text-red-500 transition-colors cursor-pointer text-white">
                   {t("header.projects")}
                 </li>
               </Link>
@@ -347,7 +347,7 @@ export default function Header() {
                 aria-controls="drawer-example"
                 href="#footer"
               >
-                <li className="hover:text-red-500 transition-colors cursor-pointer  text-white ">
+                <li className="hover:text-red-500 transition-colors cursor-pointer text-white">
                   {t("header.talk")}
                 </li>
               </Link>

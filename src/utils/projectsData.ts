@@ -3,18 +3,19 @@ import { ProjectType } from "@/types/Index.types";
 const projectData: ProjectType[] = [
   {
     name_en: "Jajiga",
-    description_fa: "ویلای مورد علاقتو رزرو کن و با خانواده لذتشو ببرید.",
+    description_fa:
+      "ویلای مورد علاقت رو در شهر مورد علاقت رزرو کن و با خانواده لذتشو ببرید. همچنین میتونید ویلای خودتون رو ثبت و کسب درامد کنید.",
     description_en:
-      "Book your favorite villa in your favorite city with Jajiga website and have fun with your family!",
+      "Book your favorite villa in your favorite city and enjoy it. You can also register your villa and earn money.",
     type_en: "Villa reservation site",
     type_fa: "سایت رزرو ویلا",
-    href: "https://github.com/KasraMg/jajiga",
+    href: "https://jajiga.liara.run/",
     image: "/Images/jajiga.jpg",
     tag: [
       "Zustand",
       "Next-14",
       "Threejs",
-      "Tanstack-Query",
+      "React-Query",
       "TypeScript",
       "Leaflet",
       "Date-picker",
@@ -24,12 +25,13 @@ const projectData: ProjectType[] = [
   },
   {
     name_en: "Nike",
-    description_fa: "انواع کفش های نایک و فقط و فقط از ما بخواهید:))",
+    description_fa:
+      "انواع کفش های نایک و فقط و فقط از ما بخواهید. همین الان سبد خریدت رو پر از کفش های معروف کن :))",
     description_en:
-      " Buy all kinds of Nike shoes from our site and enjoy it 😉 I really enjoy the Ui of this site",
+      "All kinds of Nike shoes and just ask us. Fill your shopping cart with famous shoes right now :))",
     type_en: "Store website",
     type_fa: "سایت فروشگاهی",
-    href: "https://nike.iran.liara.run/",
+    href: "https://nike.liara.run/",
     image: "/Images/nike.PNG",
     tag: [
       "Api",
@@ -46,19 +48,26 @@ const projectData: ProjectType[] = [
   {
     name_en: "Storm Seeker",
     description_fa:
-      "این سایت اطلاعات مفید و خوبی رو با پیش بینی آب و هوا برای تمام مناطق ارائه میده .",
+      "این سایت اطلاعات مفید و خوبی رو با پیش بینی آب و هوا برای تمام مناطق ارائه میده و همین الان میتونی شهر مد نظرت رو جستجو کنی .",
     description_en:
       "This site provides useful and good information with weather forecast for all regions.",
     type_en: "Weather website",
     type_fa: "سایت آب و هوا",
-    href: "https://github.com/KasraMg/Weather",
+    href: "https://new-weather-app.liara.run/",
     image: "/Images/weather.PNG",
-    tag: ["Api", "next-12", "TypeScript", "ParicleJs", "Tailwind"],
+    tag: [
+      "Api",
+      "Next-14",
+      "React-Query",
+      "TypeScript",
+      "ParicleJs",
+      "Tailwind",
+    ],
   },
   {
     name_en: "Fixed Float",
     description_fa:
-      "با این سایت به راحتی میتونید ارز های دیجیتال خودتون به سایر حساب ها انتقال بدید ",
+      "با این سایت به راحتی میتونید ارز های دیجیتال خودتون رو با کارمزد کم به سایر حساب ها انتقال بدید. ",
     description_en:
       "This site gives you the tools to make full use of your digital assets through an easy & accessible exchange platform 🐱‍👤",
     type_en: "Digital currency website",
@@ -70,9 +79,9 @@ const projectData: ProjectType[] = [
   {
     name_en: "OnlyMusic",
     description_fa:
-      "با استفاده از این سایت میتونید انواع اهنگ ها و موزیک ویدیو دانلود و مشاهده کنید.",
+      "با استفاده از این سایت میتونید انواع اهنگ ها و موزیک ویدیو هارو دانلود، و در پنلتون پلی لیست های متفاوت بسازید و حالشو ببرید.",
     description_en:
-      "Reference of all types of music for you. This site is developed with js pure & tailwind & more packages...",
+      "Using this site, you can download all kinds of songs and music videos, and create different playlists in your panel.",
     type_en: "Music website",
     type_fa: "سایت موزیک",
     href: "https://onlymusic.iran.liara.run/",
@@ -80,7 +89,7 @@ const projectData: ProjectType[] = [
     tag: ["Api", "DarkMode", "Tailwind", "Videojs"],
   },
   {
-    name_en: "Todo_List",
+    name_en: "Todo List",
     description_fa:
       "با استفاده از این سایت میتونید کار های روزانه خود را یادداشت و مدیریت کنید و همچنین همیشه بهشون دسترسی داشته باشید.",
     description_en:
@@ -101,17 +110,12 @@ const projectData: ProjectType[] = [
     type_fa: "سایت دیوار",
     href: "https://mydivar.liara.run/",
     image: "/Images/divar.png",
-    tag: [
-      "Api", 
-      "Bootstrap",
-      "swal",
-      "Leaflet", 
-    ],
+    tag: ["Api", "Bootstrap", "swal", "Leaflet"],
   },
   {
     name_en: "Nuxt",
     description_fa:
-      "این لندینگ پیج که از سایت nuxt.com الهام گرفته شده واقعا طرح زیبایی داره و پیشنهاد میکنم از دست ندید!",
+      "این لندینگ پیج Pwa که از سایت nuxt.com الهام گرفته شده واقعا طرح و انیمیشن زیبایی داره و پیشنهاد میکنم از دست ندید!",
     description_en:
       "This site is developed with js pure and has dark mode. It has a very beautiful and powerful UI 😎⚡",
     type_en: "landing page",
@@ -119,6 +123,6 @@ const projectData: ProjectType[] = [
     href: "https://nuxt.iran.liara.run/",
     image: "/Images/nuxt.PNG",
     tag: ["Animation", "Bootstrap", "DarkMode", "PWA"],
-  } 
+  },
 ];
 export default projectData;

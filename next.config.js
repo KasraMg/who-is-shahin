@@ -34,7 +34,7 @@ const withPWA = require("@ducanh2912/next-pwa").default({
       },
     },
     { 
-      urlPattern: /^https?.*\/images\/.*\.(?:png|jpg|jpeg|svg|gif|webp)$/,
+      urlPattern: /^https?.*\/images\/.*\.(?:png|jpg|jpeg|svg|gif|webp|pdf)$/,
       handler: "CacheFirst",
       options: {
         cacheName: "image-cache",

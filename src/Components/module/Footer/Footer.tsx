@@ -10,7 +10,7 @@ import { useTranslation } from "react-i18next";
 import Link from "next/link";
 import swal from "sweetalert";
 import "leaflet/dist/images/marker-shadow.png";
-import dynamic from "next/dynamic"; 
+import dynamic from "next/dynamic";
 
 const Map = dynamic(() => import("../../templates/Map/Map"), { ssr: false });
 export default function Footer() {
@@ -21,7 +21,7 @@ export default function Footer() {
       <footer
         data-aos-duration="3000"
         id="footer"
-        className="bg-[url(/Images/softBg.jpg)] relative   border-t-2 md:bg-repeat-round  border-red-600 border-solid   pt-16 "
+        className="bg-[url(/Images/softBg.jpg)] relative border-t-2 md:bg-repeat-round border-red-600 border-solid pt-16"
       >
         <svg
           aria-hidden="true"
@@ -42,7 +42,7 @@ export default function Footer() {
           {t("footer.footer_title")}
         </p>
         <div className="overlay" style={{ background: "#231f33e8" }}></div>
-        <main className="flex  relative z-[999] sm-x2:!pb-4 gap-48 justify-center md:flex-col md:justify-center sm:!px-6 md:px-10 sm:pt-16  lg:gap-20 pt-32 pb-32">
+        <main className="flex  relative z-[999] xs:!pb-4 gap-48 justify-center md:flex-col md:justify-center sm:!px-6 md:px-10 sm:pt-16  lg:gap-20 pt-32 pb-32">
           <div>
             <p className="text-[#727272] font-extrabold font-swap">
               {t("footer.Linkedin_title")}:
@@ -146,7 +146,7 @@ export default function Footer() {
 
                 <button
                   type="submit"
-                  className={` disabled:opacity-50 bg-red-600 rounded-md md:w-full font-swap text-white py-2 mt-8  px-6`}
+                  className={`disabled:opacity-50 bg-red-600 rounded-md md:w-full font-swap text-white py-2 mt-8  px-6`}
                 >
                   {t("footer.button")}
                 </button>
@@ -154,7 +154,7 @@ export default function Footer() {
             )}
           </Formik>
         </main>
-        <div className="flex sm-x2:!px-6 sm:!px-5 lg:px-16 md:gap-20 relative gap-48 justify-center md:flex-col md:justify-center pt-4  py-20 ">
+        <div className="flex xs:!px-6 sm:!px-5 lg:px-16 md:gap-20 relative gap-48 justify-center md:flex-col md:justify-center pt-4  py-20 ">
           <div className="z-50  pl-10 lg:pl-8 md:!pl-0 w-[330px] md:flex md:justify-between md:w-full">
             <div>
               <p className="text-[#727272] font-extrabold font-swap">
@@ -165,7 +165,7 @@ export default function Footer() {
               </p>
             </div>
 
-            <div className="flex  gap-4 items-center text-white text-2xl md:mt-2 mt-32 md:hidden">
+            <div className="flex gap-4 items-center text-white text-2xl md:mt-2 mt-32 md:hidden">
               <p>{t("footer.location_title")} </p>
               <div className="bg-white relative top-1 p-2 rounded-full ">
                 <BsArrowRight className="text-red-600 text-2xl " />
@@ -175,7 +175,7 @@ export default function Footer() {
           <Map />
         </div>
       </footer>
-      <section className="flex sm:flex-col-reverse sm:px-2 sm:text-center sm:text-[13px]   justify-between px-12 border-solid border-t-2 border-white py-5 bg-[#16171b]">
+      <section className="flex sm:flex-col-reverse sm:px-2 sm:text-center sm:text-[13px] justify-between px-12 border-solid border-t-2 border-white py-5 bg-[#16171b]">
         <p className="text-white font-swap sm:mt-3"> {t("footer.last_text")}</p>
         <div className="flex gap-5 sm:justify-evenly sm:gap-0  sm:pb-4 text-white text-2xl">
           <Link

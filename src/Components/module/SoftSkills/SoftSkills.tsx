@@ -14,7 +14,7 @@ export default function SoftSkills() {
           <p className='text-white  whitespace-nowrap text-xl'>{t('softSkills.one')}</p>
       </section>
        <section className='z-40 box h-[200px] font-swap py-8 bg-[#1c1d21] w-full text-center'>
-          <Image height={64} width={64} className='w-16 h-16 block mx-auto mb-6'  src="/Images/icons8-people-96.png" alt="soft_skill" />
+          <Image height={64} width={64} className='w-16 h-16 block mx-auto mb-6' src="/Images/icons8-people-96.png" alt="soft_skill" />
           <p className='text-white  whitespace-nowrap text-xl'>{t('softSkills.two')}</p>
       </section> 
       <section className='z-40 h-[200px] font-swap py-8 bg-[#1c1d21] w-full text-center'>
@@ -22,7 +22,7 @@ export default function SoftSkills() {
           <p className='text-white  whitespace-nowrap text-xl'>{t('softSkills.tree')}</p>
       </section> 
        <section className='z-40 box h-[200px] font-swap py-8 bg-[#1c1d21] w-full text-center'>
-          <Image height={64} width={64} className='w-16 h-16 block mx-auto mb-6'  src="/Images/icons8-working-with-a-laptop-96.png" alt="soft_skill" />
+          <Image height={64} width={64} className='w-16 h-16 block mx-auto mb-6' src="/Images/icons8-working-with-a-laptop-96.png" alt="soft_skill" />
           <p className='text-white  whitespace-nowrap text-xl'>{t('softSkills.four')}</p>
       </section>
       <section className='z-40  h-[200px] font-swap py-8 bg-[#1c1d21] w-full text-center'>
@@ -31,14 +31,14 @@ export default function SoftSkills() {
       </section>
       
       <section className='z-40 box h-[200px] font-swap py-8 bg-[#1c1d21] w-full text-center'>
-          <Image height={64} width={64} className='w-16 h-16 block mx-auto mb-6'  src="/Images/icons8-mind-map-96.png" alt="soft_skill" />
+          <Image height={64} width={64} className='w-16 h-16 block mx-auto mb-6' src="/Images/icons8-mind-map-96.png" alt="soft_skill" />
           <p className='text-white  whitespace-nowrap text-xl'> {t('softSkills.six')}</p>
       </section>
 
     
 
   </div>
-  <p className='skills-title font-bold  pb-16 text-[120px] text-white relative z-50  uppercase sm:text-[80px] sm-x2:!text-[50px]  w-full text-center  mt-20 '> {t('softSkills.title')}</p>
+  <p className='skills-title font-bold  pb-16 text-[120px] text-white relative z-50  uppercase sm:text-[80px] xs:!text-[50px]  w-full text-center  mt-20 '> {t('softSkills.title')}</p>
   
   <div className="overlay"></div>
     </div>

@@ -16,7 +16,7 @@ export default function Skills() {
       id="skills"
       className="relative border-b-2 sm:border-0 border-red-600 border-solid bg-[#1d192c] pb-40 pt-10"
     >
-      <p className="skills-title font-bold text-[120px]  uppercase sm:text-[80px] sm-x2:!text-[50px]  w-full text-center  mb-20 ">
+      <p className="skills-title font-bold text-[120px]  uppercase sm:text-[80px] xs:!text-[50px] w-full text-center mb-20 ">
         {i18n.language == "fa" ? " تخصص ها" : " my skills"}
       </p>
       <div className=" relative h-full">
@@ -24,7 +24,7 @@ export default function Skills() {
           dir="ltr"
           data-aos="flip-left"
           data-aos-duration="3000"
-          className="skills-main z-[9999] relative flex justify-evenly mx-auto w-full md:flex-col  max-w-[1346px] "
+          className="skills-main z-[9999] relative flex justify-evenly mx-auto w-full md:flex-col max-w-[1346px] "
         >
           <div>
             {skills.slice(0, 6).map((data: SkillType) => (
@@ -40,7 +40,7 @@ export default function Skills() {
         </main>
 
         <ParticlesComponent />
-        <span className="Skillsline block w-[2px] sm-x2:h-[101%] h-full bg-[#f43534] absolute left-1/2 -ml-[1px] -top-10"></span>
+        <span className="Skillsline block w-[2px] xs:h-[101%] h-full bg-[#f43534] absolute left-1/2 -ml-[1px] -top-10"></span>
       </div>
     </div>
   );
