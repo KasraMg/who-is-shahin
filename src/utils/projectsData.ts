@@ -31,7 +31,7 @@ const projectData: ProjectType[] = [
       "All kinds of Nike shoes and just ask us. Fill your shopping cart with famous shoes right now :))",
     type_en: "Store website",
     type_fa: "سایت فروشگاهی",
-    href: "https://nike.liara.run/",
+    href: "https://nike-shop-ashen-five.vercel.app/",
     image: "/Images/nike.PNG",
     tag: [
       "Api",
