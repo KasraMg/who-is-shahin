@@ -41,8 +41,8 @@ const Card = (props: ProjectType) => {
             ))}
           </div>
         </div>
-        <div className="flex xs:w-full xs:absolute xs:bottom-0 xxs:!-bottom-5 items-center mt-5">
-          <p className=" text-white font-swap text-2xl">
+        <div className={`${i18n.language == "fa" ? 'pl-3' : 'pr-7'} flex xs:w-full xs:justify-center xs:absolute xs:bottom-0 xxs:!-bottom-[2.25rem] items-center mt-5`}>
+          <p className="text-white font-swap text-2xl">
             {" "}
             {i18n.language == "fa" ? "بریم ببینیم" : "View Live"}
           </p>
@@ -50,7 +50,7 @@ const Card = (props: ProjectType) => {
             className={`${i18n.language == "fa" && "mr-2"}`}
             href={props.href}
           >
-            <button className="bg-red-600 text-2xl relative top-1 rounded-full ml-3 p-4 text-white">
+            <button className="bg-red-600 text-2xl relative top-1 rounded-full ml-3 xs:!p-2 xs:text-base p-4 text-white">
               <HiArrowLongRight />
             </button>
           </Link>

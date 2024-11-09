@@ -11,7 +11,7 @@ export default function Header() {
   const [isSticky, setIsSticky] = useState<boolean>(false);
   const [language, setLanguage] = useState("en");
   const drawer = useRef<any>();
-  useEffect(() => {
+  useEffect(() => { 
     i18n.changeLanguage(language);
     i18n.language == "en"
       ? (document.documentElement.dir = "ltr")
