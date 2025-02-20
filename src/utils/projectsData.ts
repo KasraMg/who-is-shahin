@@ -63,18 +63,18 @@ const projectData: ProjectType[] = [
       "Tailwind",
     ],
   },
-  // {
-  //   name_en: "Fixed Float",
-  //   description_fa:
-  //     "با PilBil به راحتی میتونید ارز های دیجیتال خودتون رو با کارمزد کم به سایر حساب ها انتقال بدید. این صرافی دارای پنل کاربر هست و به دلایل امنیتی پنل ادمین در دسترس قرار نمیگیره. ",
-  //   description_en:
-  //     "With PilBil, you can easily transfer your digital currencies to other accounts. This site has a user panel & for security reasons, admin panel is not available.",
-  //   type_en: "Digital currency website",
-  //   type_fa: "سایت ارز دیجیتال",
-  //   href: "https://pilbil.com/",
-  //   image: "/Images/fixedFloat.PNG",
-  //   tag: ["Api", "Bootstrap", "Formik_Yup", "React"],
-  // },
+  {
+    name_en: "Fixed Float",
+    description_fa:
+      "با PilBil به راحتی میتونید ارز های دیجیتال خودتون رو با کارمزد کم به سایر حساب ها انتقال بدید. این صرافی دارای پنل کاربر هست و به دلایل امنیتی پنل ادمین در دسترس قرار نمیگیره. ",
+    description_en:
+      "With PilBil, you can easily transfer your digital currencies to other accounts. This site has a user panel & for security reasons, admin panel is not available.",
+    type_en: "Digital currency website",
+    type_fa: "سایت ارز دیجیتال",
+    href: "https://pilbil.com/",
+    image: "/Images/fixedFloat.PNG",
+    tag: ["Api", "Bootstrap", "Formik_Yup", "React"],
+  },
   {
     name_en: "OnlyMusic",
     description_fa:
@@ -83,7 +83,7 @@ const projectData: ProjectType[] = [
       "On this site you can download all kinds of songs & music videos, & create different playlists in your panel & enjoy it. You can also access the lyrics of the songs",
     type_en: "Music website",
     type_fa: "سایت موزیک",
-    href: "https://onlymusic2024.netlify.app/",
+    href: "https://onlymusic.iran.liara.run/",
     image: "/Images/onlyMusic.jpg",
     tag: ["Pure JS","Api", "DarkMode", "Tailwind", "Videojs"],
   },
