@@ -19,9 +19,9 @@ export default function TopBar() {
         } px-36 relative z-20 xs:overflow-hidden pb-[70px] lg:px-10 pt-28 md:pt-10`}
       >
         <Image
-          width={500}
+          width={500} 
           height={500}
-          src="/Images/mobile-img.jfif"
+          src="/Images/photo_6046383890941199314_y.jpg"
           className="me-image-2 z-[9999] relative xs:w-60  xs:h-64  xs:relative  xs:z-50 hidden md:block object-cover w-72 h-80 mx-auto mb-4 rounded-full"
           alt=""
         />
@@ -79,7 +79,7 @@ export default function TopBar() {
             <span className="text-2xl font-thin text-white font-swap xs:w-[90px]">
               {t("topbar.resume")}
             </span>
-            <Link href="/resume.pdf" download className="z-[999] relative">
+            <Link href="/shahinMoshkelGosha.pdf" download className="z-[999] relative">
               <button className="bg-red-600 text-2xl relative top-1 rounded-full p-4 text-white">
                 <IoCloudDownloadOutline />
               </button>

@@ -5,13 +5,14 @@ import { useTranslation } from "react-i18next";
 import i18n from "@/i18n/index";
 import i18next from "i18next";
 import Link from "next/link";
+import { IoLanguageOutline } from "react-icons/io5";
 
 export default function Header() {
   const { t } = useTranslation();
   const [isSticky, setIsSticky] = useState<boolean>(false);
   const [language, setLanguage] = useState("en");
   const drawer = useRef<any>();
-  useEffect(() => { 
+  useEffect(() => {
     i18n.changeLanguage(language);
     i18n.language == "en"
       ? (document.documentElement.dir = "ltr")
@@ -42,69 +43,18 @@ export default function Header() {
           ` !top-0 !fixed z-[99999] !py-2 left-0 w-full !text-[#1d192c] bg-white !max-w-full`
         } bg-full bg-[top] bg-fullSize bg-[#1d192c] xs:px-3 text-white items-center flex justify-between flex-row-reverse py-4 px-10    `}
       >
-        <div className="flex z-[999] xxs:mx-3">
-          <div>
-            <div className="flex items-center justify-center">
-              <div className=" relative inline-block text-left dropdown  mt-1">
-                <span className="rounded-md shadow-sm">
-                  <button
-                    style={{ boxShadow: "none" }}
-                    className={`${
-                      isSticky && "!text-[#1d192c]"
-                    } outline-none border-0 inline-flex justify-center w-full px-4 py-2 text-sm font-medium leading-5  transition duration-150 ease-in-out   text-white active:text-gray-800`}
-                    type="button"
-                    aria-haspopup="true"
-                    aria-expanded="true"
-                    aria-controls="headlessui-menu-items-117"
-                  >
-                    <span
-                      style={{
-                        marginLeft:
-                          i18next.language === "fa" ? (".5rem" as any) : null,
-                      }}
-                    >
-                      {i18next.language == "fa" ? "فارسی" : "en"}
-                    </span>
-                    <svg
-                      className="w-5 h-5 ml-2 -mr-1"
-                      viewBox="0 0 20 20"
-                      fill="currentColor"
-                    >
-                      <path
-                        fillRule="evenodd"
-                        d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-                        clipRule="evenodd"
-                      ></path>
-                    </svg>
-                  </button>
-                </span>
-                <div className="opacity-0 invisible dropdown-menu transition-all duration-300 transform origin-top-right -translate-y-2 scale-95">
-                  <div
-                    className="absolute right-0   mt-2 origin-top-right cursor-pointer bg-white border border-gray-200 divide-y divide-gray-100 rounded-md shadow-lg outline-none"
-                    aria-labelledby="headlessui-menu-button-1"
-                    id="headlessui-menu-items-117"
-                    role="menu"
-                  >
-                    <div className="mx-5 py-2">
-                      <p
-                        onClick={() =>
-                          setLanguage(i18next.language == "en" ? "fa" : "en")
-                        }
-                        className="text-sm font-medium px-3 leading-5 text-gray-900 truncate"
-                      >
-                        {i18next.language == "en" && "fa"}{" "}
-                        {i18next.language == "fa" && <>انگلیسی</>}
-                      </p>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="flex z-[999] xxs:mx-3 gap-5">
+          <p
+            className="cursor-pointer flex gap-1 items-center"
+            onClick={() => setLanguage(i18next.language == "en" ? "fa" : "en")}
+          >
+            {i18next.language == "fa" ? "En" : "Fa"}
+            <IoLanguageOutline/>
+          </p>
 
           <div className={`${isSticky && " !w-[48px]"} relative w-[64px]`}>
             <svg
-              className="w-full cursor-pointer absolute "
+              className="w-full cursor-pointer "
               xmlns="http://www.w3.org/2000/svg"
               id="Layer_1"
               data-name="Layer 1"

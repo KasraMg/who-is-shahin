@@ -24,6 +24,29 @@ const projectData: ProjectType[] = [
     ],
   },
   {
+    name_en: "EatBetter",
+    description_fa:
+      "این سایت با ارائه رژیم های غذایی، چالش ها و دستورات آشپزی تناسب اندامت رو حفظ میکنه. به راحتی میتونید رژیم متناسب با خودتون رو خریداری و در پنل کاربریتون مشاهده کنید.",
+    description_en:
+      "A site for maintaining fitness by offering various diets, challenges & recipes. The user panel of this project is available to you & you can easily buy diets.",
+    type_en: "Diet site",
+    type_fa: "سایت  رژیم غذایی",
+    href: "https://alimoayed.com/",
+    image: "/Images/eatbetter.jpg",
+    tag: [
+      "Zustand",
+      "React",
+      "React-Query",
+      "TypeScript",
+      "I18next",
+      "Tailwind",
+      "Shadcn",
+      "Swiper",
+      "Formik_Yup",
+      "Apexcharts",
+    ],
+  },
+  {
     name_en: "Nike",
     description_fa:
       "سایت فروشگاهی نایک با کفش های متنوعش از شما استقبال میکنه. توی این سایت میتونید هر چند تا کفش که دوست داشته باشید رو به سبد خریدتون اضافه و اونها رو بخرید.",
@@ -47,7 +70,8 @@ const projectData: ProjectType[] = [
   },
   {
     name_en: "Storm Seeker",
-    description_fa: "در سایت storm seeker   از آب و هوای امروز تا یک هفته هر شهری که مد نظرت هست خبر دار بشو. اطلاعاتی راجب وضعیت طلوع و غروب آفتاب هم توی این سایت در دسترستون هست.",
+    description_fa:
+      "در سایت storm seeker   از آب و هوای امروز تا یک هفته هر شهری که مد نظرت هست خبر دار بشو. اطلاعاتی راجب وضعیت طلوع و غروب آفتاب هم توی این سایت در دسترستون هست.",
     description_en:
       "On this website, you'll be informed about the weather today & for a week in any city of your choice. Info about sunrise & sunset is also available on this site.",
     type_en: "Weather website",
@@ -64,7 +88,7 @@ const projectData: ProjectType[] = [
     ],
   },
   {
-    name_en: "Fixed Float",
+    name_en: "Pil Bil",
     description_fa:
       "با PilBil به راحتی میتونید ارز های دیجیتال خودتون رو با کارمزد کم به سایر حساب ها انتقال بدید. این صرافی دارای پنل کاربر هست و به دلایل امنیتی پنل ادمین در دسترس قرار نمیگیره. ",
     description_en:
@@ -83,9 +107,9 @@ const projectData: ProjectType[] = [
       "On this site you can download all kinds of songs & music videos, & create different playlists in your panel & enjoy it. You can also access the lyrics of the songs",
     type_en: "Music website",
     type_fa: "سایت موزیک",
-    href: "https://onlymusic.iran.liara.run/",
+    href: "https://onlymusic2024.netlify.app/",
     image: "/Images/onlyMusic.jpg",
-    tag: ["Pure JS","Api", "DarkMode", "Tailwind", "Videojs"],
+    tag: ["Pure JS", "Api", "DarkMode", "Tailwind", "Videojs"],
   },
   {
     name_en: "Todo List",
@@ -109,7 +133,7 @@ const projectData: ProjectType[] = [
     type_fa: "سایت دیوار",
     href: "https://mydivar.liara.run/",
     image: "/Images/divar.png",
-    tag: ["Pure JS","Api", "Bootstrap", "swal", "Leaflet"],
+    tag: ["Pure JS", "Api", "Bootstrap", "swal", "Leaflet"],
   },
   {
     name_en: "Nuxt",
