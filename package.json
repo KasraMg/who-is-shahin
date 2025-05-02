@@ -17,6 +17,7 @@
     "flowbite": "^1.7.0",
     "formik": "^2.4.5",
     "i18next": "^23.4.4",
+    "knip": "^5.50.5",
     "leaflet": "^1.9.4",
     "next": "latest",
     "next-pwa": "^5.6.0",
