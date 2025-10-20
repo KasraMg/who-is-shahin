@@ -2,6 +2,28 @@ import { ProjectType } from "@/types/Index.types";
 
 const projectData: ProjectType[] = [
   {
+    name_en: "Darman shirin",
+    description_fa:
+      "درمان شیرین، نوبت‌دهی اینترنتی و آنلاین پزشکان در سرتاسر ایران. با استفاده از این سایت، سه سوت نوبت دکتر یا مراکز درمانی مد نظرتو بگیر!",
+    description_en:
+      "Darman Shirin, online doctor appointments throughout Iran. Using this site, make an appointment with the doctor or medical center of your choice.",
+    type_en: "Medical site",
+    type_fa: "سایت رزرو نوبت پزشکی",
+    href: "https://darmanshirin.dom",
+    image: "/Images/darmanshirin.png",
+    tag: [
+      "Redux",
+      "Next-14",
+      "Pwa",
+      "React-Query",
+      "TypeScript",
+      "Leaflet",
+      "Date-picker",
+      "Tailwind",
+      "Shadcn",
+    ],
+  },
+  {
     name_en: "Jajiga",
     description_fa:
       "سایت ویلایی جاجیگا که در اون میتونید ویلای خودتون رو ثبت و ویلای مورد علاقتون رو رزرو کنید. این پروژه دارای دو پنل کاربر و ادمین هست و دست کمی از سایت اصلی نداره.",
@@ -111,41 +133,41 @@ const projectData: ProjectType[] = [
     image: "/Images/onlyMusic.jpg",
     tag: ["Pure JS", "Api", "DarkMode", "Tailwind", "Videojs"],
   },
-  {
-    name_en: "Todo List",
-    description_fa:
-      "با استفاده از این سایت میتونید اکانت خودتون رو بسازید و کار های روزانه خود را یادداشت و مدیریت کنید و میتونید به صورت دائم، به یادداشت هاتون دسترسی داشته باشید.",
-    description_en:
-      "By using this site, you can create your own account and record and manage your daily tasks, and you can permanently access all your notes.",
-    type_en: "Todo List website",
-    type_fa: "لیست کارهای روزانه",
-    href: "https://todo-list-v2.liara.run/",
-    image: "/Images/todolist.PNG",
-    tag: ["Api", "Json-server", "Mui", "TypeScript", "Formik_Yup", "React"],
-  },
-  {
-    name_en: "Divar",
-    description_fa:
-      "چکیده ای سایت فروشگاهی دیوار که در اون میتونید اکانت بسازید و آگهی ثبت کنید، یا آگهی های شهر خودتون رو چک کنید (رسپانسیو نیست و فقط در دسکتاپ قابل مشاهده هست)",
-    description_en:
-      "Divar website where you can create an account & register an add or check the ads of your city (it is not responsive & can only be seen on the desktop)",
-    type_en: "Shop",
-    type_fa: "سایت دیوار",
-    href: "https://mydivar.liara.run/",
-    image: "/Images/divar.png",
-    tag: ["Pure JS", "Api", "Bootstrap", "swal", "Leaflet"],
-  },
-  {
-    name_en: "Nuxt",
-    description_fa:
-      "این لندینگ پیج Pwa که از سایت nuxt.com الهام گرفته شده، واقعا طرح و انیمیشن های فوقالعاده زیبایی داره و دارای دو تم دارک و لایت هست. پیشنهاد میکنم از دستش ندید!",
-    description_en:
-      "This Pwa landing page, inspired by nuxt.com, has a really beautiful design & animation, & has two themes, dark & light. I suggest you don't miss it!",
-    type_en: "landing page",
-    type_fa: "لندینگ پیج",
-    href: "https://nuxt.iran.liara.run/",
-    image: "/Images/nuxt.PNG",
-    tag: ["Animation", "Bootstrap", "DarkMode", "PWA"],
-  },
+  // {
+  //   name_en: "Todo List",
+  //   description_fa:
+  //     "با استفاده از این سایت میتونید اکانت خودتون رو بسازید و کار های روزانه خود را یادداشت و مدیریت کنید و میتونید به صورت دائم، به یادداشت هاتون دسترسی داشته باشید.",
+  //   description_en:
+  //     "By using this site, you can create your own account and record and manage your daily tasks, and you can permanently access all your notes.",
+  //   type_en: "Todo List website",
+  //   type_fa: "لیست کارهای روزانه",
+  //   href: "https://todo-list-v2.liara.run/",
+  //   image: "/Images/todolist.PNG",
+  //   tag: ["Api", "Json-server", "Mui", "TypeScript", "Formik_Yup", "React"],
+  // },
+  // {
+  //   name_en: "Divar",
+  //   description_fa:
+  //     "چکیده ای سایت فروشگاهی دیوار که در اون میتونید اکانت بسازید و آگهی ثبت کنید، یا آگهی های شهر خودتون رو چک کنید (رسپانسیو نیست و فقط در دسکتاپ قابل مشاهده هست)",
+  //   description_en:
+  //     "Divar website where you can create an account & register an add or check the ads of your city (it is not responsive & can only be seen on the desktop)",
+  //   type_en: "Shop",
+  //   type_fa: "سایت دیوار",
+  //   href: "https://mydivar.liara.run/",
+  //   image: "/Images/divar.png",
+  //   tag: ["Pure JS", "Api", "Bootstrap", "swal", "Leaflet"],
+  // },
+  // {
+  //   name_en: "Nuxt",
+  //   description_fa:
+  //     "این لندینگ پیج Pwa که از سایت nuxt.com الهام گرفته شده، واقعا طرح و انیمیشن های فوقالعاده زیبایی داره و دارای دو تم دارک و لایت هست. پیشنهاد میکنم از دستش ندید!",
+  //   description_en:
+  //     "This Pwa landing page, inspired by nuxt.com, has a really beautiful design & animation, & has two themes, dark & light. I suggest you don't miss it!",
+  //   type_en: "landing page",
+  //   type_fa: "لندینگ پیج",
+  //   href: "https://nuxt.iran.liara.run/",
+  //   image: "/Images/nuxt.PNG",
+  //   tag: ["Animation", "Bootstrap", "DarkMode", "PWA"],
+  // },
 ];
 export default projectData;

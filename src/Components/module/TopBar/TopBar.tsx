@@ -23,7 +23,7 @@ export default function TopBar() {
           height={500}
           src="/Images/pic.jpg"
           className="me-image-2 z-[9999] relative xs:w-60 objec xs:h-64 object-top xs:relative xs:z-50 hidden md:block object-cover w-72 h-80 mx-auto mb-4 rounded-full"
-          alt=""
+          alt="shape"
         />
         <div
           className={`md:text-center sm:w-full xs:mt-8 md:w-full w-max relative text-white font-swap font-extrabold`}
@@ -46,7 +46,7 @@ export default function TopBar() {
                 : " md:right-40 xxs:!right-0  right-2"
             } absolute top-4 md:top-0 w-36  z-10`}
             src="/Images/title.png"
-            alt=""
+            alt="shape"
           />
         </div>
         <p
@@ -75,7 +75,7 @@ export default function TopBar() {
             </Link>
           </div>
 
-          <div className="mx-4 flex items-center gap-2">
+          {/* <div className="mx-4 flex items-center gap-2">
             <span className="text-2xl font-thin text-white font-swap xs:w-[90px]">
               {t("topbar.resume")}
             </span>
@@ -88,7 +88,7 @@ export default function TopBar() {
                 <IoCloudDownloadOutline />
               </button>
             </Link>
-          </div>
+          </div> */}
         </div>
         <Image
           width={317}
@@ -99,7 +99,7 @@ export default function TopBar() {
               : "xs:left-0 TopBar-logo"
           }  absolute xs:w-full`}
           src="/Images/vertical_logo.png"
-          alt=""
+          alt="shape"
         />
         <Image
           width={420}
@@ -110,7 +110,7 @@ export default function TopBar() {
               ? "left-[220px] lg:left-28"
               : "right-[220px] lg:right-28"
           } me-image absolute h-auto  w-[420px] -top-[74px]  md:hidden`}
-          alt=""
+          alt="shape"
         />
         <Image
           width={91}
@@ -121,7 +121,7 @@ export default function TopBar() {
               ? " md:!left-[45%] lg:left-3 left-[97px] "
               : " md:!right-[45%] lg:right-3 right-[97px]"
           } dot-bg md:z-[-1] md:-top-20 top-32 absolute max-w-full h-auto`}
-          alt=""
+          alt="shape"
         />
       </section>
       <div className="flex justify-between items-center">
@@ -137,7 +137,7 @@ export default function TopBar() {
               height={23}
               className="absolute z-50 cursor-pointer w-4 top-0 -left-10"
               src="/Images/scroll.png"
-              alt=""
+              alt="shape"
             />
           </p>
         </Link>

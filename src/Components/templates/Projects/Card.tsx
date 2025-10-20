@@ -21,7 +21,7 @@ const Card = (props: ProjectType) => {
         <p className="text-3xl mt-4 text-white font-swap font-bold ">
           {props.name_en}
         </p>
-        <p className="text-justify sm:w-[100%] mt-3 text-[20px] font-swap w-96  text-[#ababab]">
+        <p className="sm:w-[100%] mt-3 text-[20px] font-swap w-96  text-[#ababab]">
           {i18n.language == "fa" ? props.description_fa : props.description_en}
         </p>
         <div
@@ -72,7 +72,7 @@ const Card = (props: ProjectType) => {
               : " md:ml-16  sm:mr-auto  mr-6"
           } h-auto w-[700px] sm:!mx-auto sm:block sm:!w-[80%] xs:!mx-auto   rounded-md relative z-50`}
           src={props.image}
-          alt=""
+          alt={props.name_en}
         />
       </section>
     </>

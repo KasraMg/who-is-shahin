@@ -1,21 +1,13 @@
-"use client";
-import Header from "../Components/module/Header/Header";
-import Footer from "../Components/module/Footer/Footer";
-import TopBar from "../Components/module/TopBar/TopBar";
-import Intro from "../Components/module/Intro/Intro";
-import Projects from "../Components/module/Projects/Projects";
-import Skills from "../Components/module/Skills/Skills";
-import SoftSkills from "../Components/module/SoftSkills/SoftSkills";
-import AOS from "aos";
+import Header from "../Components/module/header/header";
+import Footer from "../Components/module/footer/footer";
+import TopBar from "../Components/module/topbar/topbar";
+import Intro from "../Components/module/intro/intro";
+import Projects from "../Components/module/projects/projects";
+import Skills from "../Components/module/skills/skills";
+import SoftSkills from "../Components/module/soft-skills/soft-skills";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
-import { initFlowbite } from "flowbite";
 
 export default function Home() {
-  useEffect(() => {
-    AOS.init();
-    initFlowbite();
-  }, []); 
   return (
     <div
       data-aos="fade-down"

@@ -1,9 +1,9 @@
 "use client";
 import React, { useState } from "react";
-import data from "@/utils/skillsData";
-import Card from "@/Components/templates/Skills/Card";
+import data from "@/utils/skills-data";
+import Card from "@/Components/templates/skills/card";
 import i18n from "@/i18n/index";
-import ParticlesComponent from "@/Components/templates/Particles/Particles";
+import ParticlesComponent from "@/Components/templates/particles/particles";
 import { SkillType } from "@/types/Index.types";
 import { useTranslation } from "react-i18next";
 

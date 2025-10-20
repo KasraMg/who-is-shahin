@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
-import projectData from "@/utils/projectsData";
+import projectData from "@/utils/projects-data";
 import { Navigation } from "swiper/modules";
 import i18n from "@/i18n/index";
 import { useTranslation } from "react-i18next";
 import { ProjectType } from "@/types/Index.types.js";
-import Card from "@/Components/templates/Projects/Card";
+import Card from "@/Components/templates/projects/card";
 import Image from "next/image";
 
 export default function Projects() {
@@ -57,7 +57,7 @@ export default function Projects() {
         width={260}
         src="/Images/projectShape.png"
         className="bottom-0 -left-44 absolute"
-        alt=""
+        alt="shape"
       />
     </div>
   );
