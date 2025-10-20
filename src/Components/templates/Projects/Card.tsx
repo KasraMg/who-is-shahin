@@ -41,7 +41,11 @@ const Card = (props: ProjectType) => {
             ))}
           </div>
         </div>
-        <div className={`${i18n.language == "fa" ? 'pl-3' : 'pr-7'} flex xs:w-full xs:justify-center xs:absolute xs:bottom-0 xxs:!-bottom-[2.25rem] items-center mt-5`}>
+        <div
+          className={`${
+            i18n.language == "fa" ? "pl-3" : "pr-7"
+          } flex xs:w-full xs:justify-center xs:absolute xs:bottom-0 xxs:!-bottom-[2.25rem] items-center mt-5`}
+        >
           <p className="text-white font-swap text-2xl">
             {" "}
             {i18n.language == "fa" ? "بریم ببینیم" : "View Live"}
@@ -70,7 +74,7 @@ const Card = (props: ProjectType) => {
             i18n.language == "fa"
               ? " md:mr-16  sm:ml-auto  ml-16"
               : " md:ml-16  sm:mr-auto  mr-6"
-          } h-auto w-[700px] sm:!mx-auto sm:block sm:!w-[80%] xs:!mx-auto   rounded-md relative z-50`}
+          } h-auto w-[700px] sm:!mx-auto sm:block sm:!w-[80%] xs:!mx-auto rounded-md relative z-50`}
           src={props.image}
           alt={props.name_en}
         />

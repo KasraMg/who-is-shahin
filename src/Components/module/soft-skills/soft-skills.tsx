@@ -7,7 +7,7 @@ export default function SoftSkills() {
 
   return (
     <div className='bg-[url(/Images/softBg.jpg)] font-swap relative '>
-     <div className='pt-10 font-swap relative sm:!px-4 sm:!block z-10 items-baseline px-36 gap-6 grid space-y-12 lg:grid-cols-[1fr,1fr] grid-cols-[1fr,1fr,1fr]'>
+     <div className='pt-10 font-swap relative sm:!px-4 sm:!block z-10 items-baseline px-[144px] gap-6 grid space-y-12 lg:grid-cols-[1fr,1fr] grid-cols-[1fr,1fr,1fr]'>
       
       <section className='z-40 h-[200px] font-swap py-8 bg-[#1c1d21] w-full text-center'>
           <Image height={64} width={64} className='w-16 h-16 block mx-auto mb-6' src="/Images/icons8-time-96.png" alt="soft_skill" />

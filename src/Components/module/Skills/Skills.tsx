@@ -14,7 +14,7 @@ export default function Skills() {
   return (
     <div
       id="skills"
-      className="relative border-b-2 sm:border-0 border-red-600 border-solid bg-[#1d192c] pb-40 pt-10"
+      className="relative border-b-2 sm:border-0 border-red-600 border-solid bg-[#1d192c] pb-[160px] pt-10"
     >
       <p className="skills-title font-bold text-[120px]  uppercase sm:text-[80px] xs:!text-[50px] w-full text-center mb-20 ">
         {i18n.language == "fa" ? " تخصص ها" : " my skills"}

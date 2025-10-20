@@ -21,7 +21,7 @@ export default function Footer() {
       <footer
         data-aos-duration="3000"
         id="footer"
-        className="bg-[url(/Images/softBg.jpg)] relative border-t-2 md:bg-repeat-round border-red-600 border-solid pt-16"
+        className="bg-[url(/Images/softBg.jpg)] relative border-t-2 md:bg-repeat-round border-red-600 border-solid pt-[65px]"
       >
         <svg
           aria-hidden="true"

@@ -21,7 +21,7 @@ export default function Projects() {
       data-aos-duration="3000"
       style={{ background: "url(/Images/projectBg.jpg)" }}
       id="projects"
-      className={`relative overflow-hidden border-b-2 border-solid border-red-600 pb-56 pt-36 md:pt-12 !bg-fixed !bg-center `}
+      className={`relative overflow-hidden border-b-2 border-solid border-red-600 pb-56 pt-[244px] md:pt-12 !bg-fixed !bg-center `}
     >
       <div className="bg-[#19182dd9] left-0 top-0 w-full h-full absolute"></div>
       <Swiper

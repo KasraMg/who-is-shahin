@@ -10,7 +10,7 @@ import Link from "next/link";
 import { IoCloudDownloadOutline } from "react-icons/io5";
 
 export default function TopBar() {
-  const { t } = useTranslation();
+  const { t } = useTranslation(); 
   return (
     <div className="topbar bg-[top] bg-fullSize bg-[#1d192c] border-b-2 border-red-600 border-solid xs:pb-20">
       <section

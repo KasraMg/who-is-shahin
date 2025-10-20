@@ -49,7 +49,7 @@ export default function Header() {
             onClick={() => setLanguage(i18next.language == "en" ? "fa" : "en")}
           >
             {i18next.language == "fa" ? "En" : "Fa"}
-            <IoLanguageOutline/>
+            <IoLanguageOutline />
           </p>
 
           <div className={`${isSticky && " !w-[48px]"} relative w-[64px]`}>
@@ -264,7 +264,7 @@ export default function Header() {
           </div>
           <div className="px-2 py-10">
             <ul
-              className="flex flex-col gap-10 font-swap list-none z-30 relative"
+              className="flex flex-col gap-[40px] font-swap list-none z-30 relative"
               data-drawer-hide="drawer-example"
               aria-controls="drawer-example"
             >
