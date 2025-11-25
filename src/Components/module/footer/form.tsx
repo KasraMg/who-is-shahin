@@ -1,8 +1,8 @@
 import i18n from "@/i18n/index";
-import swal from "sweetalert";
 import { Formik } from "formik";
 import { registerSchema, registerSchemaFa } from "@/Validations/rules";
 import { useTranslation } from "react-i18next";
+import { toast } from "sonner";
 
 const Form = () => {
   const { t } = useTranslation();
@@ -14,13 +14,8 @@ const Form = () => {
         i18n.language == "fa" ? registerSchemaFa : registerSchema
       }
       onSubmit={(values, { resetForm }) => {
-        swal({
-          title: i18n.language == "fa" ? "ایمیل ارسال شد  " : "Email Was Send",
-          icon: "success",
-          buttons: i18n.language == "fa" ? "ایول" : (" ok" as any),
-        }).then(() => {
-          resetForm();
-        });
+        toast(i18n.language == "fa" ? "ایمیل ارسال شد  " : "Email Was Send");
+        resetForm();
       }}
     >
       {({

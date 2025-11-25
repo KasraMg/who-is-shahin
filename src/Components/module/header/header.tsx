@@ -12,7 +12,8 @@ export default function Header() {
   const { t } = useTranslation();
   const [isSticky, setIsSticky] = useState<boolean>(false);
   const [language, setLanguage] = useState("en");
-  const drawer = useRef<any>();
+  const drawer = useRef<any>(null);
+  
   useEffect(() => {
     i18n.changeLanguage(language);
     i18n.language == "en"

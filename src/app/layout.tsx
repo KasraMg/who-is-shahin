@@ -2,6 +2,7 @@ import ClientInit from "@/utils/client-init";
 import "./globals.css";
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
+import { Toaster } from "sonner";
 
 const inter = Inter({ subsets: ["latin"], display: "swap" });
 
@@ -39,6 +40,7 @@ export default function RootLayout({
       <body className={inter.className}>
         <ClientInit />
         {children}
+        <Toaster />
       </body>
     </html>
   );
