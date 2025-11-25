@@ -37,9 +37,9 @@ export default function Footer() {
         </svg>
         <p className="text-white text-3xl relative z-[999] font-swap font-extrabold mt-5 text-center">
           {t("footer.footer_title")}
-        </p>
-        <div className="overlay" style={{ background: "#231f33e8" }}></div>
-        <main className="flex  relative z-[999] xs:!pb-4 gap-48 justify-center md:flex-col md:justify-center sm:!px-6 md:px-10 sm:pt-16  lg:gap-20 pt-32 pb-32">
+        </p> 
+        <div className="z-0 absolute top-0 left-0 w-full h-full bg-[#231f33e8]"></div>
+        <main className="flex relative z-[999] xs:!pb-4 gap-48 justify-center md:flex-col md:justify-center sm:!px-6 md:px-10 sm:pt-16  lg:gap-20 pt-32 pb-32">
           <div>
             <p className="text-[#727272] font-extrabold font-swap">
               {t("footer.Linkedin_title")}:

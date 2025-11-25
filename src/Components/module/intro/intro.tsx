@@ -10,7 +10,8 @@ export default function Intro() {
     <div
       data-aos="fade-up"
       data-aos-duration="3000"
-      className={` overflow-hidden  Intro relative   bg-[#1d192c] `}
+      dir="ltr"
+      className={`overflow-hidden relative bg-[#1d192c] `}
       id="me"
     >
       <Image
@@ -20,7 +21,7 @@ export default function Intro() {
         className="lg:bottom-12 absolute bottom-3 left-5"
         alt="shape"
       />
-      <main className="px-[144px] lg:px-12 flex md:!pr-0 sm:!pl-0 border-b-2 sm:border-0 border-red-600 border-solid   sm:flex-col ">
+      <main className="px-[144px] lg:px-12 flex md:!pr-0 sm:!pl-0 border-b-2 sm:border-0 border-red-600 border-solid sm:flex-col">
         <Image
           height={1000}
           width={1000}
@@ -34,7 +35,7 @@ export default function Intro() {
             i18n.language == "fa" && "pr-5"
           } bg-center bg-[url(/Images/about-bg.jpg)] relative`}
         >
-          <div className="overlay"></div>
+          <div className="z-0 absolute top-0 left-0 w-full h-full bg-[#1d192cf0]"></div>
           <div
             className={` ${
               i18n.language == "fa"
@@ -68,7 +69,7 @@ export default function Intro() {
       <Image
         height={1000}
         width={1000}
-        className="intro-shape absolute xs:bottom-32 bottom-0 right-1"
+        className="z-[3] origin-top-right animate-about-shape-move bottom-[30px] absolute xs:bottom-32 max-w-[630px] right-1"
         src="/Images/shape.png"
         alt="shape"
       />

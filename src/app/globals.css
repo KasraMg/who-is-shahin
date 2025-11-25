@@ -43,55 +43,6 @@
     background-color: transparent !important;
   }
 
-  /* TopBar  */
-  .TopBar-logo {
-    left: calc(100% / 6);
-    transform: translateY(-50%);
-  }
-  .TopBar-logo-fa {
-    right: calc(100% / 6);
-    transform: translateY(-50%);
-  }
-  .topbar[dir="rtl"] .TopBar-logo {
-    right: calc(100% / 6) !important;
-  }
-  .scrollDown img {
-    transform: rotate(90deg);
-    transform-origin: center;
-    animation: scroll-down-move 1s ease infinite;
-  }
-
-  .scrollDown {
-    transform: rotate(-90deg) translateX(0px);
-  }
-
-  @-webkit-keyframes scroll-down-move {
-    0% {
-      left: -30px;
-    }
-
-    50% {
-      left: -40px;
-    }
-
-    100% {
-      left: -30px;
-    }
-  }
-
-  @keyframes scroll-down-move {
-    0% {
-      left: -30px;
-    }
-
-    50% {
-      left: -40px;
-    }
-
-    100% {
-      left: -30px;
-    }
-  }
   @keyframes slideDown {
     from {
       transform: translateY(-100%);
@@ -108,47 +59,6 @@
     }
   }
 
-  /* TopBar  */
-
-  .overlay {
-    background: #1d192cf0;
-    z-index: 0;
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-  }
-
-  .intro-shape {
-    z-index: 3;
-    bottom: 30px;
-    max-width: 630px;
-    transform-origin: top right;
-    animation: about-shape-move 8s ease infinite;
-  }
-
-  @keyframes about-shape-move {
-    0% {
-      transform: rotate(0deg);
-    }
-
-    50% {
-      transform: rotate(4deg);
-    }
-
-    100% {
-      transform: rotate(0deg);
-    }
-  }
-
-  .Intro {
-    direction: ltr !important;
-  }
-
-  .dirRtl {
-    direction: rtl !important;
-  }
   /* swiper */
 
   .swiper-button-prev,
@@ -171,14 +81,6 @@
     color: white !important;
     padding: 0.6rem 1rem;
     border-radius: 100%;
-  }
-
-  .projects-title {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #fff6;
-    font-family: "Futura Md BT";
-    transform: rotate(90deg);
   }
 
   @media (max-width: 1200px) {
@@ -235,76 +137,16 @@
 
   /* swiper */
 
-  .skills-title {
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 2px;
-    -webkit-text-stroke-color: #fff6;
-    font-family: "Futura Md BT";
-  }
-
-  .line {
-    background: linear-gradient(
-      to right,
-      rgb(187, 23, 23) 0%,
-      rgba(15, 15, 15, 0) 81%,
-      rgba(0, 0, 0, 0) 100%
-    );
-  }
-
-  .circle {
-    box-shadow: 0 0px 0px 8px #333;
-  }
-
-  .rectengle {
-    background: linear-gradient(
-      to right,
-      rgba(0, 0, 0, 0) 1%,
-      rgba(78, 78, 78, 0.99) 99%,
-      rgba(78, 78, 78, 1) 100%
-    );
-  }
-
-  .Skillsline::after {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 100%;
-    background: #f43534;
-    left: -7px;
-    bottom: 0;
-  }
-
-  .Skillsline::before {
-    content: "";
-    position: absolute;
-    width: 16px;
-    height: 16px;
-    border-radius: 100%;
-    background: #f43534;
-    left: -7px;
-    top: 0;
-  }
-
   /* soft skill */
-  .box {
-    --border-size: 3px;
-    --border-angle: 0turn;
-    background-image: conic-gradient(
-        from var(--border-angle),
-        #1c1d21,
-        #222223 50%,
-        #1c1d21
-      ),
+  .box { 
+    background-image: conic-gradient(from 0turn, #1c1d21, #222223 50%, #1c1d21),
       conic-gradient(
-        from var(--border-angle),
+        from 0turn,
         transparent 20%,
         rgb(58, 63, 67),
         rgb(217, 35, 35)
       );
-    background-size: calc(100% - (var(--border-size) * 2))
-        calc(100% - (var(--border-size) * 2)),
-      cover;
+    background-size: calc(100% - 3px * 2) calc(100% - 3px * 2), cover;
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-animation: bg-spin 3s linear infinite;
@@ -337,7 +179,7 @@
     inherits: true;
     initial-value: 0turn;
   }
-} 
+}
 
 @media (max-width: 500px) {
   .swiper-button-prev,

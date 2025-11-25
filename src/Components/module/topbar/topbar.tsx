@@ -84,11 +84,13 @@ export default function TopBar() {
         <Image
           width={317}
           height={798}
-          className={`${
-            i18n.language == "fa"
-              ? "xs:right-0 TopBar-logo-fa"
-              : "xs:left-0 TopBar-logo"
-          }  absolute xs:w-full`}
+          className={`absolute xs:w-full
+    ${
+      i18n.language === "fa"
+        ? "right-1/6 -translate-y-1/2"
+        : "left-1/6 -translate-y-1/2"
+    }
+  `}
           src="/Images/vertical_logo.png"
           alt="shape"
         />
@@ -124,12 +126,12 @@ export default function TopBar() {
           onClick={() => window.scrollTo(500, 7900)}
           className={`z-50 cursor-pointer xs:hidden`}
         >
-          <p className="scrollDown text-white ">
+          <p className="text-white relative -rotate-90 translate-x-0">
             {t("topbar.scroll")}{" "}
             <Image
               width={16}
               height={23}
-              className="absolute z-50 cursor-pointer w-4 top-0 -left-10"
+              className="absolute z-50 cursor-pointer w-4 top-0 origin-center rotate-90 animate-scroll-down-move"
               src="/Images/scroll.png"
               alt="shape"
             />

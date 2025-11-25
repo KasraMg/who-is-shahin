@@ -35,9 +35,8 @@ export default function Projects() {
           projects.map((data: ProjectType) => (
             <SwiperSlide
               key={crypto.randomUUID()}
-              className={` ${
-                i18n.language == "fa" ? "dirRtl" : null
-              } !flex md:flex-col-reverse  justify-between gap-8 bg-transparent `}
+              dir={i18n.language == "fa" ? "rtl" : "ltr"}
+              className={`!flex md:flex-col-reverse  justify-between gap-8 bg-transparent `}
             >
               <Card {...data} />
             </SwiperSlide>
@@ -48,7 +47,7 @@ export default function Projects() {
           i18n.language == "fa"
             ? "!font-vazir xl:text-[180px] md:text-[130px] md:!-left-28 text-[150px] lg:bottom-[44%] lg:left-[5.5rem] bottom-[37%] left-60"
             : "bottom-[42%] text-[120px] md:!-right-48 lg:right-12 right-52"
-        } projects-title sm:hidden font-bold uppercase absolute`}
+        }   rotate-90 font-futura text-fill-transparent text-stroke sm:hidden font-bold uppercase absolute`}
       >
         {t("projects.title")}
       </p>

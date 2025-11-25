@@ -5,18 +5,16 @@ import Card from "@/Components/templates/skills/card";
 import i18n from "@/i18n/index";
 import ParticlesComponent from "@/Components/templates/particles/particles";
 import { SkillType } from "@/types/Index.types";
-import { useTranslation } from "react-i18next";
 
 export default function Skills() {
   const [skills, setSkill] = useState(data);
-  const { t } = useTranslation();
 
   return (
     <div
       id="skills"
       className="relative border-b-2 sm:border-0 border-red-600 border-solid bg-[#1d192c] pb-[160px] pt-10"
     >
-      <p className="skills-title font-bold text-[120px]  uppercase sm:text-[80px] xs:!text-[50px] w-full text-center mb-20 ">
+      <p className="font-futura text-fill-transparent text-stroke font-bold text-[120px] uppercase sm:text-[80px] xs:!text-[50px] w-full text-center mb-20 ">
         {i18n.language == "fa" ? " تخصص ها" : " my skills"}
       </p>
       <div className=" relative h-full">
@@ -40,7 +38,13 @@ export default function Skills() {
         </main>
 
         <ParticlesComponent />
-        <span className="Skillsline block w-[2px] xs:h-[101%] h-full bg-[#f43534] absolute left-1/2 -ml-[1px] -top-10"></span>
+        <span
+          className="
+        before:absolute before:content-[''] before:w-4 before:h-4 before:rounded-full before:bg-[#f43534] before:left-[-7px] before:top-0
+        after:absolute after:content-[''] after:w-4 after:h-4 after:rounded-full after:bg-[#f43534] after:left-[-7px] after:bottom-0
+        
+        block w-[2px] xs:h-[101%] h-full bg-[#f43534] absolute left-1/2 -ml-[1px] -top-10"
+        ></span>
       </div>
     </div>
   );
