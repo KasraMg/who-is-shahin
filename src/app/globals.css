@@ -4,16 +4,19 @@
 
 @layer base {
   @font-face {
+    font-display: swap;
     font-family: Swap;
-    src: url("../../public/Fonts/Quicksand-Regular.ttf");
+    src: url("./assets/Fonts/Quicksand-Regular.ttf");
   }
   @font-face {
+    font-display: swap;
     font-family: Vazir;
-    src: url("../../public/Fonts/vazir/Vazir-Medium.woff2");
+    src: url("./assets/Fonts/vazir/Vazir-Medium.woff2");
   }
   @font-face {
+    font-display: swap;
     font-family: VazirLight;
-    src: url("../../public/Fonts/vazir/Vazir-Light.woff");
+    src: url("./assets/Fonts/vazir/Vazir-Light.woff");
   }
 }
 

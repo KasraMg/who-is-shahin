@@ -1,16 +1,13 @@
 "use client";
 import React from "react";
-import { Formik } from "formik";
-import { registerSchema, registerSchemaFa } from "@/Validations/rules";
 import { BsArrowRight, BsDiscord, BsGithub } from "react-icons/bs";
 import { BiLogoTelegram } from "react-icons/bi";
 import { AiOutlineInstagram } from "react-icons/ai";
-import i18n from "@/i18n/index";
 import { useTranslation } from "react-i18next";
 import Link from "next/link";
-import swal from "sweetalert";
 import "leaflet/dist/images/marker-shadow.png";
 import dynamic from "next/dynamic";
+import Form from "./form";
 
 const Map = dynamic(() => import("../../templates/map/map"), { ssr: false });
 export default function Footer() {
@@ -66,93 +63,7 @@ export default function Footer() {
               09046417084
             </p>
           </div>
-          <Formik
-            initialValues={{ name: "", email: "", message: "" }}
-            validationSchema={
-              i18n.language == "fa" ? registerSchemaFa : registerSchema
-            }
-            onSubmit={(values, { setSubmitting, resetForm }) => {
-              swal({
-                title:
-                  i18n.language == "fa" ? "ایمیل ارسال شد  " : "Email Was Send",
-                icon: "success",
-                buttons: i18n.language == "fa" ? "ایول" : (" ok" as any),
-              }).then((res) => {
-                resetForm();
-              });
-            }}
-          >
-            {({
-              values,
-              errors,
-              touched,
-              handleBlur,
-              handleChange,
-              handleSubmit,
-              isSubmitting,
-            }) => (
-              <form onSubmit={handleSubmit}>
-                <section className="grid font-swap gap-6">
-                  <label className="text-[#727272]" htmlFor="">
-                    {t("footer.lable1")} *
-                  </label>
-                  <input
-                    type="text"
-                    name="name"
-                    value={values.name}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    className="bg-transparent focus-visible:outline-0 w-[460px] md:w-full text-[#fff] rounded pt-[14px] pb-4 border-solid border-b-2 border-[#333]"
-                    placeholder={t("footer.placeHolder1")}
-                  />
-                  {touched.name && errors.name && (
-                    <span className="text-red-600">{errors.name}</span>
-                  )}
-                </section>
-                <section className="grid font-swap gap-6 my-8">
-                  <label className="text-[#727272]" htmlFor="">
-                    {t("footer.lable2")} *
-                  </label>
-                  <input
-                    type="email"
-                    name="email"
-                    value={values.email}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    className="bg-transparent focus-visible:outline-0 w-[460px] md:w-full text-[#fff] rounded pt-[14px] pb-4 border-solid border-b-2 border-[#333]"
-                    placeholder={t("footer.placeHolder2")}
-                  />
-                  {touched.email && errors.email && (
-                    <span className="text-red-600">{errors.email}</span>
-                  )}
-                </section>
-                <section className="grid font-swap gap-6">
-                  <label className="text-[#727272]" htmlFor="">
-                    {t("footer.lable3")} *
-                  </label>
-                  <input
-                    name="message"
-                    value={values.message}
-                    onChange={handleChange}
-                    onBlur={handleBlur}
-                    type="text"
-                    className="bg-transparent focus-visible:outline-0 w-[460px] md:w-full text-[#fff] rounded pt-[14px] pb-4 border-solid border-b-2 border-[#333]"
-                    placeholder={t("footer.placeHolder3")}
-                  />
-                  {touched.message && errors.message && (
-                    <span className="text-red-600">{errors.message}</span>
-                  )}
-                </section>
-
-                <button
-                  type="submit"
-                  className={`disabled:opacity-50 bg-red-600 rounded-md md:w-full font-swap text-white py-2 mt-8  px-6`}
-                >
-                  {t("footer.button")}
-                </button>
-              </form>
-            )}
-          </Formik>
+          <Form />
         </main>
         <div className="flex xs:!px-6 sm:!px-5 lg:px-16 md:gap-20 relative gap-48 justify-center md:flex-col md:justify-center pt-4  py-20 ">
           <div className="z-50  pl-10 lg:pl-8 md:!pl-0 w-[330px] md:flex md:justify-between md:w-full">
@@ -181,16 +92,29 @@ export default function Footer() {
           <Link
             href="https://instagram.com/_ka.s.ra_?igshid=ZDc4ODBmNjlmNQ=="
             target="_blank"
+            aria-label="instagram"
           >
             <AiOutlineInstagram />
           </Link>
-          <Link href="https://t.me/MrShahiin" target="_blank">
+          <Link
+            aria-label="telegram"
+            href="https://t.me/MrShahiin"
+            target="_blank"
+          >
             <BiLogoTelegram />
           </Link>
-          <Link href="https://github.com/KasraMg" target="_blank">
+          <Link
+            aria-label="github"
+            href="https://github.com/KasraMg"
+            target="_blank"
+          >
             <BsGithub />
           </Link>
-          <Link href="https://discord.com/users/shahin#6613" target="_blank">
+          <Link
+            aria-label="discord"
+            href="https://discord.com/users/shahin#6613"
+            target="_blank"
+          >
             <BsDiscord />
           </Link>
         </div>

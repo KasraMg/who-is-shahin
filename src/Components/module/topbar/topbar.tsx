@@ -1,16 +1,15 @@
 "use client";
 import { BsDiscord, BsGithub } from "react-icons/bs";
 import { BiLogoTelegram } from "react-icons/bi";
-import { HiArrowLongDown, HiArrowLongRight } from "react-icons/hi2";
+import { HiArrowLongRight } from "react-icons/hi2";
 import { AiOutlineInstagram } from "react-icons/ai";
 import { useTranslation } from "react-i18next";
 import Image from "next/image";
 import i18n from "@/i18n/index";
 import Link from "next/link";
-import { IoCloudDownloadOutline } from "react-icons/io5";
 
 export default function TopBar() {
-  const { t } = useTranslation(); 
+  const { t } = useTranslation();
   return (
     <div className="topbar bg-[top] bg-fullSize bg-[#1d192c] border-b-2 border-red-600 border-solid xs:pb-20">
       <section
@@ -19,11 +18,14 @@ export default function TopBar() {
         } px-36 relative z-20 xs:overflow-hidden pb-[70px] lg:px-10 pt-28 md:pt-10`}
       >
         <Image
-          width={500}
-          height={500}
+          width={240}
+          height={256}
+          loading="eager"
+          fetchPriority="high"
+          priority
           src="/Images/pic.jpg"
           className="me-image-2 z-[9999] relative xs:w-60 objec xs:h-64 object-top xs:relative xs:z-50 hidden md:block object-cover w-72 h-80 mx-auto mb-4 rounded-full"
-          alt="shape"
+          alt="شاهین مشکل گشا"
         />
         <div
           className={`md:text-center sm:w-full xs:mt-8 md:w-full w-max relative text-white font-swap font-extrabold`}
@@ -46,7 +48,7 @@ export default function TopBar() {
                 : " md:right-40 xxs:!right-0  right-2"
             } absolute top-4 md:top-0 w-36  z-10`}
             src="/Images/title.png"
-            alt="shape"
+            alt="شاهین مشکل گشا"
           />
         </div>
         <p
@@ -68,27 +70,16 @@ export default function TopBar() {
             <span className="text-2xl font-thin text-white font-swap xs:w-[90px]">
               {t("topbar.hire")}
             </span>
-            <Link href="#footer" className="z-[999] relative">
+            <Link
+              aria-label={i18n.language == "fa" ? "گپ بزنیم" : "Hire Me"}
+              href="#footer"
+              className="z-[999] relative"
+            >
               <button className="bg-red-600 text-2xl relative top-1 rounded-full p-4 text-white">
                 <HiArrowLongRight />
               </button>
             </Link>
           </div>
-
-          {/* <div className="mx-4 flex items-center gap-2">
-            <span className="text-2xl font-thin text-white font-swap xs:w-[90px]">
-              {t("topbar.resume")}
-            </span>
-            <Link
-              href="/shahinMoshkelGosha.pdf"
-              download
-              className="z-[999] relative"
-            >
-              <button className="bg-red-600 text-2xl relative top-1 rounded-full p-4 text-white">
-                <IoCloudDownloadOutline />
-              </button>
-            </Link>
-          </div> */}
         </div>
         <Image
           width={317}
@@ -104,6 +95,9 @@ export default function TopBar() {
         <Image
           width={420}
           height={100}
+          loading="eager"
+          fetchPriority="high"
+          priority
           src="/Images/shomal2.jpg"
           className={`${
             i18n.language == "fa"
@@ -149,16 +143,29 @@ export default function TopBar() {
           <Link
             href="https://instagram.com/_ka.s.ra_?igshid=ZDc4ODBmNjlmNQ=="
             target="_blank"
+            aria-label="instagram"
           >
             <AiOutlineInstagram className="ml-auto mr-7 xs:mx-auto" />
           </Link>
-          <Link href="https://t.me/MrShahiin" target="_blank">
+          <Link
+            aria-label="telegram"
+            href="https://t.me/MrShahiin"
+            target="_blank"
+          >
             <BiLogoTelegram className="ml-auto mr-7 xs:mx-auto" />
           </Link>
-          <Link href="https://github.com/KasraMg" target="_blank">
+          <Link
+            aria-label="github"
+            href="https://github.com/KasraMg"
+            target="_blank"
+          >
             <BsGithub className="ml-auto mr-7 xs:mx-auto" />
           </Link>
-          <Link href="https://discord.com/users/shahin#6613" target="_blank">
+          <Link
+            aria-label="discord"
+            href="https://discord.com/users/shahin#6613"
+            target="_blank"
+          >
             <BsDiscord className="ml-auto mr-7 xs:mx-auto" />
           </Link>
         </div>

@@ -24,8 +24,8 @@ export default function Intro() {
         <Image
           height={1000}
           width={1000}
-          src="/Images/pic2.png"
-          className="w-80 sm:!block sm:object-cover sm:!w-full xs:!h-[300px] sm:h-[430px] sm:rounded-none md:hidden object-cover lg:w-72 rounded-l-[20rem] relative z-30"
+          src={"/Images/code.jpeg"}
+          className="w-80 sm:!border-l-0 border-l border-white sm:!block sm:object-cover sm:!w-full xs:!h-[300px] sm:h-[430px] sm:rounded-none md:hidden object-cover lg:w-72 rounded-l-[20rem] relative z-30"
           alt="شاهین مشکل گشا"
         />
         <section
