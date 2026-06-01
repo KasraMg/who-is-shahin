@@ -46,7 +46,7 @@ const Form = () => {
               value={values.name}
               onChange={handleChange}
               onBlur={handleBlur}
-              className="bg-transparent focus-visible:outline-0 w-[460px] md:w-full text-[#fff] rounded pt-[14px] pb-4 border-solid border-gray-400"
+              className="bg-transparent focus-visible:outline-0 w-[460px] min-w-[270px] lg:w-full text-[#fff] rounded pt-[14px] pb-4 border-solid border-gray-400"
               placeholder={t("footer.placeHolder1")}
             />
             {touched.name && errors.name && (
@@ -63,7 +63,7 @@ const Form = () => {
               value={values.email}
               onChange={handleChange}
               onBlur={handleBlur}
-              className="bg-transparent focus-visible:outline-0 w-[460px] md:w-full text-[#fff] rounded pt-[14px] pb-4 border-solid border-gray-400"
+              className="bg-transparent focus-visible:outline-0 w-[460px] min-w-[270px] lg:w-full text-[#fff] rounded pt-[14px] pb-4 border-solid border-gray-400"
               placeholder={t("footer.placeHolder2")}
             />
             {touched.email && errors.email && (
@@ -80,7 +80,7 @@ const Form = () => {
               onChange={handleChange}
               onBlur={handleBlur}
               type="text"
-              className="bg-transparent focus-visible:outline-0 w-[460px] md:w-full text-[#fff] rounded pt-[14px] pb-4 border-solid border-gray-400"
+              className="bg-transparent focus-visible:outline-0 w-[460px] min-w-[270px] lg:w-full text-[#fff] rounded pt-[14px] pb-4 border-solid border-gray-400"
               placeholder={t("footer.placeHolder3")}
             />
             {touched.message && errors.message && (

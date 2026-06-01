@@ -40,12 +40,12 @@
     "@types/aos": "^3.0.7",
     "@types/node": "latest",
     "@types/react": "latest",
-    "@types/react-dom": "latest",
-    "autoprefixer": "latest",
-    "eslint": "latest",
-    "eslint-config-next": "latest",
+    "react-dom": "18.3.1",
+    "autoprefixer": "^10.4.14",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "14.2.13",
     "postcss": "latest",
-    "tailwindcss": "latest",
+    "tailwindcss": "^3.3.2",
     "typescript": "latest"
   }
 }

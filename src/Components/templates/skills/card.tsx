@@ -1,14 +1,17 @@
 "use client";
 import { SkillType } from "@/types/Index.types";
-import i18n from "@/i18n/index";
+import { useTranslation } from "react-i18next";
 export default function Card(props: SkillType) {
+  const { i18n } = useTranslation();
+
   return (
     <div
+      key={i18n.language}
       dir={i18n.language == "fa" ? "rtl" : "ltr"}
       className="relative md:!w-3/4 md:mx-auto items-stretch md:z-[888] border-[#26272d] border-solid border-2 xs:px-4  pb-5 pt-4 px-8 rounded-md mb-12 bg-[#1c1d21] lg:w-[377px] w-[535px]"
     >
       <div className="font-swap text-3xl text-white flex gap-2">
-        <p className="relative z-40 top-[2px]">{props.name}</p>
+        <p className="relative z-40 top-[2px] whitespace-nowrap">{props.name}</p>
         <span className="bg-[linear-gradient(to_right,_#bb1717_0%,_#0f0f0f00_81%,_#00000000_100%)] block relative top-[20px] ml-8 h-[2px] w-full"></span>
       </div>
       <p
@@ -16,7 +19,7 @@ export default function Card(props: SkillType) {
           i18n.language == "fa" ? "font-vazirlight" : "font-swap"
         }  text-1xl text-white mt-4 xs:mt-5 text-[15px]`}
       >
-        {i18n.language !== "en" ? props.des_fa : props.des_en}
+        {i18n.language == "fa" ? props.des_fa : props.des_en}
       </p>
       <div
         className={

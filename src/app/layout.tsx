@@ -1,10 +1,8 @@
 import ClientInit from "@/utils/client-init";
+// @ts-ignore
 import "./globals.css";
-import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import type { Metadata } from "next"; 
 import { Toaster } from "sonner";
-
-const inter = Inter({ subsets: ["latin"], display: "swap" });
 
 export const metadata: Metadata = {
   title: "shahin moshkelgosha | front end developer",
@@ -37,7 +35,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={""}>
         <ClientInit />
         {children}
         <Toaster />

@@ -12,6 +12,20 @@ export default function TopBar() {
   const { t } = useTranslation();
   return (
     <div className="topbar bg-[top] bg-fullSize bg-[#1d192c] border-b-2 border-red-600 border-solid xs:pb-20">
+      <Image
+        width={420}
+        height={100}
+        loading="eager"
+        fetchPriority="high"
+        priority
+        src="/Images/20251129_153252(1)(1).jpg"
+        className={`${
+          i18n.language == "fa"
+            ? "left-[220px] lg:left-28"
+            : "right-[220px] lg:right-28"
+        } me-image absolute h-auto xl:!w-[420px] w-[350px] top-24 rounded-[100px] md:hidden`}
+        alt="شاهین مشکل گشا"
+      />
       <section
         className={`${
           i18n.language == "fa" ? null : "pl-44"
@@ -23,19 +37,20 @@ export default function TopBar() {
           loading="eager"
           fetchPriority="high"
           priority
-          src="/Images/pic.jpg"
-          className="me-image-2 z-[9999] relative xs:w-60 objec xs:h-64 object-top xs:relative xs:z-50 hidden md:block object-cover w-72 h-80 mx-auto mb-4 rounded-full"
+          src="/Images/20251129_153252(1)(1).jpg"
+          className="me-image-2 z-[9999] relative xs:w-60 objec xs:h-64 object-none object-[-1px,-50px] xs:relative xs:z-50 hidden md:block  w-72 h-80 mx-auto mb-4 rounded-full"
           alt="شاهین مشکل گشا"
         />
         <div
           className={`md:text-center sm:w-full xs:mt-8 md:w-full w-max relative text-white font-swap font-extrabold`}
         >
           <p
+            id="name"
             className={`${
               i18n.language == "fa"
-                ? "text-[7rem] mt-4 leading-[1]"
-                : "text-9xl"
-            }  text-9xl xxs:!text-[23px] sm:mx-auto  md:text-6xl z-20 relative`}
+                ? "text-[4rem] mt-4 leading-[1]"
+                : "text-[5rem]"
+            } text-9xl sm:mx-auto md:text-6xl xs:!text-3xl z-20 relative`}
           >
             {t("topbar.title")}
           </p>
@@ -44,9 +59,9 @@ export default function TopBar() {
             height={106}
             className={`${
               i18n.language == "fa"
-                ? "md:left-40 xxs:!left-0  left-10"
-                : " md:right-40 xxs:!right-0  right-2"
-            } absolute top-4 md:top-0 w-36  z-10`}
+                ? "md:left-40 xxs:!-left-20 left-10"
+                : " md:right-40 xxs:!-right-20 right-2"
+            } absolute xxs:!hidden top-4 md:top-0 w-36 z-10`}
             src="/Images/title.png"
             alt="شاهین مشکل گشا"
           />
@@ -56,7 +71,7 @@ export default function TopBar() {
             i18n.language == "fa"
               ? " !font-vazirlight font-thin  relative "
               : " font-swap"
-          } text-5xl md:text-3xl md:text-center top-4 md:w-full mt-4 w-max relative  xs:!text-2xl text-white font-extrabold z-10`}
+          } text-5xl lg:text-3xl md:text-center top-4 md:w-full mt-4 w-max relative xs:!text-2xl text-white font-extrabold z-10`}
         >
           {" "}
           {t("topbar.myJob")}
@@ -81,7 +96,7 @@ export default function TopBar() {
             </Link>
           </div>
         </div>
-        <Image
+        {/* <Image
           width={317}
           height={798}
           className={`absolute xs:w-full
@@ -93,21 +108,8 @@ export default function TopBar() {
   `}
           src="/Images/vertical_logo.png"
           alt="shape"
-        />
-        <Image
-          width={420}
-          height={100}
-          loading="eager"
-          fetchPriority="high"
-          priority
-          src="/Images/shomal2.jpg"
-          className={`${
-            i18n.language == "fa"
-              ? "left-[220px] lg:left-28"
-              : "right-[220px] lg:right-28"
-          } me-image absolute h-auto  w-[420px] -top-[74px]  md:hidden`}
-          alt="shape"
-        />
+        /> */}
+
         <Image
           width={91}
           height={100}

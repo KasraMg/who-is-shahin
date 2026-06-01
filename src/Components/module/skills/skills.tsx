@@ -7,7 +7,7 @@ import ParticlesComponent from "@/Components/templates/particles/particles";
 import { SkillType } from "@/types/Index.types";
 
 export default function Skills() {
-  const [skills, setSkill] = useState(data);
+  const [skills, _setSkill] = useState(data);
 
   return (
     <div
@@ -25,13 +25,13 @@ export default function Skills() {
           className="skills-main z-[9999] relative flex justify-evenly mx-auto w-full md:flex-col max-w-[1346px] "
         >
           <div>
-            {skills.slice(0, 6).map((data: SkillType) => (
+            {skills.slice(0, 7).map((data: SkillType) => (
               <Card key={crypto.randomUUID()} {...data} />
             ))}
           </div>
 
           <div className=" md:mt-0 mt-28">
-            {skills.slice(6, 11).map((data: SkillType) => (
+            {skills.slice(7, 14).map((data: SkillType) => (
               <Card key={crypto.randomUUID()} {...data} />
             ))}
           </div>
