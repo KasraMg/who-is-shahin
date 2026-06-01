@@ -32,7 +32,7 @@ const projectData: ProjectType[] = [
       "Darman Shirin, online doctor appointments throughout Iran. Using this site, make an appointment with the doctor or medical center of your choice.",
     type_en: "Medical site",
     type_fa: "سایت رزرو نوبت پزشکی",
-    href: "https://darmanshirin.dom",
+    href: "https://darmanshirin.com",
     image: "/Images/darmanshirin.png",
     tag: [
       "Redux",
