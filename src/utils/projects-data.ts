@@ -2,6 +2,29 @@ import { ProjectType } from "@/types/Index.types";
 
 const projectData: ProjectType[] = [
   {
+    name_en: "Imteb",
+    description_fa:
+      "وقتی به راهنمایی تخصصی نیاز داری، آیم‌طب کنارته!، ارائه خدمات تخصصی روانشناسی و روانپزشکی ویژه کاربران ،کلینیک های روانشناسی و سازمان ها ی دولتی و خصوصی.",
+    description_en:
+      "Need expert guidance? Imteb is here for you! Offering specialized psychological & psychiatric services for users, clinics, & organizations (public & private).",
+    type_en: "Psychology site",
+    type_fa: "سایت رزرو نوبت پزشکی",
+    href: "https://imteb.com",
+    image: "/Images/imteb.png",
+    tag: [
+      "Monorepo",
+      "Next-15",
+      "React-hook-form",
+      "React-Query",
+      "TypeScript",
+      "Leaflet",
+      "Date-picker",
+      "Axios",
+      "Tailwind",
+      "Shadcn",
+    ],
+  },
+  {
     name_en: "Darman shirin",
     description_fa:
       "درمان شیرین، نوبت‌دهی اینترنتی و آنلاین پزشکان در سرتاسر ایران. با استفاده از این سایت، سه سوت نوبت دکتر یا مراکز درمانی مد نظرتو بگیر!",
@@ -13,7 +36,7 @@ const projectData: ProjectType[] = [
     image: "/Images/darmanshirin.png",
     tag: [
       "Redux",
-      "Next-14",
+      "Next-16",
       "Pwa",
       "React-Query",
       "TypeScript",
