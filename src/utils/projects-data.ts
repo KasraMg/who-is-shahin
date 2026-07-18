@@ -54,7 +54,7 @@ const projectData: ProjectType[] = [
       "Jajiga is where you can register your villa & book your favorite villa. This project has two user & admin panels & it is not much different from the main site.",
     type_en: "Villa reservation site",
     type_fa: "سایت رزرو ویلا",
-    href: "https://jajiga.liara.run/",
+    href: "https://jajiiga.liara.run/",
     image: "/Images/jajiga.jpg",
     tag: [
       "Zustand",
@@ -66,6 +66,27 @@ const projectData: ProjectType[] = [
       "Date-picker",
       "Tailwind",
       "Shadcn",
+    ],
+  },
+  {
+    name_en: "Homano",
+    description_fa:
+      "فروشگاه آنلاین فول‌استک توسعه‌داده‌شده با React و Express. این پروژه از React Query برای مدیریت داده‌ها، Redis برای کش، Zod برای اعتبارسنجی، Zustand برای...",
+    description_en:
+      "A full-stack e-commerce application built with React & Node.js (Express). The project leverages React Query for management, Redis for caching, Zod for data validation, and Zustand for...",
+    type_en: "Online shopping site",
+    type_fa: "سایت خرید کالا",
+    href: "https://homano.liara.run/",
+    image: "/Images/homano.png",
+    tag: [
+      "Express",
+      "Redis",
+      "React",
+      "React-Query",
+      "Tailwind",
+      "Zod",
+      "Zustand",
+      "TypeScript",
     ],
   },
   {
@@ -144,18 +165,18 @@ const projectData: ProjectType[] = [
     image: "/Images/fixedFloat.PNG",
     tag: ["Api", "Bootstrap", "Formik_Yup", "React"],
   },
-  {
-    name_en: "OnlyMusic",
-    description_fa:
-      "با استفاده از این سایت میتونید انواع اهنگ ها و موزیک ویدیو هارو دانلود، و در پنلتون پلی لیست های متفاوت بسازید و حالشو ببرید. همچنین میتونید به متن آهنگ ها دسترسی داشته باشید",
-    description_en:
-      "On this site you can download all kinds of songs & music videos, & create different playlists in your panel & enjoy it. You can also access the lyrics of the songs",
-    type_en: "Music website",
-    type_fa: "سایت موزیک",
-    href: "https://onlymusic2024.netlify.app/",
-    image: "/Images/onlyMusic.jpg",
-    tag: ["Pure JS", "Api", "DarkMode", "Tailwind", "Videojs"],
-  },
+  // {
+  //   name_en: "OnlyMusic",
+  //   description_fa:
+  //     "با استفاده از این سایت میتونید انواع اهنگ ها و موزیک ویدیو هارو دانلود، و در پنلتون پلی لیست های متفاوت بسازید و حالشو ببرید. همچنین میتونید به متن آهنگ ها دسترسی داشته باشید",
+  //   description_en:
+  //     "On this site you can download all kinds of songs & music videos, & create different playlists in your panel & enjoy it. You can also access the lyrics of the songs",
+  //   type_en: "Music website",
+  //   type_fa: "سایت موزیک",
+  //   href: "https://onlymusic2024.netlify.app/",
+  //   image: "/Images/onlyMusic.jpg",
+  //   tag: ["Pure JS", "Api", "DarkMode", "Tailwind", "Videojs"],
+  // },
   // {
   //   name_en: "Todo List",
   //   description_fa:

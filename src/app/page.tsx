@@ -1,10 +1,10 @@
-import Header from "../Components/module/header/header";
-import Footer from "../Components/module/footer/footer";
-import TopBar from "../Components/module/topbar/topbar";
-import Intro from "../Components/module/intro/intro";
-import Projects from "../Components/module/projects/projects";
-import Skills from "../Components/module/skills/skills";
-import SoftSkills from "../Components/module/soft-skills/soft-skills";
+import Header from "../components/module/header/header";
+import Footer from "../components/module/footer/footer";
+import TopBar from "../components/module/topbar/topbar";
+import Intro from "../components/module/intro/intro";
+import Projects from "../components/module/projects/projects";
+import Skills from "../components/module/skills/skills";
+import SoftSkills from "../components/module/soft-skills/soft-skills";
 // @ts-ignore
 import "aos/dist/aos.css";
 
