@@ -76,7 +76,7 @@ const projectData: ProjectType[] = [
       "A full-stack e-commerce application built with React & Node.js (Express). The project leverages React Query for management, Redis for caching, Zod for data validation, and Zustand for...",
     type_en: "Online shopping site",
     type_fa: "سایت خرید کالا",
-    href: "https://homano.liara.run/",
+    href: "https://homano.vercel.app",
     image: "/Images/homano.png",
     tag: [
       "Express",
