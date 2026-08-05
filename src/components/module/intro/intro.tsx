@@ -21,7 +21,7 @@ export default function Intro() {
         className="lg:bottom-12 absolute bottom-3 left-5"
         alt="shape"
       />
-      <main className="px-[144px] lg:px-12 flex md:!pr-0 sm:!pl-0 border-b-2 sm:border-0 border-red-600 border-solid sm:flex-col">
+      <main className="px-[144px] gap-2 lg:px-12 flex md:!pr-0 sm:!pl-0 border-b-2 sm:border-0 border-red-600 border-solid sm:flex-col">
         <Image
           height={1000}
           width={1000}
@@ -49,13 +49,13 @@ export default function Intro() {
           <div
             className={`${
               i18n.language == "fa"
-                ? " mr-auto ml-5 font-vazirlight font-thin"
-                : "font-swap ml-auto mr-2"
-            }  w-80  leading-10 text-[22px] xs:!w-full xs:px-5 mix-blend-difference relative z-30  mt-16 text-justify text-white`}
+                ? " mr-auto ml-6 font-vazirlight font-thin"
+                : "font-swap ml-auto mr-6"
+            }  w-80 tracking-[-1px] leading-10 text-[22px] xs:!w-full xs:px-5 mix-blend-difference relative z-30  mt-16 text-justify text-white`}
           >
             {" "}
             {t("intro.text2")}{" "}
-            <p className="text-red-600 !text-base mt-3"> {t("intro.text3")}</p>
+            {/* <p className="text-red-600 !text-base mt-3"> {t("intro.text3")}</p> */}
           </div>
         </section>
         <Image

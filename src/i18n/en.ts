@@ -16,9 +16,9 @@ const en = {
   },
   intro: {
     text1:
-      "Frontend Developer with over 4 years of experience in designing and developing websites using modern technologies such as React, Next.js, and TypeScript.",
+      "Front-End Developer with 4+ years of experience in designing & developing modern projects using React, Next.js, TypeScrip, Express.js & Nest.js.",
     text2:
-      "I pay great attention to details & coding standards, striving to deliver the best possible results in my projects, both technically & in terms of user experience ",
+      "Familiar with performance optimization, Technical SEO, CI/CD practices, and building scalable applications. Passionate about solving complex challenges and creating high-quality products.",
     text3: "Tackling difficult challenges & finding appropriate & creative solutions for them is one of my favorite aspects of work.",
   },
 

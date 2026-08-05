@@ -50,7 +50,7 @@ export default function TopBar() {
               i18n.language == "fa"
                 ? "text-[4rem] mt-4 leading-[1]"
                 : "text-[5rem]"
-            } text-9xl sm:mx-auto md:text-6xl xs:!text-3xl z-20 relative`}
+            } [text-shadow:-1px_-2px_black] text-9xl sm:mx-auto md:text-6xl xs:!text-3xl z-20 relative`}
           >
             {t("topbar.title")}
           </p>

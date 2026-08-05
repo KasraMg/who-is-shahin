@@ -65,7 +65,7 @@ export default function Footer() {
           </div>
           <Form />
         </main>
-        <div className="flex xs:!px-6 sm:!px-5 lg:px-16 md:gap-20 relative gap-48 justify-center md:flex-col md:justify-center pt-4  py-20 ">
+        {/* <div className="flex xs:!px-6 sm:!px-5 lg:px-16 md:gap-20 relative gap-48 justify-center md:flex-col md:justify-center pt-4  py-20 ">
           <div className="z-50  pl-10 lg:pl-8 md:!pl-0 w-[330px] md:flex md:justify-between md:w-full">
             <div>
               <p className="text-[#727272] font-extrabold font-swap">
@@ -84,7 +84,7 @@ export default function Footer() {
             </div>
           </div>
           <Map />
-        </div>
+        </div> */}
       </footer>
       <section className="flex sm:flex-col-reverse sm:px-2 sm:text-center sm:text-[13px] justify-between px-12 border-solid border-t-2 border-white py-5 bg-[#16171b]">
         <p className="text-white font-swap sm:mt-3"> {t("footer.last_text")}</p>
