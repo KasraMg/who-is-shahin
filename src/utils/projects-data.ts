@@ -54,7 +54,7 @@ const projectData: ProjectType[] = [
       "Jajiga is where you can register your villa & book your favorite villa. This project has two user & admin panels & it is not much different from the main site.",
     type_en: "Villa reservation site",
     type_fa: "سایت رزرو ویلا",
-    href: "https://jajiiga.liara.run/",
+    href: "https://jajiiga.vercel.app",
     image: "/Images/jajiga.jpg",
     tag: [
       "Zustand",
@@ -97,7 +97,7 @@ const projectData: ProjectType[] = [
       "A site for maintaining fitness by offering various diets, challenges & recipes. The user panel of this project is available to you & you can easily buy diets.",
     type_en: "Diet site",
     type_fa: "سایت  رژیم غذایی",
-    href: "https://alimoayed.com/",
+    href: "https://alimoayed.com",
     image: "/Images/eatbetter.jpg",
     tag: [
       "Zustand",
@@ -120,7 +120,7 @@ const projectData: ProjectType[] = [
       "Nike store website welcomes you with its various & beautifull shoes. In this site, you can add as many shoes as you like to your shopping cart & buy them.",
     type_en: "Store website",
     type_fa: "سایت فروشگاهی",
-    href: "https://nike-shop-ir.vercel.app/",
+    href: "https://nike-shop-ir.vercel.app",
     image: "/Images/nike.PNG",
     tag: [
       "React",
@@ -142,7 +142,7 @@ const projectData: ProjectType[] = [
       "On this website, you'll be informed about the weather today & for a week in any city of your choice. Info about sunrise & sunset is also available on this site.",
     type_en: "Weather website",
     type_fa: "سایت آب و هوا",
-    href: "https://weather-app-ir.vercel.app/",
+    href: "https://weather-app-ir.vercel.app",
     image: "/Images/weather.PNG",
     tag: [
       "Next-14",
@@ -161,7 +161,7 @@ const projectData: ProjectType[] = [
       "With PilBil, you can easily transfer your digital currencies to other accounts. This site has a user panel & for security reasons, admin panel is not available.",
     type_en: "Digital currency website",
     type_fa: "سایت ارز دیجیتال",
-    href: "https://pilbil.com/",
+    href: "https://pilbil.com",
     image: "/Images/fixedFloat.PNG",
     tag: ["Api", "Bootstrap", "Formik_Yup", "React"],
   },
