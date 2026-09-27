@@ -4,9 +4,9 @@ const projectData: ProjectType[] = [
   {
     name_en: "Imteb",
     description_fa:
-      "وقتی به راهنمایی تخصصی نیاز داری، آیم‌طب کنارته!، ارائه خدمات تخصصی روانشناسی و روانپزشکی ویژه کاربران ،کلینیک های روانشناسی و سازمان ها ی دولتی و خصوصی.",
+      "یک پلتفرم تخصصی روانشناسی و روانپزشکی توسعه‌داده‌شده با Next.js که شامل پنل‌های مختلف برای کاربران، کلینیک‌ها و سازمان‌ها است. پروژه با تمرکز بر SEO تکنیکال، معماری مقیاس‌پذیر و مدیریت نوبت‌ها توسعه داده شده.",
     description_en:
-      "Need expert guidance? Imteb is here for you! Offering specialized psychological & psychiatric services for users, clinics, & organizations (public & private).",
+      "A psychology & psychiatry platform built with Next.js, featuring dedicated dashboards for users, clinics, & organizations. Developed with a focus on technical SEO, scalable architecture, & appointment management.",
     type_en: "Psychology site",
     type_fa: "سایت رزرو نوبت پزشکی",
     href: "https://imteb.com",
@@ -27,9 +27,9 @@ const projectData: ProjectType[] = [
   {
     name_en: "Darman shirin",
     description_fa:
-      "درمان شیرین، نوبت‌دهی اینترنتی و آنلاین پزشکان در سرتاسر ایران. با استفاده از این سایت، سه سوت نوبت دکتر یا مراکز درمانی مد نظرتو بگیر!",
+      "یک پلتفرم نوبت‌دهی پزشکی توسعه‌داده‌شده با Next.js که امکان جستجو و رزرو نوبت پزشکان و مراکز درمانی را فراهم می‌کند. پروژه با تمرکز بر SEO تکنیکال، عملکرد و تجربه کاربری توسعه داده شده.",
     description_en:
-      "Darman Shirin, online doctor appointments throughout Iran. Using this site, make an appointment with the doctor or medical center of your choice.",
+      "A medical appointment platform built with Next.js for finding & booking doctors & healthcare centers. Developed with a focus on technical SEO, performance, & user experience.",
     type_en: "Medical site",
     type_fa: "سایت رزرو نوبت پزشکی",
     href: "https://darmanshirin.com",
@@ -47,17 +47,39 @@ const projectData: ProjectType[] = [
     ],
   },
   {
+    name_en: "FlowBoard",
+    description_fa:
+      "یک تسک منیجر Full-stack توسعه‌داده‌شده با Next.js و NestJS با تمرکز بر معماری ماژولار، احراز هویت، مدیریت پروژه و تسک، Drag & Drop و مدیریت اعضای تیم.",
+    description_en:
+      "A full-stack task manager built with Next.js & NestJS, focused on modular architecture, authentication, project & task management, Drag & Drop, & team management.",
+    type_en: "Project Management",
+    type_fa: "تسک منیجر",
+    href: "https://flowboarrd.vercel.app",
+    image: "/Images/flowboard.png",
+    tag: [
+      "Next.js",
+      "React",
+      "TypeScript",
+      "NestJS",
+      "TypeORM",
+      "TanStack Query",
+      "Zust&",
+      "Tailwind CSS",
+      "dnd-kit",
+    ],
+  },
+  {
     name_en: "Jajiga",
     description_fa:
-      "سایت ویلایی جاجیگا که در اون میتونید ویلای خودتون رو ثبت و ویلای مورد علاقتون رو رزرو کنید. این پروژه دارای دو پنل کاربر و ادمین هست و دست کمی از سایت اصلی نداره.",
+      "یک پلتفرم رزرو ویلا توسعه‌داده‌شده با Next.js که شامل پنل‌های کاربر و ادمین است. قابلیت‌هایی مانند ثبت و رزرو ویلا، احراز هویت و مدیریت اطلاعات با تمرکز بر PWA و تجربه کاربری پیاده‌سازی شده‌اند.",
     description_en:
-      "Jajiga is where you can register your villa & book your favorite villa. This project has two user & admin panels & it is not much different from the main site.",
+      "A villa booking platform built with Next.js, featuring separate user & admin panels. Includes villa registration, booking, authentication, & management features with a focus on PWA & user experience.",
     type_en: "Villa reservation site",
     type_fa: "سایت رزرو ویلا",
     href: "https://jajiiga.vercel.app",
     image: "/Images/jajiga.jpg",
     tag: [
-      "Zustand",
+      "Zust&",
       "Next-14",
       "Threejs",
       "React-Query",
@@ -71,9 +93,9 @@ const projectData: ProjectType[] = [
   {
     name_en: "Homano",
     description_fa:
-      "فروشگاه آنلاین فول‌استک توسعه‌داده‌شده با React و Express. این پروژه از React Query برای مدیریت داده‌ها، Redis برای کش، Zod برای اعتبارسنجی، Zustand برای...",
+      "یک فروشگاه Full-stack توسعه‌داده‌شده با React، Express و TypeScript که شامل احراز هویت، مدیریت محصولات، سبد خرید، سفارش‌ها و CMS است. پروژه از React Query، Redis، Zod و Zust& برای مدیریت داده، کش و اعتبارسنجی استفاده می‌کند.",
     description_en:
-      "A full-stack e-commerce application built with React & Node.js (Express). The project leverages React Query for management, Redis for caching, Zod for data validation, and Zustand for...",
+      "A full-stack e-commerce application built with React, Express, & TypeScript, featuring authentication, product management, cart, orders, & CMS. Uses React Query, Redis, Zod, & Zust& for data management, caching, & validation.",
     type_en: "Online shopping site",
     type_fa: "سایت خرید کالا",
     href: "https://homano.vercel.app",
@@ -85,7 +107,7 @@ const projectData: ProjectType[] = [
       "React-Query",
       "Tailwind",
       "Zod",
-      "Zustand",
+      "Zust&",
       "TypeScript",
     ],
   },
@@ -100,7 +122,7 @@ const projectData: ProjectType[] = [
     href: "https://alimoayed.com",
     image: "/Images/eatbetter.jpg",
     tag: [
-      "Zustand",
+      "Zust&",
       "React",
       "React-Query",
       "TypeScript",
@@ -113,11 +135,31 @@ const projectData: ProjectType[] = [
     ],
   },
   {
+    name_en: "Storm Seeker",
+    description_fa:
+      "یک اپلیکیشن آب‌وهوا توسعه‌داده‌شده با Next.js که اطلاعات آب‌وهوای فعلی و پیش‌بینی هفتگی شهرها را از طریق API نمایش می‌دهد. اطلاعات طلوع و غروب خورشید نیز در دسترس کاربران قرار دارد.",
+    description_en:
+      "A weather application built with Next.js, providing current conditions and weekly forecasts through an external API. Also includes sunrise and sunset information for selected cities.",
+    type_en: "Weather website",
+    type_fa: "سایت آب و هوا",
+    href: "https://weather-app-ir.vercel.app",
+    image: "/Images/weather.PNG",
+    tag: [
+      "Next-14",
+      "React-Query",
+      "TypeScript",
+      "ParicleJs",
+      "Api",
+      "Tailwind",
+    ],
+  },
+
+  {
     name_en: "Nike",
     description_fa:
-      "سایت فروشگاهی نایک با کفش های متنوعش از شما استقبال میکنه. توی این سایت میتونید هر چند تا کفش که دوست داشته باشید رو به سبد خریدتون اضافه و اونها رو بخرید.",
+      "یک فروشگاه اینترنتی توسعه‌داده‌شده با React که شامل مدیریت سبد خرید، نمایش محصولات و جستجوی کالاها است. پروژه با استفاده از Redux Toolkit برای مدیریت state و Infinite Scroll برای بهبود تجربه مرور محصولات پیاده‌سازی شده است.",
     description_en:
-      "Nike store website welcomes you with its various & beautifull shoes. In this site, you can add as many shoes as you like to your shopping cart & buy them.",
+      "An e-commerce website built with React, featuring product browsing, search, and shopping cart management. Uses Redux Toolkit for state management and Infinite Scroll for a smoother browsing experience.",
     type_en: "Store website",
     type_fa: "سایت فروشگاهی",
     href: "https://nike-shop-ir.vercel.app",
@@ -134,37 +176,19 @@ const projectData: ProjectType[] = [
       "infinite-scroll",
     ],
   },
-  {
-    name_en: "Storm Seeker",
-    description_fa:
-      "در سایت storm seeker   از آب و هوای امروز تا یک هفته هر شهری که مد نظرت هست خبر دار بشو. اطلاعاتی راجب وضعیت طلوع و غروب آفتاب هم توی این سایت در دسترستون هست.",
-    description_en:
-      "On this website, you'll be informed about the weather today & for a week in any city of your choice. Info about sunrise & sunset is also available on this site.",
-    type_en: "Weather website",
-    type_fa: "سایت آب و هوا",
-    href: "https://weather-app-ir.vercel.app",
-    image: "/Images/weather.PNG",
-    tag: [
-      "Next-14",
-      "React-Query",
-      "TypeScript",
-      "ParicleJs",
-      "Api",
-      "Tailwind",
-    ],
-  },
-  {
-    name_en: "Pil Bil",
-    description_fa:
-      "با PilBil به راحتی میتونید ارز های دیجیتال خودتون رو با کارمزد کم به سایر حساب ها انتقال بدید. این صرافی دارای پنل کاربر هست و به دلایل امنیتی پنل ادمین در دسترس قرار نمیگیره. ",
-    description_en:
-      "With PilBil, you can easily transfer your digital currencies to other accounts. This site has a user panel & for security reasons, admin panel is not available.",
-    type_en: "Digital currency website",
-    type_fa: "سایت ارز دیجیتال",
-    href: "https://pilbil.com",
-    image: "/Images/fixedFloat.PNG",
-    tag: ["Api", "Bootstrap", "Formik_Yup", "React"],
-  },
+
+  // {
+  //   name_en: "Pil Bil",
+  //   description_fa:
+  //     "با PilBil به راحتی میتونید ارز های دیجیتال خودتون رو با کارمزد کم به سایر حساب ها انتقال بدید. این صرافی دارای پنل کاربر هست و به دلایل امنیتی پنل ادمین در دسترس قرار نمیگیره. ",
+  //   description_en:
+  //     "With PilBil, you can easily transfer your digital currencies to other accounts. This site has a user panel & for security reasons, admin panel is not available.",
+  //   type_en: "Digital currency website",
+  //   type_fa: "سایت ارز دیجیتال",
+  //   href: "https://pilbil.com",
+  //   image: "/Images/fixedFloat.PNG",
+  //   tag: ["Api", "Bootstrap", "Formik_Yup", "React"],
+  // },
   // {
   //   name_en: "OnlyMusic",
   //   description_fa:
@@ -182,7 +206,7 @@ const projectData: ProjectType[] = [
   //   description_fa:
   //     "با استفاده از این سایت میتونید اکانت خودتون رو بسازید و کار های روزانه خود را یادداشت و مدیریت کنید و میتونید به صورت دائم، به یادداشت هاتون دسترسی داشته باشید.",
   //   description_en:
-  //     "By using this site, you can create your own account and record and manage your daily tasks, and you can permanently access all your notes.",
+  //     "By using this site, you can create your own account & record & manage your daily tasks, & you can permanently access all your notes.",
   //   type_en: "Todo List website",
   //   type_fa: "لیست کارهای روزانه",
   //   href: "https://todo-list-v2.liara.run/",
@@ -206,8 +230,8 @@ const projectData: ProjectType[] = [
   //   description_fa:
   //     "این لندینگ پیج Pwa که از سایت nuxt.com الهام گرفته شده، واقعا طرح و انیمیشن های فوقالعاده زیبایی داره و دارای دو تم دارک و لایت هست. پیشنهاد میکنم از دستش ندید!",
   //   description_en:
-  //     "This Pwa landing page, inspired by nuxt.com, has a really beautiful design & animation, & has two themes, dark & light. I suggest you don't miss it!",
-  //   type_en: "landing page",
+  //     "This Pwa l&ing page, inspired by nuxt.com, has a really beautiful design & animation, & has two themes, dark & light. I suggest you don't miss it!",
+  //   type_en: "l&ing page",
   //   type_fa: "لندینگ پیج",
   //   href: "https://nuxt.iran.liara.run/",
   //   image: "/Images/nuxt.PNG",

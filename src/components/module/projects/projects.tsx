@@ -60,14 +60,14 @@ export default function Projects() {
         className="bottom-0 -left-44 absolute"
         alt="shape"
       />
-      <p
+      {/* <p
         className={`${i18n.language == "fa" ? "text-right pr-24" : "text-left pl-24"} lg:!text-center px-4  pt-4 lg:!pt-0 lg:!pl-4 text-white z-[9999] relative`}
       >
         {" "}
         {i18n.language == "fa"
           ? "با توجه به اختلال سراسری اینترنت و قطع بودن بستر ها، ممکن است برخی پروژه ها لود نشوند!!"
           : "Due to the internet disruption and platform outages, some projects may not load!!"}
-      </p>
+      </p> */}
     </div>
   );
 }
